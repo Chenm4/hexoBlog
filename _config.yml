@@ -1,0 +1,187 @@
+# site name
+prefixName:
+siteName: 朝生暮的小屋~
+# favicon and site master avatar
+favicon: /images/favicon.ico
+avatar: /img/custom/avatar.jpg
+url: https://sakura.hojun.cn
+description: Live your life with passion! With some drive!
+cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+#  https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051132707.png
+pjax: 1
+# 1开启
+mathjax: 1
+
+notice: hexo-Sakura主题已经开源，目前正在开发中...
+lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: {
+    技术: {path: /categories/技术/, fa: fa-code },
+    生活: {path: /categories/生活/, fa: fa-file-text-o },
+    资源: {path: /categories/资源/, fa: fa-cloud-download },
+    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    转载: {path: /categories/转载/, fa: fa-book }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: {
+    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce },
+    番组: {path: /bangumi/, fa: fa-film faa-vertical },
+    歌单: {path: /music/, fa: fa-headphones },
+    图集: {path: /tags/图集/, fa: fa-photo }
+  } }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: {
+    我？: {path: /about/, fa: fa-meetup},
+    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+    Lab: {path: /lab/, fa: fa-cogs },
+  } }
+  客户端: { path: /client/, fa: fa-android faa-vertical }
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# 背景图片 更好的修改
+bg:
+  #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp
+  #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp
+  #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
+  #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp
+  - https://s3.bmp.ovh/imgs/2022/08/05/dbc178e43a06e562.png
+  - https://s3.bmp.ovh/imgs/2022/08/05/dc977031205da31e.png
+  - https://s3.bmp.ovh/imgs/2022/08/05/a15b127e665d84bd.png
+  - https://s3.bmp.ovh/imgs/2022/08/05/ade048f4e0761e4d.png
+
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass:
+
+# startdash url, title, desc img
+startdash:
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+  - {url: https://space.bilibili.com/691973097, title: Bilibili, desc: 博主的b站视频, img: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg}
+  - {url: /, title: 朝生暮的小屋, desc: 技术服务, img: https://s3.bmp.ovh/imgs/2022/08/05/b3300dfc765f5fd8.jpg}
+
+
+
+# your site build time or founded date
+siteBuildingTime: 06/8/2022
+
+#social  url, img PC端配置
+social:
+  github: {url: http://github.com/Chenm4, img: /img/social/github.png}
+  sina: {url: https://weibo.com/u/2144294960, img: /img/social/sina.png}
+  wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: /img/social/wangyiyun.png}
+  zhihu: {url: https://music.163.com/#/user/home?id=1357895709, img: /img/social/zhihu.png}
+  email: {url: https://weibo.com/u/2144294960, img: /img/social/email.svg}
+  wechat: {url: /#, qrcode: https://s3.bmp.ovh/imgs/2022/08/05/fc1f42754519e888.jpg, img: /img/social/wechat.png}
+  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+
+#social  url, img 移动端配置
+msocial:
+  github: {url: http://github.com/Chenm4, fa: fa-github, color: 333}
+  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
+  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
+
+donate:
+  paypal: https://s3.bmp.ovh/imgs/2022/08/05/c729d56441a4f9c5.png
+  alipay: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
+  wechat: https://s3.bmp.ovh/imgs/2022/08/05/fa170103090af988.jpg
+  wechatSQ: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051132707.png
+
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies:
+  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: Unbroken.mp4
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: Sakura
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo:
+    # github: git@github.com:honjun/honjun.github.io.git
+    github: https://github.com/Chenm4/Chenm4.github.io.git
+    #coding: https://git.coding.net/hojun/hojun.git
+  branch: master
+
+# backup
+backup:
+  type: git
+  message: backup my blog of https://yourname.github.io/
+  repository:
+    # github: https://github.com/honjun/honjun.github.io.git,backup
+    coding: https://git.coding.net/hojun/hojun.git,backup
+
+#RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
