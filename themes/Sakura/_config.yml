@@ -1,12 +1,15 @@
 # site name
+# 这个的改变比较关键，其他的_config没啥用
 prefixName:
 siteName: 朝生暮的小屋~
 # favicon and site master avatar
-favicon: /images/favicon.ico
-avatar: /img/custom/avatar.jpg
-url: https://sakura.hojun.cn
-description: Live your life with passion! With some drive!
+favicon: https://s3.bmp.ovh/imgs/2022/08/05/9418a22a81be6cf7.jpg
+avatar: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051845711.jpg
+#https://cdn:jsdelivr:net/gh/Chenm4/typoraImg@main/202208051845711:jpg:
+url: https://zhaoshengmu.top
+description: 朝闻道，夕可死矣
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+#https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
 # 1开启
 mathjax: 0

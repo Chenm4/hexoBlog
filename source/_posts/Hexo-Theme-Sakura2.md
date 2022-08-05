@@ -1,19 +1,19 @@
 ---
 title: Hexo-Theme-Sakura
-author: hojun
-avatar: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
-authorLink: hojun.cn
+author: 朝生暮
+avatar: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051845711.jpg
+authorLink: zhaoshengmu.top
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 categories: 技术
-date: 2018-12-12 22:16:01
+date: 2022-08-04 22:16:01
 comments: true
 tags: 
  - web
  - 悦读
 keywords: Sakura
 description: hexo-sakura主题使用教程
-photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
+photos: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg
 ---
 hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-sakura/blob/master/README.md)
 
@@ -114,7 +114,7 @@ avatar: /img/custom/avatar.jpg
 url: https://sakura.hojun.cn
 
 # 站点介绍（或者说是个人签名）【改】
-description: Live your life with passion! With some drive!
+description: 朝闻道，夕可死矣
 
 # 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
@@ -375,3 +375,40 @@ hexo-tag-fancybox_img用来在文章或单页面中图片，使用语法如下�
 ## 还有啥，一时想不起来......
 
 To be continued...
+
+---
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+## Quick Start
+
+### Create a new post
+
+``` bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+### Run server
+
+``` bash
+$ hexo server
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### Generate static files
+
+``` bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+### Deploy to remote sites
+
+``` bash
+$ hexo deploy
+```
+
+More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
