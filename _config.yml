@@ -2,19 +2,20 @@
 prefixName:
 siteName: 朝生暮的小屋~
 # favicon and site master avatar
-favicon: /images/favicon.ico
-avatar: /img/custom/avatar.jpg
-url: https://sakura.hojun.cn
-description: Live your life with passion! With some drive!
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+favicon: https://s3.bmp.ovh/imgs/2022/08/05/9418a22a81be6cf7.jpg
+avatar: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051845711.jpg
+url: https://zhaoshengmu.top
+description: 朝闻道，夕可死矣
+cdn:
+# https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 #  https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051132707.png
 pjax: 1
 # 1开启
 mathjax: 1
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
-
+lazyloadImg:
+#https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg  这个为上面的
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: {
@@ -90,7 +91,7 @@ msocial:
 
 donate:
   paypal: https://s3.bmp.ovh/imgs/2022/08/05/c729d56441a4f9c5.png
-  alipay: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
+  alipay: https://s3.bmp.ovh/imgs/2022/08/05/9418a22a81be6cf7.jpg
   wechat: https://s3.bmp.ovh/imgs/2022/08/05/fa170103090af988.jpg
   wechatSQ: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051132707.png
 
@@ -117,7 +118,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
