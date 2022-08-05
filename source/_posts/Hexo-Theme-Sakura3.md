@@ -13,7 +13,7 @@ tags:
  - 悦读
 keywords: Sakura
 description: hexo-sakura主题使用教程
-photos: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg
+photos: https://s3.bmp.ovh/imgs/2022/08/05/ef0d3f66237bee0b.png
 ---
 hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-sakura/blob/master/README.md)
 
@@ -173,7 +173,7 @@ startdash:
 
 # your site build time or founded date
 # 你的站点建立日期 【改】
-siteBuildingTime: 07/17/2018
+siteBuildingTime: 05/08/2022
 
 
 # 社交按钮(social)  url, img PC端配置 【改】

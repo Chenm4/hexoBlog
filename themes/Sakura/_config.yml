@@ -3,12 +3,12 @@
 prefixName:
 siteName: 朝生暮的小屋~
 # favicon and site master avatar
-favicon: https://s3.bmp.ovh/imgs/2022/08/05/9418a22a81be6cf7.jpg
-avatar: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051845711.jpg
+favicon: https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208052151008.bmp
+avatar: https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208052151008.bmp
 #https://cdn:jsdelivr:net/gh/Chenm4/typoraImg@main/202208051845711:jpg:
 url: https://zhaoshengmu.top
 description: 朝闻道，夕可死矣
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn:
 #https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
 # 1开启
@@ -57,7 +57,7 @@ bg:
   - https://s3.bmp.ovh/imgs/2022/08/05/dbc178e43a06e562.png
   - https://s3.bmp.ovh/imgs/2022/08/05/dc977031205da31e.png
   - https://s3.bmp.ovh/imgs/2022/08/05/a15b127e665d84bd.png
-  - https://s3.bmp.ovh/imgs/2022/08/05/ade048f4e0761e4d.png
+#  - https://s3.bmp.ovh/imgs/2022/08/05/ade048f4e0761e4d.png
 
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
@@ -76,13 +76,13 @@ siteBuildingTime: 06/8/2022
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/Chenm4, img: /img/social/github.png}
-  sina: {url: https://weibo.com/u/2144294960, img: /img/social/sina.png}
-  wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: /img/social/wangyiyun.png}
-  zhihu: {url: https://weibo.com/u/2144294960, img: /img/social/zhihu.png}
-  email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  wechat: {url: /#, qrcode: ./hexo-theme-sakura-master/source/Image/weixin.jpg, img: /img/social/wechat.png}
-  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  github: {url: http://github.com/Chenm4, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/github.png}
+  sina: {url: https://weibo.com/u/2144294960, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/sina.png}
+  wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wangyiyun.png}
+  zhihu: {url: https://weibo.com/u/2144294960, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/zhihu.png}
+  email: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/email.svg}
+#  wechat: {url: /#, qrcode: ./hexo-theme-sakura-master/source/Image/weixin.jpg, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png}
+#  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:

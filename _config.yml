@@ -3,7 +3,11 @@ prefixName:
 siteName: 朝生暮的小屋~
 # favicon and site master avatar
 favicon: https://s3.bmp.ovh/imgs/2022/08/05/9418a22a81be6cf7.jpg
-avatar: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051845711.jpg
+avatar:
+#https://cdn:
+#  jsdelivr:
+#    net/gh/Chenm4/typoraImg@main/202208051845711:
+#      jpg:
 url: https://zhaoshengmu.top
 description: 朝闻道，夕可死矣
 cdn:
