@@ -61,10 +61,10 @@ bg:
 bgclass:
 
 # startdash url, title, desc img
-startdash:
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: https://space.bilibili.com/691973097, title: Bilibili, desc: 博主的b站视频, img: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg}
-  - {url: /, title: 朝生暮的小屋, desc: 技术服务, img: https://s3.bmp.ovh/imgs/2022/08/05/b3300dfc765f5fd8.jpg}
+#startdash:
+#  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+#  - {url: https://space.bilibili.com/691973097, title: Bilibili, desc: 博主的b站视频, img: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg}
+#  - {url: /, title: 朝生暮的小屋, desc: 技术服务, img: https://s3.bmp.ovh/imgs/2022/08/05/b3300dfc765f5fd8.jpg}
 
 
 
@@ -78,7 +78,7 @@ social:
   wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: /img/social/wangyiyun.png}
   zhihu: {url: https://weibo.com/u/2144294960, img: /img/social/zhihu.png}
   email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  wechat: {url: /#, qrcode: https://s3.bmp.ovh/imgs/2022/08/05/fc1f42754519e888.jpg, img: /img/social/wechat.png}
+  wechat: {url: /#, qrcode: ./hexo-theme-sakura-master/source/Image/weixin.jpg, img: /img/social/wechat.png}
   wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置

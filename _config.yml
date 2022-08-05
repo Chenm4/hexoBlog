@@ -62,10 +62,10 @@ bg:
 bgclass:
 
 # startdash url, title, desc img
-startdash:
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: https://space.bilibili.com/691973097, title: Bilibili, desc: 博主的b站视频, img: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg}
-  - {url: /, title: 朝生暮的小屋, desc: 技术服务, img: https://s3.bmp.ovh/imgs/2022/08/05/b3300dfc765f5fd8.jpg}
+#startdash:
+#  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+#  - {url: https://space.bilibili.com/691973097, title: Bilibili, desc: 博主的b站视频, img: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg}
+#  - {url: /, title: 朝生暮的小屋, desc: 技术服务, img: https://s3.bmp.ovh/imgs/2022/08/05/b3300dfc765f5fd8.jpg}
 
 
 
