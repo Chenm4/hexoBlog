@@ -15,7 +15,7 @@ tags:
 - 悦读
 keywords: 
 description: hexo-sakura主题使用教程
-photos: https://s3.bmp.ovh/imgs/2022/08/05/215fc5840269c7f2.jpg
+photos: https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208052219286.png
 ---
 hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-sakura/blob/master/README.md)
 
@@ -118,7 +118,7 @@ url: https://zhaoshengmu.top
 # 站点介绍（或者说是个人签名）【改】
 description: 朝闻道，夕可死矣
 
-# 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
+# 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https\:\/\/cdn\.statically\.io\/gh/honjun/cdn@1.6/img/custom/avatar.jpg
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 
 # 开启pjax 【选】
