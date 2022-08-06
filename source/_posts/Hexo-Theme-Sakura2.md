@@ -25,11 +25,6 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
 
 ![](https://wx3.sinaimg.cn/large/006bYVyvly1g069tuf42oj312w0m8ndq.jpg)
 
-## 交流群
-若你是使用者，加群QQ: 801511924
-
-若你是创作者，加群QQ: 194472590
-
 
 ## 主题特性
 
@@ -205,12 +200,12 @@ movies:
 
 # 左下角aplayer播放器配置 主要改id和server这两项，修改详见[aplayer文档] 【改】
 aplayer: 
-  id: 2660651585
+  id: 7575508256
   server: netease
   type: playlist
   fixed: true
-  mini: false
-  autoplay: false
+  mini: true
+  autoplay: true
   loop: all
   order: random
   preload: auto

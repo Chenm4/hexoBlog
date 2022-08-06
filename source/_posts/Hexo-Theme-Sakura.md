@@ -27,11 +27,6 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
 
 ![](https://wx3.sinaimg.cn/large/006bYVyvly1g069tuf42oj312w0m8ndq.jpg)
 
-## 交流群
-若你是使用者，加群QQ: 801511924
-
-若你是创作者，加群QQ: 194472590
-
 
 ## 主题特性
 

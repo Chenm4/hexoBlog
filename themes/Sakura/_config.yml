@@ -102,7 +102,7 @@ movies:
   name: Unbroken.mp4
 
 aplayer:
-  id: 2660651585
+  id: 7575508256
   server: netease
   type: playlist
   fixed: true
@@ -110,7 +110,7 @@ aplayer:
   loop: all
   order: random
   preload: auto
-  volume: 0.7
+  volume: 0.1
   mutex: true
 
 # Valine
