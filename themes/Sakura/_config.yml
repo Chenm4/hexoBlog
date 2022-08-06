@@ -54,9 +54,9 @@ bg:
   #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp
   #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
   #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp #- https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp
-  - https://s3.bmp.ovh/imgs/2022/08/05/dbc178e43a06e562.png
-  - https://s3.bmp.ovh/imgs/2022/08/05/dc977031205da31e.png
-  - https://s3.bmp.ovh/imgs/2022/08/05/a15b127e665d84bd.png
+  - https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434117.png
+  - https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434096.png
+  - https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434218.png
 #  - https://s3.bmp.ovh/imgs/2022/08/05/ade048f4e0761e4d.png
 
 
@@ -76,24 +76,24 @@ siteBuildingTime: 06/8/2022
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/Chenm4, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/github.png}
-  sina: {url: https://weibo.com/u/2144294960, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/sina.png}
-  wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wangyiyun.png}
-  zhihu: {url: https://weibo.com/u/2144294960, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/zhihu.png}
-  email: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/email.svg}
+  github: {url: http://github.com/Chenm4, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409435.png}
+  sina: {url: https://weibo.com/u/2144294960, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409437.png}
+  wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409438.png}
+  zhihu: {url: https://weibo.com/u/2144294960, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409439.png}
+  email: {url: http://weibo.com/mashirozx?is_all=1, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409440.svg}
 #  wechat: {url: /#, qrcode: ./hexo-theme-sakura-master/source/Image/weixin.jpg, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png}
 #  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:
-  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
+  weibo: {url: https://weibo.com/u/2144294960, fa: fa-weibo, color: dd4b39}
   qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 donate:
-  paypal: https://s3.bmp.ovh/imgs/2022/08/05/c729d56441a4f9c5.png
-  alipay: https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208060904351.png
-  wechat: https://s3.bmp.ovh/imgs/2022/08/05/fa170103090af988.jpg
-  wechatSQ: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051132707.png
+  paypal: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png
+  alipay: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png
+  wechat: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png
+  wechatSQ: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061412992.jpeg
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
