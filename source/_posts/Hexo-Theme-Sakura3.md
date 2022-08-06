@@ -1,7 +1,7 @@
 ---
 title: Hexo-Theme-Sakura
 author: 朝生暮
-avatar: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051845711.jpg
+avatar: https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208051845711.jpg
 authorLink: zhaoshengmu.top
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
@@ -219,8 +219,8 @@ aplayer:
 
 # Valine评论配置【改】
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
+v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
 ```
 
 ## 分类页和标签页配置

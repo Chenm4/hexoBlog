@@ -221,8 +221,8 @@ aplayer:
 
 # Valine评论配置【改】
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
+v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
 ```
 
 ## 分类页和标签页配置

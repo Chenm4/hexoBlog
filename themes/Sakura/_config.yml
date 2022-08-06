@@ -91,7 +91,7 @@ msocial:
 
 donate:
   paypal: https://s3.bmp.ovh/imgs/2022/08/05/c729d56441a4f9c5.png
-  alipay: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
+  alipay: https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208060904351.png
   wechat: https://s3.bmp.ovh/imgs/2022/08/05/fa170103090af988.jpg
   wechatSQ: https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208051132707.png
 
@@ -115,8 +115,8 @@ aplayer:
 
 # Valine
 valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
+v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
 
 # Waline
 waline:
