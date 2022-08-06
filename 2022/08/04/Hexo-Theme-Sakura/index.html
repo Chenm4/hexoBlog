@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">video | Hexo</title>
+  <title itemprop="name">Hexo-Theme-Sakura | Hexo</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208052151008.bmp">
   
@@ -372,135 +372,418 @@
   </div>
 </header>
 
-        <div class="pattern-center-blank"></div>
-  
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208052219286.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208052219286.png">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      Hexo-Theme-Sakura</h1>
+      <p class="entry-census">
+        <span>
+          <a href="zhaoshengmu.top">
+            <img src="">
+          </a>
+        </span>
+        <span>
+          <a href="zhaoshengmu.top">朝生暮</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-8-4<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>hexo-theme-sakura主题 <a href="https://github.com/honjun/hexo-theme-sakura/blob/master/README.md" target="_blank" rel="noopener">English document</a></p>
+<p>基于WordPress主题<a href="https://github.com/mashirozx/Sakura/" target="_blank" rel="noopener">Sakura</a>修改成Hexo的主题。</p>
+<p><a href="https://sakura.hojun.cn" target="_blank" rel="noopener">demo预览</a></p>
+<p>正在开发中……</p>
+<p><img src="https://wx3.sinaimg.cn/large/006bYVyvly1g069tuf42oj312w0m8ndq.jpg" alt></p>
+<h2 id="主题特性"><a href="#主题特性" class="headerlink" title="主题特性"></a>主题特性</h2><ul>
+<li>首页大屏视频</li>
+<li>首页随机封面</li>
+<li>图片懒加载</li>
+<li>valine评论</li>
+<li>fancy-box相册</li>
+<li>pjax支持，音乐不间断</li>
+<li>aplayer音乐播放器</li>
+<li>多级导航菜单（按现在大部分hexo主题来说，这也算是个特性了）</li>
+</ul>
+<h2 id="赞赏作者"><a href="#赞赏作者" class="headerlink" title="赞赏作者"></a>赞赏作者</h2><p>如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！</p>
+<p><a href="https://www.paypal.me/hojuncn" target="_blank" rel="noopener">paypal</a> | <a href="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg" target="_blank" rel="noopener">Alipay 支付宝</a> | <a href="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg" target="_blank" rel="noopener">WeChat Pay 微信支付</a></p>
+<h2 id="未完善的使用教程"><a href="#未完善的使用教程" class="headerlink" title="未完善的使用教程"></a>未完善的使用教程</h2><p>那啥？老实说我目前也不是很有条理233333333~</p>
+<h2 id="1、主题下载安装"><a href="#1、主题下载安装" class="headerlink" title="1、主题下载安装"></a>1、主题下载安装</h2><p><a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" rel="noopener">hexo-theme-sakura</a>建议下载压缩包格式，因为除了主题内容还有些source的配置对新手来说比较太麻烦，直接下载解压就省去这些麻烦咯。</p>
+<p>下载好后解压到博客根目录（不是主题目录哦，重复的选择替换）。接着在命令行（cmd、bash）运行<code>npm i</code>安装依赖。</p>
+<h2 id="2、主题配置"><a href="#2、主题配置" class="headerlink" title="2、主题配置"></a>2、主题配置</h2><h3 id="博客根目录下的-config配置"><a href="#博客根目录下的-config配置" class="headerlink" title="博客根目录下的_config配置"></a>博客根目录下的_config配置</h3><p>站点</p>
+<pre><code class="yml"># Site
+title: 你的站点名
+subtitle:
+description: 站点简介
+keywords:
+author: 作者名
+language: zh-cn
+timezone:
+</code></pre>
+<p>部署</p>
+<pre><code class="yml">deploy:
+  type: git
+  repo: 
+    github: 你的github仓库地址
+    # coding: 你的coding仓库地址
+  branch: master
+</code></pre>
+<p>备份 （使用hexo b发布备份到远程仓库）</p>
+<pre><code class="yml">backup:
+  type: git
+  message: backup my blog of https://honjun.github.io/
+  repository:
+    # 你的github仓库地址,备份分支名  （建议新建backup分支）
+    github: https://github.com/honjun/honjun.github.io.git,backup
+    # coding: https://git.coding.net/hojun/hojun.git,backup
+
+</code></pre>
+<h3 id="主题目录下的-config配置"><a href="#主题目录下的-config配置" class="headerlink" title="主题目录下的_config配置"></a>主题目录下的_config配置</h3><p>其中标明【改】的是需要修改部门，标明【选】是可改可不改，标明【非】是不用改的部分</p>
+<pre><code class="yml"># site name
+# 站点名 【改】
+prefixName: さくら荘その
+siteName: hojun
+
+# favicon and site master avatar
+# 站点的favicon和头像 输入图片路径（下面的配置是都是cdn的相对路径，没有cdn请填写完整路径，建议使用jsdeliver搭建一个cdn啦，先去下载我的cdn替换下图片就行了，简单方便~）【改】
+favicon: /images/favicon.ico
+avatar: /img/custom/avatar.jpg
+
+# 站点url 【改】
+url: https://zhaoshengmu.top
+
+# 站点介绍（或者说是个人签名）【改】
+description: 朝闻道，夕可死矣
+
+# 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https\:\/\/cdn\.statically\.io\/gh/honjun/cdn@1.6/img/custom/avatar.jpg
+cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+
+# 开启pjax 【选】
+pjax: 1
+
+# 站点首页的公告信息 【改】
+notice: hexo-Sakura主题已经开源，目前正在开发中...
+
+# 懒加载的加载中图片 【选】
+lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+
+# 站点菜单配置 【选】
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    技术: {path: /categories/技术/, fa: fa-code }, 
+    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
+    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
+    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    转载: {path: /categories/转载/, fa: fa-book }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
+    歌单: {path: /music/, fa: fa-headphones },
+    图集: {path: /tags/图集/, fa: fa-photo }
+  } }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about/, fa: fa-meetup}, 
+    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+    Lab: {path: /lab/, fa: fa-cogs },
+  } }
+  客户端: { path: /client/, fa: fa-android faa-vertical }
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+# Home page sort type: -1: newer first，1: older first. 【非】
+homePageSortType: -1
+
+# Home page article shown number) 【非】
+homeArticleShown: 10
+
+# 背景图片 【选】
+bgn: 8
+
+# startdash面板 url, title, desc img 【改】
+startdash: 
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
+  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
+
+
+# your site build time or founded date
+# 你的站点建立日期 【改】
+siteBuildingTime: 07/17/2018
+
+
+# 社交按钮(social)  url, img PC端配置 【改】
+social:
+  github: {url: http://github.com/honjun, img: /img/social/github.png}
+  sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
+  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
+  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
+  email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
+  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+
+# 社交按钮(msocial)  url, img 移动端配置 【改】
+msocial:
+  github: {url: http://github.com/honjun, fa: fa-github, color: 333}
+  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
+  qq: {url: https://wpa.qq.com/msgrd?v=3&amp;uin=954655431&amp;site=qq&amp;menu=yes, fa: fa-qq, color: 25c6fe}
+
+# 赞赏二维码（其中wechatSQ是赞赏单页面的赞赏码图片）【改】
+donate:
+  alipay: /img/custom/donate/AliPayQR.jpg
+  wechat: /img/custom/donate/WeChanQR.jpg
+  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+
+# 首页视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下 【改】
+movies:
+  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: Unbroken.mp4
+
+# 左下角aplayer播放器配置 主要改id和server这两项，修改详见[aplayer文档] 【改】
+aplayer: 
+  id: 2660651585
+  server: netease
+  type: playlist
+  fixed: true
+  mini: false
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+
+# Valine评论配置【改】
+valine: true
+v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
+v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
+</code></pre>
+<h2 id="分类页和标签页配置"><a href="#分类页和标签页配置" class="headerlink" title="分类页和标签页配置"></a>分类页和标签页配置</h2><h3 id="分类页"><a href="#分类页" class="headerlink" title="分类页"></a>分类页</h3><p><img src="https://ws3.sinaimg.cn/large/006bYVyvly1g07b0gucy9j31060jih76.jpg" alt></p>
+<h3 id="标签页"><a href="#标签页" class="headerlink" title="标签页"></a>标签页</h3><p><img src="https://wx2.sinaimg.cn/large/006bYVyvly1g07azb2399j31040jgazs.jpg" alt></p>
+<p>配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。</p>
+<pre><code class="yml">#category
+# 按分类名创建
+技术:
+    #中文标题
+    zh: 野生技术协会 
+    # 英文标题
+    en: Geek – Only for Love
+    # 封面图片
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
+生活:
+    zh: 生活
+    en: live
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
+
+#tag
+# 标签名即是标题
+悦读:
+    # 封面图片
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+</code></pre>
+<h2 id="单页面封面配置"><a href="#单页面封面配置" class="headerlink" title="单页面封面配置"></a>单页面封面配置</h2><p><img src="https://ws3.sinaimg.cn/large/006bYVyvly1g07b1pi619j31080jge4u.jpg" alt><br>如留言板页面页面，位于source下的comment下，打开index.md如下：</p>
+<pre><code class="md">---
+title: comment
+date: 2018-12-20 23:13:48
+keywords: 留言板
+description: 
+comments: true
+# 在这里配置单页面头部图片，自定义替换哦~
+photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
+---
+</code></pre>
+<h2 id="单页面配置"><a href="#单页面配置" class="headerlink" title="单页面配置"></a>单页面配置</h2><h3 id="番组计划页-（请直接在下载后的文件中改，下面的添加了注释可能会有些影响）"><a href="#番组计划页-（请直接在下载后的文件中改，下面的添加了注释可能会有些影响）" class="headerlink" title="番组计划页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）"></a>番组计划页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）</h3><p><img src="https://wx2.sinaimg.cn/large/006bYVyvly1g07b2gyx60j31090jjahj.jpg" alt></p>
+<pre><code class="yml">---
+layout: bangumi
+title: bangumi
+comments: false
+date: 2019-02-10 21:32:48
+keywords:
+description:
+bangumis:
+  # 番组图片
+  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg
+  # 番组名
+    title: 朝花夕誓——于离别之朝束起约定之花
+  # 追番状态 （追番ing/已追完）
+    status: 已追完
+  # 追番进度
+    progress: 100
+  # 番剧日文名称
+    jp: さよならの朝に約束の花をかざろう
+  # 放送时间
+    time: 放送时间: 2018-02-24 SUN.
+  # 番剧介绍
+    desc:  住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
+  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg
+    title: 朝花夕誓——于离别之朝束起约定之花
+    status: 已追完
+    progress: 50
+    jp: さよならの朝に約束の花をかざろう
+    time: 放送时间: 2018-02-24 SUN.
+    desc: 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
+---
+</code></pre>
+<h3 id="友链页-（请直接在下载后的文件中改，下面的添加了注释可能会有些影响）"><a href="#友链页-（请直接在下载后的文件中改，下面的添加了注释可能会有些影响）" class="headerlink" title="友链页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）"></a>友链页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）</h3><p><img src="https://ws3.sinaimg.cn/large/006bYVyvly1g07b39tleej31080jhjv1.jpg" alt></p>
+<pre><code class="yml">---
+layout: links
+title: links
+# 创建日期，可以改下
+date: 2018-12-19 23:11:06 
+# 图片上的标题，自定义修改
+keywords: 友人帐 
+description: 
+# true/false 开启/关闭评论
+comments: true 
+# 页面头部图片，自定义修改
+photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/links.jpg 
+# 友链配置
+links: 
+  # 类型分组
+  - group: 个人项目
+    # 类型简介
+    desc: 充分说明这家伙是条咸鱼 &lt; (￣︶￣)&gt;
+    items:
+    # 友链链接
+    - url: https://shino.cc/fgvf
+    # 友链头像
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+    # 友链站点名
+      name: Google
+    # 友链介绍  下面雷同
+      desc: Google 镜像
+    - url: https://shino.cc/fgvf
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: Google
+      desc: Google 镜像
+  # 类型分组...
+  - group: 小伙伴们
+    desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
+    items:
+    - url: https://shino.cc/fgvf
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: Google
+      desc: Google 镜像
+    - url: https://shino.cc/fgvf
+      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
+      name: Google
+      desc: Google 镜像
+---
+</code></pre>
+<h2 id="写文章配置"><a href="#写文章配置" class="headerlink" title="写文章配置"></a>写文章配置</h2><p>主题集成了个人插件hexo-tag-bili和hexo-tag-fancybox_img。其中hexo-tag-bili用来在文章或单页面中插入B站外链视频，使用语法如下：</p>
+<pre><code class="md">{% bili video_id [page] %}
+</code></pre>
+<p>详细使用教程详见<a href="https://github.com/honjun/hexo-tag-bili/blob/master/README-zh_cn.md" target="_blank" rel="noopener">hexo-tag-bili</a>。</p>
+<p>hexo-tag-fancybox_img用来在文章或单页面中图片，使用语法如下：</p>
+<pre><code class="md">{% fb_img src [caption] %}
+</code></pre>
+<p>详细使用教程详见<a href="https://github.com/honjun/hexo-tag-fancybox_img/blob/master/README-zh_cn.md" target="_blank" rel="noopener">hexo-tag-fancybox_img</a></p>
+<h2 id="还有啥，一时想不起来……"><a href="#还有啥，一时想不起来……" class="headerlink" title="还有啥，一时想不起来……"></a>还有啥，一时想不起来……</h2><p>To be continued…</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
+                <li class="wechat-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre full previous">
+          
+            <a href="/2022/08/04/JSP&三层架构/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255251.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255251.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                JSP&amp;三层架构</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+      </section>
       
+<div id="vcomments"></div>
 <script>
-  var videos = [
-    {
-      img: 'https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg',
-      title: '朝花夕誓——于离别之朝束起约定之花',
-      status: '已追完',
-      progress: 100,
-      jp: 'さよならの朝に約束の花をかざろう',
-      time: '放送时间: 2018-02-24 SUN.',
-      desc: ' 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。'
-    },
-    {
-      img : 'https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg',
-      title: '朝花夕誓——于离别之朝束起约定之花',
-      status: '已追完',
-      progress: 100,
-      jp: 'さよならの朝に約束の花をかざろう',
-      time: '2018-02-24 SUN.',
-      desc: ' 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。'
-    }
-  ]
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz",
+        appKey: "bfvLFp8vPRNo3A3Dt11mlo4C",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
 </script>
 
 
-  <style>.should-ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:95%;}.should-ellipsis-full{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;}.should-ellipsis i{position:absolute;right:24px;}.grey-text{color:#9e9e9e !important}.grey-text.text-darken-4{color:#212121 !important}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}img{border-style:none}progress{display:inline-block;vertical-align:baseline}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*:before,*:after{-webkit-box-sizing:inherit;box-sizing:inherit}ul:not(.browser-default){padding-left:0;list-style-type:none}ul:not(.browser-default)>li{list-style-type:none}.card{-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)}.hoverable{-webkit-transition:-webkit-box-shadow .25s;transition:-webkit-box-shadow .25s;transition:box-shadow .25s;transition:box-shadow .25s,-webkit-box-shadow .25s}.hoverable:hover{-webkit-box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);box-shadow:0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}i{line-height:inherit}i.right{float:right;margin-left:15px}.bangumi .right{float:right !important}.material-icons{text-rendering:optimizeLegibility;-webkit-font-feature-settings:'liga';-moz-font-feature-settings:'liga';font-feature-settings:'liga'}.row{margin-left:auto;margin-right:auto;margin-bottom:20px}.row:after{content:"";display:table;clear:both}.row .col{float:left;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 .75rem;min-height:1px}.row .col.s12{width:100%;margin-left:auto;left:auto;right:auto}@media only screen and (min-width:601px){.row .col.m6{width:50%;margin-left:auto;left:auto;right:auto}}html{line-height:1.5;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-weight:normal;color:rgba(0,0,0,0.87)}@media only screen and (min-width:0){html{font-size:14px}}@media only screen and (min-width:992px){html{font-size:14.5px}}@media only screen and (min-width:1200px){html{font-size:15px}}.card{position:relative;margin:.5rem 0 1rem 0;background-color:#fff;-webkit-transition:-webkit-box-shadow .25s;transition:-webkit-box-shadow .25s;transition:box-shadow .25s;transition:box-shadow .25s,-webkit-box-shadow .25s;border-radius:2px}.card .card-title{font-size:24px;font-weight:300}.card .card-title.activator{cursor:pointer}.card .card-image{position:relative}.card .card-image img{display:block;border-radius:2px 2px 0 0;position:relative;left:0;right:0;top:0;bottom:0;width:100%}.card .card-content{padding:24px;border-radius:0 0 2px 2px}.card .card-content p{margin:0}.card .card-content .card-title{display:block;line-height:32px;margin-bottom:8px}.card .card-content .card-title i{line-height:32px}.card .card-reveal{padding:24px;position:absolute;background-color:#fff;width:100%;overflow-y:auto;left:0;top:100%;height:100%;z-index:3;display:none}.card .card-reveal .card-title{cursor:pointer;display:block}.waves-effect{position:relative;cursor:pointer;display:inline-block;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;vertical-align:middle;z-index:1;-webkit-transition:.3s ease-out;transition:.3s ease-out}.waves-effect img{position:relative;z-index:-1}.waves-block{display:block}::-webkit-input-placeholder{color:#d1d1d1}::-moz-placeholder{color:#d1d1d1}:-ms-input-placeholder{color:#d1d1d1}::-ms-input-placeholder{color:#d1d1d1}[type="radio"]:not(:checked){position:absolute;opacity:0;pointer-events:none}[type="radio"]:not(:checked)+span{position:relative;padding-left:35px;cursor:pointer;display:inline-block;height:25px;line-height:25px;font-size:1rem;-webkit-transition:.28s ease;transition:.28s ease;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}[type="radio"]:not(:checked)+span:before,[type="radio"]:not(:checked)+span:after{border-radius:50%}[type="radio"]:not(:checked)+span:before,[type="radio"]:not(:checked)+span:after{border:2px solid #5a5a5a}[type="radio"]:not(:checked)+span:after{-webkit-transform:scale(0);transform:scale(0)}[type="checkbox"]:not(:checked){position:absolute;opacity:0;pointer-events:none}[type="checkbox"]:not(:checked):disabled+span:not(.lever):before{border:none;background-color:rgba(0,0,0,0.42)}[type="checkbox"].filled-in:not(:checked)+span:not(.lever):before{width:0;height:0;border:3px solid transparent;left:6px;top:10px;-webkit-transform:rotateZ(37deg);transform:rotateZ(37deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%}[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after{height:20px;width:20px;background-color:transparent;border:2px solid #5a5a5a;top:0px;z-index:0}input[type=checkbox]:not(:disabled) ~ .lever:active:before,input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before{-webkit-transform:scale(2.4);transform:scale(2.4);background-color:rgba(0,0,0,0.08)}input[type=range].focused:focus:not(.active)::-webkit-slider-thumb{-webkit-box-shadow:0 0 0 10px rgba(38,166,154,0.26);box-shadow:0 0 0 10px rgba(38,166,154,0.26)}input[type=range].focused:focus:not(.active)::-moz-range-thumb{box-shadow:0 0 0 10px rgba(38,166,154,0.26)}input[type=range].focused:focus:not(.active)::-ms-thumb{box-shadow:0 0 0 10px rgba(38,166,154,0.26)}
-  </style>
-  <header class="page-header"><h1 class="cat-title">番组计划</h1> <span class="cat-des"><p>这里将是永远的回忆</p> </span></header>
-  <div class="bangumi">
-    <div class="row" id="rootRow">
-    </div>
-  </div>
-  <script>
-  window.onload = function(){
-    videos.forEach(function(video, i){
-      $('#rootRow').append(`<div class="col s12 m6" id="bangumi-218971">
-        <div class="card hoverable" style="overflow: visible;">
-          <div class="card-image waves-effect waves-block waves-light">
-            <div class="activator itempic lazyload" style="background-image: url(${video.img});" data-src="${video.img}">
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="card-title should-ellipsis activator grey-text text-darken-4">
-              ${video.title}<i class="fa fa-commenting-o right"></i>
-            </div>
-            <p class="should-ellipsis-full">
-            ${video.jp}</p>
-            <ul class="skill-list">
-              <li class="skill">
-                <div>
-                ${video.status}</div>
-                <progress class="skill-1" max="100" value="${video.progress}">
-                </progress>
-              </li>
-            </ul>
-          </div>
-          <div class="card-reveal" style="display: none; transform: translateY(0%);">
-            <span class="card-title grey-text text-darken-4">
-              ${video.title}<i class="fa fa-close right"></i>
-            </span>
-            <span>
-              ${video.jp}<br>
-            </span>
-            <span>
-              放送时间: ${video.time}<span>
-                <p>${video.desc}</p>
-                <ul class="skill-list">
-                  <li class="skill">
-                    <div>
-                    ${video.status}</div>
-                    <progress class="skill-1" max="100" value="${video.progress}">
-                    </progress>
-                  </li>
-                </ul>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>`)
-    })
-  }
-  </script>
-
-      <!-- .entry-content -->
-      
 
 
-
-      <div class="single-reward">
-        <div class="reward-open">赏
-          <div class="reward-main">
-            <ul class="reward-row">
-              <li class="alipay-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
-              <li class="wechat-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-      <footer class="post-footer">
-        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-        <div class="post-tags">
-        </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
-      <!-- #post-## -->
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208052151008.bmp" itemprop="image" alt="朝生暮的小屋~" height="70" width="70"></a>
+          <a href="zhaoshengmu.top" class="profile gravatar"><img src="" itemprop="image" alt="朝生暮" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="https://zhaoshengmu.top" itemprop="url" rel="author">朝生暮的小屋~</a>
+            <a href="zhaoshengmu.top" itemprop="url" rel="author">朝生暮</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>朝闻道，夕可死矣</p>
+        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
       </section>
+    </main><!-- #main -->
   </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
