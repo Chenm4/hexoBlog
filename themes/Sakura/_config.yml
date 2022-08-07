@@ -115,8 +115,11 @@ aplayer:
 
 # Valine
 valine: true
+#v_appId: MIyrUwE8znnXEAPY3V0CA3xX-MdYXbMMI
+#v_appKey: BjqrvOtagtUwwojIAxcKSmFP
 v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
 v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
+serverURLs: https://miyruwe8.api.lncldglobal.com
 
 # Waline
 waline:

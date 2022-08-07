@@ -1,11 +1,9 @@
 ---
 title: Mybatis
 author: 朝生暮
-avatar:
-
-
+avatar: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png
 authorLink: zhaoshengmu.top
-authorAbout: 一个好奇的人
+authorAbout: 记得花香，便对得起这时光
 authorDesc: 一个好奇的人
 categories: 资源
 date: 2022-08-06 10:16:01

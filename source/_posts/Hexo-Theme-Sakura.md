@@ -1,14 +1,12 @@
 ---
 title: Hexo-Theme-Sakura
 author: 朝生暮
-avatar:
-
-
+avatar: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png
 authorLink: zhaoshengmu.top
-authorAbout: 一个好奇的人
+authorAbout: 记得花香，便对得起这时光
 authorDesc: 一个好奇的人
 categories: 技术
-date: 2022-08-04 22:16:01
+date: 2022-08-04 20:16:01
 comments: true
 tags:
 - web
@@ -40,10 +38,12 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
  - 多级导航菜单（按现在大部分hexo主题来说，这也算是个特性了）
 
 
-## 赞赏作者
-如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！
+[//]: # (## 赞赏作者)
 
-[paypal](https://www.paypal.me/hojuncn) | [Alipay 支付宝](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg) | [WeChat Pay 微信支付](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg)
+[//]: # (如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！)
+
+[//]: # ()
+[//]: # ([paypal]&#40;https://www.paypal.me/hojuncn&#41; | [Alipay 支付宝]&#40;https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg&#41; | [WeChat Pay 微信支付]&#40;https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg&#41;)
 
 ## 未完善的使用教程
 
@@ -216,8 +216,13 @@ aplayer:
 
 # Valine评论配置【改】
 valine: true
+#v_appId: MIyrUwE8znnXEAPY3V0CA3xX-MdYXbMMI
 v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
+#v_appKey: BjqrvOtagtUwwojIAxcKSmFP
 v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
+
+serverURLs: https://miyruwe8.api.lncldglobal.com
+#  https://MIyrUwE8.api.lncldglobal.com
 ```
 
 ## 分类页和标签页配置
