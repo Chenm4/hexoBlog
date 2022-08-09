@@ -5,7 +5,7 @@ avatar: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb20220
 authorLink: zhaoshengmu.top
 authorAbout: 记得花香，便对得起这时光
 authorDesc: 一个好奇的人
-categories: 技术
+categories: 转载
 date: 2022-08-04 20:16:01
 comments: true
 tags:
@@ -281,7 +281,7 @@ photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
 ---
 layout: bangumi
 title: bangumi
-comments: false
+comments: true
 date: 2019-02-10 21:32:48
 keywords:
 description:

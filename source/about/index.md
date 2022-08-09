@@ -3,7 +3,7 @@ title: about
 date: 2018-12-12 22:14:36
 keywords: 关于
 description: 
-comments: false
+comments: true
 photos: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255256.png
 ---
 {% raw %}

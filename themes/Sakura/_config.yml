@@ -14,7 +14,7 @@ pjax: 1
 # 1开启
 mathjax: 0
 
-notice: hexo-Sakura主题已经开源，目前正在开发中...
+notice: 欢迎大家来留言板评论~(邮箱可填可不填）
 lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
@@ -28,7 +28,7 @@ menus:
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: {
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce },
-    番组: {path: /bangumi/, fa: fa-film faa-vertical },
+    影视: {path: /bangumi/, fa: fa-film faa-vertical },
     歌单: {path: /music/, fa: fa-headphones },
     图集: {path: /tags/图集/, fa: fa-photo }
   } }
@@ -124,12 +124,12 @@ serverURLs: https://miyruwe8.api.lncldglobal.com
 # Waline
 waline:
   enable: false
-  serverURL: #服务端地址
+  serverURL: https://chenm4-github-io-test-luqdt4is6-chenm4.vercel.app/#服务端地址
   visitor: true #统计阅读量
   comment_count: true #统计评论数
   avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
   guest_info: nick #,mail,link # custom comment header
-  pageSize: 10
+  pageSize: 3
   placeholder: 祝开开心心！ # Comment Box placeholder
   requiredFields: [ 'nick','mail' ] #设置必填项
   background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
