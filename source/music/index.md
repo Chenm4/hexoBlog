@@ -4,7 +4,7 @@ date: 2022-12-20 23:14:28
 keywords: 喜欢的音乐
 description: 
 comments: true
-photos: https://cdn.statically.io/gh/honjun/cdn@1.4/img/banner/music.jpg
+photos: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255248.jpg
 ---
 {% raw %}
 <meting-js
@@ -15,4 +15,11 @@ photos: https://cdn.statically.io/gh/honjun/cdn@1.4/img/banner/music.jpg
 </meting-js>
 
 
+
+<meting-js
+server="netease"
+type="playlist"
+id="1851717393"
+mutex="true">
+</meting-js>
 {% endraw %}

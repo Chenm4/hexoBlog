@@ -4,7 +4,7 @@ author: 朝生暮
 avatar: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png
 authorLink: zhaoshengmu.top
 authorAbout: 记得花香，便对得起这时光
-authorDesc: 一个好奇的人
+authorDesc: 记得花香，便对得起这时光
 categories: 资源
 date: 2022-08-06 10:16:01
 comments: true
@@ -15,7 +15,7 @@ keywords:
 description: mybatis知识点
 photos: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg
 ---
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=355992&auto=1&height=66"></iframe>
 ## Mybatis练习
 
 **目标**

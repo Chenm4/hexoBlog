@@ -101,6 +101,7 @@ movies:
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: Unbroken.mp4
 
+  [//]: # (https://blog.csdn.net/hushhw/article/details/88092728) meting-js相关选项
 aplayer:
   id: 7575508256
   server: netease

@@ -62,11 +62,11 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
 站点
 ```yml
 # Site
-title: 你的站点名
+title: 朝生暮的小屋~
 subtitle:
 description: 站点简介
 keywords:
-author: 作者名
+author: 朝生暮
 language: zh-cn
 timezone:
 ```
@@ -262,12 +262,12 @@ serverURLs: https://miyruwe8.api.lncldglobal.com
 ```md
 ---
 title: comment
-date: 2018-12-20 23:13:48
+date: 2022-8-10 23:13:48
 keywords: 留言板
 description: 
 comments: true
 # 在这里配置单页面头部图片，自定义替换哦~
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
+photos: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255248.jpg
 ---
 ```
 
