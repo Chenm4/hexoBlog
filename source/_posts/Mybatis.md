@@ -15,7 +15,7 @@ keywords:
 description: mybatis知识点
 photos: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg
 ---
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=355992&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=355992&auto=0&height=66"></iframe>
 ## Mybatis练习
 
 **目标**
