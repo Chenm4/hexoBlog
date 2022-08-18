@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Tag: 悦读 | Hexo</title>
+  <title itemprop="name">Hexo</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208052151008.bmp">
   
@@ -372,229 +372,314 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061528062.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-  </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">悦读</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title"></h1>
+            <p class="entry-census">&nbsp;·&nbsp;2022-8-18&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <p><img src="%E6%8E%A5%E9%9B%A8%E6%B0%B4%206f64b795-7739-436f-a3ff-0fe404020c75/image.png" alt="image.png"></p>
+<h2 id="个人解法："><a href="#个人解法：" class="headerlink" title="个人解法："></a>个人解法：</h2><pre><code class="Java">package src.main.java;
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+        int count = 0;
+        //此处运用双指针写法
+        for (int i = 0; i+1 &lt; arr.length; ) {
+            for (int j = i + 1; j&lt;arr.length; j++) {
+                boolean flag = hasBig(arr, i);
+                if (arr[i] &gt; arr[j] &amp;&amp; flag) {//能装水
+                    count += arr[i] - arr[j];
+//                    System.out.println(i + &quot;  &quot;+arr[i]);
+                } else  {
+                    i = j;
+                    break;
+                }
+                System.out.println(count);
+            }
+        }
+        System.out.println(count);
+    }
+
+    static boolean hasBig(int[] arr, int i) {//代表右边有大于当前的，能拦住中间的水
+        boolean flag = false;
+        for (int x = i + 1; x &lt; arr.length; x++) {
+            if (arr[x] &gt;= arr[i]) {
+                flag = true;
+                break;
+            }
+        }
+        return flag;
+    }
+}
+</code></pre>
+<p>很好，花了我快一个小时，然后没算出来，起码没完全算出来，算对了百分之五十，这种情况最恶心人了，就是某一部分情况没考虑到，然后再看一眼桌子，五六根头发，绷不住。要判断hasBig不要判断arr[i]，而应该用arr[j]因为可能如4，2,3这种，3&lt;4但是3&gt;2也能存住水</p>
+<p>艹，这代码不改了，改就要大改了而且逻辑还不一定严谨，妈的，以后看到类别为难题的直接先看答案</p>
+<p><img src="%E6%8E%A5%E9%9B%A8%E6%B0%B4%206f64b795-7739-436f-a3ff-0fe404020c75/image%201.png" alt="image.png"></p>
+<p>上图为第一次提交</p>
+<p><img src="%E6%8E%A5%E9%9B%A8%E6%B0%B4%206f64b795-7739-436f-a3ff-0fe404020c75/image%201%202.png" alt="image.png"></p>
+<p><strong>终究还是没舍得放弃，又改了将近半小时，终于通过了，真的会谢,只击败了百分之十</strong></p>
+<p>本题个人解法思路：双指针，首先一开始设置一个指针i初始为零，第二个指针j初始为i+1,然后循环（条件就是数组别越界）然后循环里面先通过hasBig方法判断j指针后面有无大于arr[j]的值，如果有则返回右侧的最大值，如果没有则返回0；然后判断arr[i]是否大于arrr[j]（只有大于才可能在j处存水）如果大于则再判断arr[i]和max的大小，用较小者减去arr[j]就是在j处存的水，如果小于等于这说明存不了水让i=j（因为i和j中间的都已经判断过有无存水了）后再break跳出循环继续下一轮。</p>
+<pre><code class="Java">package src.main.java;
+class Main {
+    public static void main(String[] args) {
+        int[] arr = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+        int count = 0;
+        //此处运用双指针写法
+        for (int i = 0; i + 1 &lt; arr.length; ) {
+            for (int j = i + 1; j &lt; arr.length; j++) {
+                int max = hasBig(arr, j);
+                if (arr[i] &gt; arr[j] &amp;&amp; max != 0) {//能装水
+                    if (arr[i] &lt;= max) {
+                        count += arr[i] - arr[j];
+                    } else {
+                        count += max - arr[j];
+                    }
+                } else {
+                    i = j;
+                    break;
+                }
+            }
+        }
+        System.out.println(count);
+    }
+
+    static int hasBig(int[] arr, int i) {//代表右边有大于当前的，能拦住中间的水
+        int max = 0;
+        for (int j = i + 1; j &lt; arr.length; j++) {
+            if (arr[j] &gt; max) {
+                max = arr[j];
+            }
+        }
+        if(max&lt;=arr[i]){
+            max=0;
+        }
+        return max;
+    }
+}
+</code></pre>
+<p>我一直觉得，如果算法中有很多if else，排除一些特殊情况不得不用后，这代码大概率写的很low。</p>
+<h2 id="正解："><a href="#正解：" class="headerlink" title="正解："></a>正解：</h2><p>我们不要想整体，而应该去想局部；就像之前的文章写的动态规划问题处理字符串问题，不要考虑如何处理整个字符串，而是去思考应该如何处理每一个字符。</p>
+<p>这么一想，可以发现这道题的思路其实很简单。具体来说，仅仅对于位置 <code>i</code>，能装下多少水呢？</p>
+<p><img src="%E6%8E%A5%E9%9B%A8%E6%B0%B4%206f64b795-7739-436f-a3ff-0fe404020c75/image%201%202%203.png" alt="image.png"></p>
+<p>能装 2 格水，因为 <code>height[i]</code> 的高度为 0，而这里最多能盛 2 格水，2-0=2。</p>
+<p>为什么位置 <code>i</code> 最多能盛 2 格水呢？因为，位置 <code>i</code> 能达到的水柱高度和其左边的最高柱子、右边的最高柱子有关，我们分别称这两个柱子高度为 <code>l_max</code> 和 <code>r_max</code>；<strong>位置 i 最大的水柱高度就是 <code>min(l_max, r_max)</code>。</strong></p>
+<p>更进一步，对于位置 <code>i</code>，能够装的水为：</p>
+<p><code>`</code>Plain Text<br>water[i] = min(</p>
+<pre><code>           # 左边最高的柱子
+           max(height[0..i]),  
+           # 右边最高的柱子
+           max(height[i..end]) 
+        ) - height[i]
+</code></pre><pre><code>
+这就是本问题的核心思路，我们可以简单写一个暴力算法：
+
+### 暴力：(试了下超时了）
+
+```C++
+int trap(vector&lt;int&gt;&amp; height) {
+    int n = height.size();
+    int res = 0;
+    for (int i = 1; i &lt; n - 1; i++) {
+        int l_max = 0, r_max = 0;
+        // 找右边最高的柱子
+        for (int j = i; j &lt; n; j++)
+            r_max = max(r_max, height[j]);
+        // 找左边最高的柱子
+        for (int j = i; j &gt;= 0; j--)
+            l_max = max(l_max, height[j]);
+        // 如果自己就是最高的话，
+        // l_max == r_max == height[i]
+        res += min(l_max, r_max) - height[i];
+    }
+    return res;
+}
+</code></pre><p>有之前的思路，这个解法应该是很直接粗暴的，时间复杂度 O(N^2)，空间复杂度 O(1)。但是很明显这种计算 <code>r_max</code> 和 <code>l_max</code> 的方式非常笨拙，一般的优化方法就是备忘录。</p>
+<h3 id="备忘录解法：（通俗易懂）"><a href="#备忘录解法：（通俗易懂）" class="headerlink" title="备忘录解法：（通俗易懂）"></a>备忘录解法：（通俗易懂）</h3><p>之前的暴力解法，不是在每个位置 <code>i</code> 都要计算 <code>r_max</code> 和 <code>l_max</code> 吗？我们直接把结果都提前计算出来，别傻不拉几的每次都遍历，这时间复杂度不就降下来了嘛。</p>
+<p><strong>我们开两个数组 <code>r_max</code> 和 <code>l_max</code> 充当备忘录，<code>l_max[i]</code> 表示位置 <code>i</code> 左边最高的柱子高度，<code>r_max[i]</code> 表示位置 <code>i</code> 右边最高的柱子高度</strong>。预先把这两个数组计算好，避免重复计算：</p>
+<p>最终备忘录的代码：</p>
+<pre><code class="Java">class Solution {
+    public int trap(int[] height) {
+        if (height == null || height.length == 0) return 0;
+        int n = height.length;
+        int res = 0;
+        // 数组充当备忘录
+        int[] maxLeft = new int[n];
+        int[] maxRight = new int[n];
+        // 初始化 base case 
+        maxLeft[0] = height[0];
+        maxRight[n - 1] = height[n - 1];
+        // 从左向右计算 maxLeft
+        for (int i = 1; i &lt; n; i++) {
+            maxLeft[i] = Math.max(maxLeft[i - 1], height[i]);
+        }
+        // 从右向左计算 maxRight
+        for (int i = n - 2; i &gt;= 0; i--) {
+            maxRight[i] = Math.max(maxRight[i + 1], height[i]);
+        }
+        // 计算答案
+        for (int i = 1; i &lt; n; i++) {
+            res += Math.min(maxLeft[i], maxRight[i]) - height[i];
+        }
+        return res;
+    }
+}
+</code></pre>
+<p>这个优化其实和暴力解法思路差不多，就<strong>只是避免了重复计算</strong>，把时间复杂度降低为 O(N)，已经是最优了，但是空间复杂度是 O(N)。下面来看一个精妙一些的解法，能够把空间复杂度降低到 O(1)。</p>
+<h3 id="双指针解法：（跟我的有类似）"><a href="#双指针解法：（跟我的有类似）" class="headerlink" title="双指针解法：（跟我的有类似）"></a>双指针解法：（跟我的有类似）</h3><p>  这种解法的思路是完全相同的，但在实现手法上非常巧妙，我们这次也不要用备忘录提前计算了，而是用双指针<strong>边走边算</strong>，节省下空间复杂度。</p>
+<p>  首先，看一部分代码：</p>
+<pre><code class="C++">int trap(vector&lt;int&gt;&amp; height) {
+    int n = height.size();
+    int left = 0, right = n - 1;
+    int l_max = height[0];
+    int r_max = height[n - 1];
+    while (left &lt;= right) {
+        l_max = max(l_max, height[left]);
+        r_max = max(r_max, height[right]);
+        left++; right--;
+    }
+}
+</code></pre>
+<p>  对于这部分代码，请问 <code>l_max</code> 和 <code>r_max</code> 分别表示什么意义呢？</p>
+<p>  很容易理解，<strong><code>l_max</code> 是 <code>height[0..left]</code> 中最高柱子的高度，<code>r_max</code> 是 <code>height[right..end]</code> 的最高柱子的高度</strong>。</p>
+<p>  明白了这一点，直接看解法：</p>
+<pre><code class="C++">int trap(vector&lt;int&gt;&amp; height) {
+    if (height.empty()) return 0;
+    int n = height.size();
+    int left = 0, right = n - 1;
+    int res = 0;
+    int l_max = height[0];
+    int r_max = height[n - 1]；
+    while (left &lt;= right) {
+        l_max = max(l_max, height[left]);
+        r_max = max(r_max, height[right]);
+        if (l_max &lt; r_max) {
+            res += l_max - height[left];
+            left++; 
+        } else {
+            res += r_max - height[right];
+            right--;
+        }
+    }
+    return res;
+}
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
+                <li class="wechat-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2022/08/18/算法 7b1a8214-a20f-468d-b7c0-ca4a94df6fd6 (2)/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255253.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255253.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                算法刷题</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2022/08/09/关于失眠/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                关于失眠</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2022/08/18/算法 7b1a8214-a20f-468d-b7c0-ca4a94df6fd6 (2)/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255253.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2022/08/18/算法 7b1a8214-a20f-468d-b7c0-ca4a94df6fd6 (2)/">
-    算法刷题</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-8-18</div>
-    <p>
-    LeetCode刷题</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2022/08/18/算法 7b1a8214-a20f-468d-b7c0-ca4a94df6fd6 (2)/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2022/08/06/JSP&三层架构/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255251.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2022/08/06/JSP&三层架构/">
-    JSP&amp;三层架构</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-8-6</div>
-    <p>
-    Javaweb相关知识</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2022/08/06/JSP&三层架构/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2022/08/06/Mybatis/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2022/08/06/Mybatis/">
-    Mybatis</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-8-6</div>
-    <p>
-    mybatis知识点</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2022/08/06/Mybatis/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2022/08/06/关于博客/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208070821416.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2022/08/06/关于博客/">
-    关于博客</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-8-6</div>
-    <p>
-    hexo-sakura主题使用教程</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2022/08/06/关于博客/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2022/08/04/Hexo-Theme-Sakura/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208052219286.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2022/08/04/Hexo-Theme-Sakura/">
-    Hexo-Theme-Sakura</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-8-4</div>
-    <p>
-    hexo-sakura主题使用教程</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2022/08/04/Hexo-Theme-Sakura/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2022/08/04/搭建这个博客的初衷/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255253.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2022/08/04/搭建这个博客的初衷/">
-    搭建博客的初衷</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-8-4</div>
-    <p>
-    搭建博客的初衷和想法</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2022/08/04/搭建这个博客的初衷/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz",
+        appKey: "bfvLFp8vPRNo3A3Dt11mlo4C",
+        path: window.location.pathname,
+        placeholder: "对待女朋友要像对待代码一样  在我心里你永远没错  错了也是我来改",
+        serverURLs: ''
+      })
+  }
+</script>
 
 
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
