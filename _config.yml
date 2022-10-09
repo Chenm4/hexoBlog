@@ -167,7 +167,7 @@ theme: Sakura
 deploy:
   type: git
   repo:
-    github: https://github.com/Chenm4/Chenm4.github.io-test.git
+    github: git@github.com:Chenm4/Chenm4.github.io-test.git
     #coding: https://git.coding.net/hojun/hojun.git
   branch: master
 
@@ -176,7 +176,7 @@ backup:
   type: git
   message: backup my blog of https://yourname.github.io/
   repository:
-     github: https://github.com/Chenm4/Chenm4.github.io-test.git,backup
+     github: git@github.com:Chenm4/Chenm4.github.io-test.git,backup
 #    coding: https://git.coding.net/hojun/hojun.git,backup
 
 #RSS
