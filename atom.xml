@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaoshengmu.top/"/>
-  <updated>2022-08-20T15:02:46.138Z</updated>
+  <updated>2022-10-09T09:59:01.811Z</updated>
   <id>https://zhaoshengmu.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每月日寄</title>
+    <link href="https://zhaoshengmu.top/2022/10/09/%E6%AF%8F%E6%9C%88%E6%97%A5%E5%AF%84/"/>
+    <id>https://zhaoshengmu.top/2022/10/09/每月日寄/</id>
+    <published>2022-10-09T00:08:26.000Z</published>
+    <updated>2022-10-09T09:59:01.811Z</updated>
+    
+    <summary type="html">
+    
+      日寄
+    
+    </summary>
+    
+      <category term="随想" scheme="https://zhaoshengmu.top/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+      <category term="web" scheme="https://zhaoshengmu.top/tags/web/"/>
+    
+      <category term="悦读" scheme="https://zhaoshengmu.top/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>算法刷题</title>
