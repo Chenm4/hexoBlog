@@ -14,7 +14,7 @@ pjax: 1
 # 1开启
 mathjax: 0
 
-notice: 欢迎大家来留言板评论~(邮箱可填可不填）
+notice: 新增了鼠标点击和晃动效果~
 lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
