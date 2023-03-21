@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">JSP&amp;三层架构 | Hexo</title>
+  
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208052151008.bmp">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "朝生暮的小屋~";
+  mashiro_option.author_name = "朝生暮的小屋~";
+  mashiro_option.site_url = "https://zhaoshengmu.top";
+  mashiro_option.v_appId = "Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz";
+  mashiro_option.v_appKey = "bfvLFp8vPRNo3A3Dt11mlo4C";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434117.png,https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434096.png,https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434218.png,https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aba66bd1-03ea-482d-811b-4ea202c3baf2/d84bc247-ec07-4f51-a855-f45ec4a7f3a9.gif".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop ">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://zhaoshengmu.top">
+          <img src="https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208052151008.bmp">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>朝闻道，夕可死矣</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/Chenm4" target="_blank" class="social-github" title="github">
+                    <img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409435.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://weibo.com/u/2144294960" target="_blank" class="social-github" title="sina">
+                    <img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409437.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/user/home?id=1357895709" target="_blank" class="social-github" title="wangyiyun">
+                    <img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409438.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://weibo.com/u/2144294960" target="_blank" class="social-github" title="zhihu">
+                    <img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409439.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="email">
+                    <img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409440.svg">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner" >
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono"></span>
+            <span class="shironeko">朝生暮的小屋~</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/技术/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          技术
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/生活/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/资源/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/随想/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/转载/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          转载
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/tags/悦读/">
+                          <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          影视
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/图集/">
+                          <i class="fa fa-photo" aria-hidden="true"></i>
+                          图集
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/lab/">
+                          <i class="fa fa-cogs" aria-hidden="true"></i>
+                          Lab
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/client/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-android faa-vertical" aria-hidden="true"></i>
+                    客户端
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255251.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255251.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      JSP&三层架构</h1>
+      <p class="entry-census">
+        <span>
+          <a href="zhaoshengmu.top">
+            <img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png">
+          </a>
+        </span>
+        <span>
+          <a href="zhaoshengmu.top">朝生暮</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-8-6<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="day26-JSP-amp-三层架构"><a href="#day26-JSP-amp-三层架构" class="headerlink" title="day26-JSP&amp;三层架构"></a>day26-JSP&amp;三层架构</h1><h1 id="教学目标"><a href="#教学目标" class="headerlink" title="教学目标"></a>教学目标</h1><ul>
+<li style="list-style: none"><input type="checkbox"> 能够说出el表达式的作用</li>
+<li style="list-style: none"><input type="checkbox"> 能够使用el表达式获取javabean的属性</li>
+<li style="list-style: none"><input type="checkbox"> 能够使用jstl标签库的if标签</li>
+<li style="list-style: none"><input type="checkbox"> 能够使用jstl标签库的foreach标签</li>
+<li style="list-style: none"><input type="checkbox"> <strong>能够使用三层架构模式完成转账案例</strong></li>
+<li style="list-style: none"><input type="checkbox"> 能够使用ThreadLocal</li>
+<li style="list-style: none"><input type="checkbox"> 能够完成转账案例</li>
+</ul>
+<h1 id="第一章-EL表达式"><a href="#第一章-EL表达式" class="headerlink" title="第一章-EL表达式"></a>第一章-EL表达式</h1><h2 id="知识点-EL表达式概述"><a href="#知识点-EL表达式概述" class="headerlink" title="知识点-EL表达式概述"></a>知识点-EL表达式概述</h2><h3 id="1-目标"><a href="#1-目标" class="headerlink" title="1.目标"></a>1.目标</h3><ul>
+<li>能够说出el表达式的作用</li>
+</ul>
+<h3 id="2-讲解"><a href="#2-讲解" class="headerlink" title="2.讲解"></a>2.讲解</h3><h4 id="2-1-什么是El表达式"><a href="#2-1-什么是El表达式" class="headerlink" title="2.1.什么是El表达式"></a>2.1.什么是El表达式</h4><p>​    域对象：</p>
+<p>​                request：一次请求</p>
+<p>​                session：一次会话</p>
+<p>​                ServletContext：整个应用</p>
+<p>​    API：</p>
+<p>​            getAttribute(name);</p>
+<p>​             &lt;%=getAttribute(name) %&gt;</p>
+<p>​            ${name}</p>
+<p>​    Expression Language:表达式语言,  jsp2.0之后内置在jsp里面</p>
+<p>​    目的：为了使JSP写起来更加简单,  取值(<strong>取的域对象里面存的值</strong>)更加简单。(代替脚本 &lt;%= %&gt;)</p>
+<h4 id="2-2-EL语法"><a href="#2-2-EL语法" class="headerlink" title="2.2.EL语法"></a>2.2.EL语法</h4><p>​    ${el表达式}</p>
+<h4 id="2-3-EL表达式的用途"><a href="#2-3-EL表达式的用途" class="headerlink" title="2.3.EL表达式的用途"></a>2.3.EL表达式的用途</h4><p>​    1.获取数据. 获取的是<strong>域(request,session,ServletContext)对象中存储的数据</strong></p>
+<p>​    2.EL执行运算(算术运算及逻辑运算)</p>
+<h3 id="3-小结"><a href="#3-小结" class="headerlink" title="3.小结"></a>3.小结</h3><ol>
+<li>EL概念：表达式语言，目的简化开发</li>
+<li>EL语法：${el表达式}</li>
+<li>作用：<ol>
+<li>获取域对象中的数据</li>
+<li>执行运算</li>
+</ol>
+</li>
+</ol>
+<h2 id="知识点-El获取数据"><a href="#知识点-El获取数据" class="headerlink" title="知识点-El获取数据"></a>知识点-El获取数据</h2><h3 id="1-目标-1"><a href="#1-目标-1" class="headerlink" title="1.目标"></a>1.目标</h3><ul>
+<li>能够使用el表达式获取域对象里面的数据(<strong>先要把数据存到域对象里面</strong>)</li>
+</ul>
+<h3 id="2-路径"><a href="#2-路径" class="headerlink" title="2.路径"></a>2.路径</h3><ul>
+<li>获取简单数据类型数据(基本类型,字符串)</li>
+<li>获取数组</li>
+<li>获取list</li>
+<li>获取Map</li>
+<li><strong>获取bean</strong></li>
+</ul>
+<h3 id="3-讲解"><a href="#3-讲解" class="headerlink" title="3.讲解"></a>3.讲解</h3><h4 id="3-1获取简单数据类型数据"><a href="#3-1获取简单数据类型数据" class="headerlink" title="3.1获取简单数据类型数据"></a>3.1获取简单数据类型数据</h4><p>​    语法:${requestScope|sessionScope|applicationScope.属性名}; </p>
+<p>​    快捷写法:==${属性名},  属性名就是存在域对象里面的key==</p>
+<pre><code class="jsp">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%--EL获取简单类型数据
+        1.在域对象中存储数据
+        2.使用EL表达式获取数据 ${key}
+        注意：
+            情况一： EL表达式获取不到数据返回&quot;&quot;
+            情况二：EL表达式获取数据时，会从作用域范围小的到范围大的【request--&gt;session--&gt;application】进行查找，找到就停止返回，找不到继续向下查找。
+    --%&gt;
+    &lt;%
+        //request 、 session 、ServletContext
+        //jsp内置对象：request、session、application
+        //request是jsp的内置对象  jsp生来就有 可以不用创建 直接使用
+        request.setAttribute(&quot;name&quot;,&quot;tom&quot;);
+        session.setAttribute(&quot;age&quot;,18);
+        //application就是ServletContext对象 只不过是在jsp中换了个马甲
+        application.setAttribute(&quot;address&quot;,&quot;深圳&quot;);
+
+        //在request作用域中在存储一个age
+        request.setAttribute(&quot;age&quot;,20);
+
+    %&gt;
+
+    &lt;%--获取域对象中存储的数据--%&gt;
+    &lt;h3&gt;老方式：&lt;%=request.getAttribute(&quot;name&quot;) %&gt;&lt;/h3&gt;
+    &lt;h3&gt;EL表达式：${requestScope.name}&lt;/h3&gt;
+    &lt;h3&gt;简化方式：${name}&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;h3&gt;老方式：&lt;%=session.getAttribute(&quot;age&quot;) %&gt;&lt;/h3&gt;
+    &lt;h3&gt;EL表达式：${sessionScope.age}&lt;/h3&gt;
+    &lt;h3&gt;简化方式：${age}&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;h3&gt;老方式：&lt;%=application.getAttribute(&quot;address&quot;) %&gt;&lt;/h3&gt;
+    &lt;h3&gt;EL表达式：${applicationScope.address}&lt;/h3&gt;
+    &lt;h3&gt;简化方式：${address}&lt;/h3&gt;
+
+    &lt;%--情况一：当获取的数据，在域对象中不存在时使用EL表达式获取会出现什么情况？  EL表达式获取不到数据返回&quot;&quot;--%&gt;
+    &lt;hr&gt;
+    &lt;h3&gt;老方式：&lt;%=request.getAttribute(&quot;sex&quot;) %&gt;&lt;/h3&gt;
+    &lt;h3&gt;EL表达式：${requestScope.sex}&lt;/h3&gt;
+    &lt;%--情况二：当多个作用域中存储相同key的数据，EL表达式使用简化方式获取时，会从范围小的到范围大的【request--&gt;session--&gt;application】进行查找，找到就停止返回--%&gt;
+    &lt;hr&gt;
+    &lt;h3&gt;EL表达式：${requestScope.age}&lt;/h3&gt;
+    &lt;h3&gt;EL表达式：${sessionScope.age}&lt;/h3&gt;
+    &lt;h3&gt;简化方式：${age}&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="3-2获取数组"><a href="#3-2获取数组" class="headerlink" title="3.2获取数组"></a>3.2获取数组</h4><p>​    语法: ${key[下标]}    key就是域对象里面存的key</p>
+<h4 id="3-3获取list"><a href="#3-3获取list" class="headerlink" title="3.3获取list"></a>3.3获取list</h4><p>​    <code>语法:${list属性名[index]}或者${list属性名.get(index)};list属性名就是存入域对象里面的key</code></p>
+<h4 id="3-4获取Map"><a href="#3-4获取Map" class="headerlink" title="3.4获取Map"></a>3.4获取Map</h4><p>​     <code>语法:${map属性名.键} 或 ${map属性名.get(&quot;键&quot;)} 或${map属性名[键],map属性名就是存入域对象里面的key }</code></p>
+<p>​    注意：当map的键比较特殊(eg：”1”、”a.ba.c”)时，此时使用点的方式会报错，可以选择使用[]的方式。</p>
+<pre><code class="jsp">&lt;%@ page import=&quot;java.util.ArrayList&quot; %&gt;
+&lt;%@ page import=&quot;java.util.List&quot; %&gt;
+&lt;%@ page import=&quot;java.util.Map&quot; %&gt;
+&lt;%@ page import=&quot;java.util.HashMap&quot; %&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%--
+        EL获取数据特点：
+            1.EL获取数据会进行自动类型转换
+    --%&gt;
+    &lt;%--1.在域对象中存储数据--%&gt;
+    &lt;%
+        /*1.1：域对象中存储数组*/
+        String[] names = {&quot;张三&quot;,&quot;李四&quot;,&quot;王五&quot;};
+        request.setAttribute(&quot;names&quot;,names);
+
+        /*1.2：域对象中存储list集合*/
+        List&lt;String&gt; list = new ArrayList&lt;&gt;();
+        list.add(&quot;篮球&quot;);
+        list.add(&quot;足球&quot;);
+        list.add(&quot;混球&quot;);
+        request.setAttribute(&quot;list&quot;,list);
+
+        /*1.3：获取Map集合中的元素*/
+        Map&lt;String,Object&gt; map = new HashMap&lt;&gt;();
+        map.put(&quot;cn&quot;,&quot;中国&quot;);
+        map.put(&quot;jp&quot;,&quot;小日本&quot;);
+        map.put(&quot;usa&quot;,&quot;漂亮国&quot;);
+        request.setAttribute(&quot;map&quot;,map);
+    %&gt;
+    &lt;%--2.使用EL表达式获取域对象中的数据--%&gt;
+    &lt;%--2.1：获取数组中的第二个元素 语法：${key[下标]}--%&gt;
+    &lt;h3&gt;老方式：&lt;%=((String[])request.getAttribute(&quot;names&quot;))[1]%&gt;&lt;/h3&gt;
+    &lt;h3&gt;获取数组数据：${names[1]}&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;%--2.2：获取list集合中的第三个元素 语法：${key[下标]} 或 ${key.get(下标)}--%&gt;
+    &lt;h3&gt;获取list数据：${list[2]}&lt;/h3&gt;
+    &lt;h3&gt;获取list数据：${list.get(2)}&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;%--2.3:获取map集合中的数据 语法：${key[&quot;map的键&quot;]} 或 ${key.get(&quot;map的键&quot;)} 或 ${key.map的键}--%&gt;
+    &lt;h3&gt;获取map集合中键cn对应值：${map[&quot;cn&quot;]}&lt;/h3&gt;
+    &lt;h3&gt;获取map集合中键cn对应值：${map.get(&quot;cn&quot;)}&lt;/h3&gt;
+    &lt;h3&gt;获取map集合中键cn对应值：${map.cn}&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="3-5-获取bean"><a href="#3-5-获取bean" class="headerlink" title="3.5 获取bean"></a>3.5 获取bean</h4><p>​    ==语法:${key.javabean属性}==</p>
+<p>​    依赖getxxx()方法; eg: getPassword()—去掉get–&gt;Password()—-首字母小写—&gt;password</p>
+<pre><code class="jsp">&lt;%@ page import=&quot;java.util.ArrayList&quot; %&gt;
+&lt;%@ page import=&quot;java.util.List&quot; %&gt;
+&lt;%@ page import=&quot;java.util.Map&quot; %&gt;
+&lt;%@ page import=&quot;java.util.HashMap&quot; %&gt;
+&lt;%@ page import=&quot;com.itheima.bean.User&quot; %&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%--
+        EL获取数据特点：
+            1.EL获取数据会进行自动类型转换
+    --%&gt;
+    &lt;%--1.在域对象中存储数据--%&gt;
+    &lt;%
+       //使用域对象存储javabean对象数据
+        User user = new User();
+        user.setName(&quot;zs&quot;);
+        user.setPwd(&quot;123&quot;);
+        request.setAttribute(&quot;user&quot;,user);
+
+        //java对象属性：就是去掉get/set之后的单词首字母小写 得到就是属性  getName--&gt;Name--&gt;name
+    %&gt;
+    &lt;%--2.使用EL表达式获取javabeaan数据 语法：${key.javabean属性名称}--%&gt;
+    &lt;h3&gt;获取user对象的name属性值：${user.name}&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="3-6：获取特殊key的值"><a href="#3-6：获取特殊key的值" class="headerlink" title="3.6：获取特殊key的值"></a>3.6：获取特殊key的值</h4><pre><code class="html">&lt;%@ page import=&quot;java.util.ArrayList&quot; %&gt;
+&lt;%@ page import=&quot;java.util.List&quot; %&gt;
+&lt;%@ page import=&quot;java.util.Map&quot; %&gt;
+&lt;%@ page import=&quot;java.util.HashMap&quot; %&gt;
+&lt;%@ page import=&quot;com.itheima.bean.User&quot; %&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%--
+        EL获取数据特点：
+            1.EL获取数据会进行自动类型转换
+    --%&gt;
+    &lt;%--1.在域对象中存储数据--%&gt;
+    &lt;%
+       request.setAttribute(&quot;a.b.c.d&quot;,&quot;特殊key a.b.c.d&quot;);
+
+       Map&lt;String,Object&gt; map = new HashMap&lt;&gt;();
+       map.put(&quot;cn&quot;,&quot;中国&quot;);
+       map.put(&quot;small.jp&quot;,&quot;小日本&quot;);
+       request.setAttribute(&quot;map&quot;,map);
+    %&gt;
+
+    &lt;%--2.使用EL表达式获取--%&gt;
+    &lt;h3&gt;${a.b.c.d}&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;h3&gt;${[&quot;a.b.c.d&quot;]}&lt;/h3&gt;
+    &lt;hr&gt;
+    &lt;h3&gt;${requestScope[&quot;a.b.c.d&quot;]}&lt;/h3&gt;
+
+    &lt;hr&gt;
+    &lt;h3&gt;${map.small.jp}&lt;/h3&gt;
+    &lt;h3&gt;${map[&quot;small.jp&quot;]}&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="4-小结"><a href="#4-小结" class="headerlink" title="4.小结"></a>4.小结</h3><pre><code>1. EL获取域对象中存储的数据 语法：${key}
+2. 获取简单数据类型数据 ：==${key}==
+3. 获取数组元素：==${key[下标]}==
+4. 获取list集合元素：==${key[下标]} 或${key.get(下标)}==
+5. 获取map集合元素：==${key[&quot;map的键&quot;]} 或 ${key.get(&quot;map的键&quot;)} 或 ${key.map的键}==
+6. 获取javabean属性值：==${key.javabean属性名称}==
+7. 注意：
+      1. EL获取不到数据返回&quot;&quot;
+      2. EL获取会进行自动类型转换
+      3. EL获取数据从范围小的到大的【request--&gt;session--&gt;application】进行查找，找到就停止。
+</code></pre><h2 id="知识点-EL执行运算"><a href="#知识点-EL执行运算" class="headerlink" title="知识点-EL执行运算"></a>知识点-EL执行运算</h2><h3 id="1-目标-2"><a href="#1-目标-2" class="headerlink" title="1.目标"></a>1.目标</h3><ul>
+<li>掌握EL执行运算</li>
+</ul>
+<h3 id="2-讲解-1"><a href="#2-讲解-1" class="headerlink" title="2.讲解"></a>2.讲解</h3><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103310.jpg" alt="img"></p>
+<h4 id="2-1算术运算"><a href="#2-1算术运算" class="headerlink" title="2.1算术运算"></a>2.1算术运算</h4><p>​    +,-,*,/</p>
+<blockquote>
+<p><strong>+</strong>:加号在EL表达式中代表加运算，不作拼接使用,如果是数字的字符串形式，则EL表达式会自动进行类型转换，然后再进行算术运算</p>
+</blockquote>
+<h4 id="2-2关系运算"><a href="#2-2关系运算" class="headerlink" title="2.2关系运算"></a>2.2关系运算</h4><p>​    &lt; &gt;= &lt;= != ==</p>
+<h4 id="2-3逻辑运算"><a href="#2-3逻辑运算" class="headerlink" title="2.3逻辑运算"></a>2.3逻辑运算</h4><p>​    &amp;&amp; || !</p>
+<h4 id="2-4非空判断【重点】"><a href="#2-4非空判断【重点】" class="headerlink" title="2.4非空判断【重点】"></a>2.4非空判断【重点】</h4><p>​    empty，</p>
+<p>​        <strong>1. 判断一个对象是否为null,为null返回true  </strong></p>
+<p>​        <strong>2. 判断集合长度是否为0,集合为null或长度为0返回true</strong>  </p>
+<p>​        3. 判断一个字符串是否为 null或””，如果是则返回true</p>
+<p>​    not empty</p>
+<p>​    语法: ${empyt 属性名};属性名 就是域对象里面的key值</p>
+<pre><code class="jsp">&lt;%@ page import=&quot;java.util.ArrayList&quot; %&gt;
+&lt;%@ page import=&quot;java.util.List&quot; %&gt;
+&lt;%@ page import=&quot;java.util.Map&quot; %&gt;
+&lt;%@ page import=&quot;java.util.HashMap&quot; %&gt;
+&lt;%@ page import=&quot;com.itheima.bean.User&quot; %&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%--EL执行运算
+        1.+：表示加运算，不表示拼接 如果+两边有一方无法转换为数字 则报错
+        2.empty
+            2.1：判断一个对象是否为null               是返回true
+            2.2：判断一个字符串是否为null或&quot;&quot;           是返回true
+            2.3：判断一个list集合是否为null或长度为0  是返回true
+       3.not empty:判断是否非null 非null 返回true
+
+    --%&gt;
+    &lt;h4&gt;${3+4}&lt;/h4&gt;
+    &lt;h4&gt;${3+&quot;4&quot;}&lt;/h4&gt;
+    &lt;%--&lt;h4&gt;${3+&quot;4a&quot;}&lt;/h4&gt;--%&gt;
+
+    &lt;%
+        User user = new User();
+        request.setAttribute(&quot;user&quot;,user);
+
+        String str1 = null;
+        String str2 = &quot;&quot;;
+        request.setAttribute(&quot;str1&quot;,str1);
+        request.setAttribute(&quot;str2&quot;,str2);
+
+        List list1 = null;
+        List list2 = new ArrayList();
+        request.setAttribute(&quot;list1&quot;,list1);
+        request.setAttribute(&quot;list2&quot;,list2);
+    %&gt;
+    &lt;h4&gt;user对象是否为null：${empty user}&lt;/h4&gt;
+    &lt;h4&gt;str1是否为null或&quot;&quot;：${empty str1}&lt;/h4&gt;
+    &lt;h4&gt;str2是否为null或&quot;&quot;：${empty str2}&lt;/h4&gt;
+    &lt;h4&gt;list1是否为null或长度为0：${empty list1}&lt;/h4&gt;
+    &lt;h4&gt;list2是否为null或长度为0：${empty list2}&lt;/h4&gt;
+
+    &lt;h4&gt;user对象是否非null：${not empty user}&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="3-小结-1"><a href="#3-小结-1" class="headerlink" title="3.小结"></a>3.小结</h3><ol>
+<li>注意: <strong>+只能做加法运算,不能拼接字符串</strong>    ,如果加号两边有一方无法转换为数字，则报错</li>
+<li>empty：判断是否为null 为null返回true<ol>
+<li>判断一个对象是否为null</li>
+<li>判断字符串是否为null或””</li>
+<li>判断list集合是否为null或长度为0<h1 id="第二章-JSTL标签库"><a href="#第二章-JSTL标签库" class="headerlink" title="第二章-JSTL标签库"></a>第二章-JSTL标签库</h1></li>
+</ol>
+</li>
+</ol>
+<h2 id="知识点-JSTL标签库概述"><a href="#知识点-JSTL标签库概述" class="headerlink" title="知识点-JSTL标签库概述"></a>知识点-JSTL标签库概述</h2><h3 id="1-目标-3"><a href="#1-目标-3" class="headerlink" title="1.目标"></a>1.目标</h3><ul>
+<li>掌握什么是JSTL标签库</li>
+</ul>
+<h3 id="2-讲解-2"><a href="#2-讲解-2" class="headerlink" title="2.讲解"></a>2.讲解</h3><p>JSTL和EL是黄金搭档：JSTL作逻辑处理，EL获取数据展示。</p>
+<h4 id="2-1什么是JSTL标签库"><a href="#2-1什么是JSTL标签库" class="headerlink" title="2.1什么是JSTL标签库"></a>2.1什么是JSTL标签库</h4><p>​    JSTL（JSP Standard Tag Library，JSP标准标签库)是一个不断完善的开放源代码的JSP标签库，是由apache的jakarta小组来维护的。这个JSTL标签库没有集成到JSP的, 要使用的话, 需要导jar包.</p>
+<h4 id="2-2JSTL标签库的作用"><a href="#2-2JSTL标签库的作用" class="headerlink" title="2.2JSTL标签库的作用"></a>2.2JSTL标签库的作用</h4><p>​    为了简化在jsp页面上操作数据;  eg:  <strong>遍历数据 判断数据</strong>等</p>
+<h4 id="2-3JSTL标签库的类别"><a href="#2-3JSTL标签库的类别" class="headerlink" title="2.3JSTL标签库的类别"></a>2.3JSTL标签库的类别</h4><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103312.jpg" alt="img"></p>
+<h3 id="3-小结-2"><a href="#3-小结-2" class="headerlink" title="3.小结"></a>3.小结</h3><ol>
+<li>JSTL：JSP标签标准标签库，用于逻辑处理，可以替代java小脚本。</li>
+<li>作用：遍历数据 判断数据</li>
+<li>使用：由于JSTL没有被集成到jsp中，所以使用时需要导入jar包</li>
+</ol>
+<h2 id="知识点-JSTL核心标签库"><a href="#知识点-JSTL核心标签库" class="headerlink" title="知识点-JSTL核心标签库"></a>知识点-JSTL核心标签库</h2><h3 id="1-目标-4"><a href="#1-目标-4" class="headerlink" title="1.目标"></a>1.目标</h3><ul>
+<li>掌握if,foreach标签的使用</li>
+</ul>
+<h3 id="2-讲解-3"><a href="#2-讲解-3" class="headerlink" title="2.讲解"></a>2.讲解</h3><h4 id="2-1核心标签库使用步骤"><a href="#2-1核心标签库使用步骤" class="headerlink" title="2.1核心标签库使用步骤"></a>2.1核心标签库使用步骤</h4><ol>
+<li><p>导入jar包 <img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103313.png" alt="img"></p>
+</li>
+<li><p>在JSP页面上导入核心标签库<code>&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;</code></p>
+</li>
+</ol>
+<h4 id="2-3if标签"><a href="#2-3if标签" class="headerlink" title="2.3if标签"></a>2.3if标签</h4><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103314.png" alt="img"></p>
+<ul>
+<li>语法</li>
+</ul>
+<pre><code>&lt;c:if test=&quot;el表达式${..}&quot; [var=&quot;给之前的表达式的结果起个名字&quot;] [scope=&quot;将结果保存在那个域中 默认page&quot;]&gt;
+&lt;/c:if&gt;
+</code></pre><ul>
+<li>实例</li>
+</ul>
+<pre><code class="jsp">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%
+        //域对象存储数据
+        request.setAttribute(&quot;age&quot;,6);
+    %&gt;
+    &lt;%--
+        if标签：用于判断  test属性值为true，则执行if标签体中的内容，为false，不执行
+            test：设置判断条件 可以使用EL表达式进行判断 返回一个boolean类型的结果true|false
+            var：声明一个变量 存储判断结果
+            scope：将判断结果变量存入到一个作用域中  方便后期使用
+    --%&gt;
+    &lt;c:if test=&quot;${age &gt;= 7}&quot; var=&quot;flag&quot; scope=&quot;request&quot;&gt;
+        &lt;h4&gt;可以上小学了&lt;/h4&gt;
+    &lt;/c:if&gt;
+    &lt;c:if test=&quot;${age&lt;7}&quot;&gt;
+        &lt;h4&gt;回家玩泥巴去吧&lt;/h4&gt;
+    &lt;/c:if&gt;
+    &lt;h3&gt;if判断结果：${requestScope.flag}&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li><p>小结</p>
+<ul>
+<li>语法 </li>
+</ul>
+<pre><code>&lt;c:if test=&quot;${} &quot;&gt;&lt;/c:if&gt;
+</code></pre><ul>
+<li>特点<ul>
+<li>如果test里面的是true, if标签体里面的就会执行</li>
+<li>如果test里面的是false, if标签体里面的就不会执行</li>
+<li>没有else的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-4choose标签"><a href="#2-4choose标签" class="headerlink" title="2.4choose标签"></a>2.4choose标签</h4><ul>
+<li>实例 </li>
+</ul>
+<pre><code class="jsp">&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%
+        //域对象存储数据
+        request.setAttribute(&quot;age&quot;,15);
+        //需求：大于6岁可以上小学 大于13岁可以上中学  大于18岁可以上大学  如果小于等于6岁回家玩泥巴
+        //分析：使用多重if判断实现
+        //实现：
+    %&gt;
+    &lt;%--c:choose表示的就是多重if选择结构  c:when表示的就是if判断  c:otherwise表示的就是else--%&gt;
+    &lt;c:choose&gt;
+        &lt;c:when test=&quot;${age&gt;18}&quot;&gt;
+            上大学
+        &lt;/c:when&gt;
+        &lt;c:when test=&quot;${age&gt;13}&quot;&gt;
+            上中学
+        &lt;/c:when&gt;
+        &lt;c:when test=&quot;${age&gt;6}&quot;&gt;
+            上小学
+        &lt;/c:when&gt;
+        &lt;c:otherwise&gt;
+            回家玩泥巴
+        &lt;/c:otherwise&gt;
+    &lt;/c:choose&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="2-5foreach标签"><a href="#2-5foreach标签" class="headerlink" title="2.5foreach标签"></a>2.5foreach标签</h4><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103315.png" alt="img">        </p>
+<ul>
+<li>简单的使用:</li>
+</ul>
+<pre><code class="jsp">&lt;%--forEach标签的简单使用
+        需求：使用foreach标签遍历1-10 每个数字显示字题为红色
+        forEach标签：用于遍历数据
+            var：迭代变量 在foreach标签体中获取迭代变量数据 需要使用el表达式
+            begin：开始 从第几个开始遍历
+            end：结束  遍历到第几个结束
+            step：步长 间隔
+            varStatus：记录迭代变量的状态信息
+--%&gt;
+
+&lt;c:forEach var=&quot;i&quot; begin=&quot;1&quot; end=&quot;10&quot; step=&quot;2&quot; varStatus=&quot;status&quot;&gt;
+    &lt;font color=&quot;red&quot;&gt;${status.index} --&gt; ${i}&lt;/font&gt;&lt;br&gt;
+&lt;/c:forEach&gt;
+</code></pre>
+<ul>
+<li><p>复杂的使用:</p>
+<p>​            <img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103316.png" alt="img"></p>
+</li>
+</ul>
+<ul>
+<li><p>c:forEach中的varStatus属性。</p>
+<pre><code>   指向一个字符串，该字符串引用一个对象。  map.put(&quot;vs&quot;,一个对象);
+
+           这个对象记录着当前遍历的元素的一些信息：
+
+                  index:返回索引。从0开始
+
+                   count:返回计数。从1开始
+
+                   last:是否是最后一个元素
+
+                   first:是否是第一个元素    
+</code></pre></li>
+</ul>
+<pre><code class="jsp">&lt;%@ page import=&quot;java.util.ArrayList&quot; %&gt;
+&lt;%@ page import=&quot;com.itheima.bean.User&quot; %&gt;
+&lt;%@ page import=&quot;java.util.List&quot; %&gt;
+&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;%--forEach标签的实际使用
+        需求：查询操作，查询所有用户 在jsp页面显示
+        分析：操作数据库，查询得到数据封装到list集合中 ，将数据保存到域对象中，在jsp页面就可以获取到展示
+    --%&gt;
+    &lt;%
+        List&lt;User&gt; list = new ArrayList&lt;&gt;();
+        User user1 = new User();
+        user1.setName(&quot;zs&quot;);
+        user1.setPwd(&quot;123&quot;);
+        User user2 = new User();
+        user2.setName(&quot;ls&quot;);
+        user2.setPwd(&quot;456&quot;);
+        User user3 = new User();
+        user3.setName(&quot;ww&quot;);
+        user3.setPwd(&quot;789&quot;);
+
+        list.add(user1);
+        list.add(user2);
+        list.add(user3);
+
+        request.setAttribute(&quot;list&quot;,list);
+    %&gt;
+   &lt;table border=&quot;1px&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;300px&quot;&gt;
+       &lt;tr&gt;
+           &lt;td&gt;序号&lt;/td&gt;
+           &lt;td&gt;姓名&lt;/td&gt;
+           &lt;td&gt;密码&lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;%--forEach遍历：每遍历一次  输出一行用户信息记录显示在页面
+            items：要遍历的数组/集合  使用el表达式获取
+            var：声明迭代变量 接收数组|集合中的每一个元素
+            varStatus：状态  status.index获取到索引下标
+       --%&gt;
+       &lt;c:forEach items=&quot;${list}&quot; var=&quot;user&quot; varStatus=&quot;status&quot;&gt;
+           &lt;tr&gt;
+               &lt;td&gt;${status.index+1}&lt;/td&gt;
+               &lt;td&gt;${user.name}&lt;/td&gt;
+               &lt;td&gt;${user.pwd}&lt;/td&gt;
+           &lt;/tr&gt;
+       &lt;/c:forEach&gt;
+
+   &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="3-小结-3"><a href="#3-小结-3" class="headerlink" title="3.小结"></a>3.小结</h3><ol start="0">
+<li><p>准备</p>
+<ol>
+<li><p>导入jar包</p>
+</li>
+<li><p>在要使用jstl标签库的jsp页面引入jstl标签库</p>
+<pre><code class="html">&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&gt;
+</code></pre>
+</li>
+</ol>
+</li>
+<li><p>if标签</p>
+<pre><code class="html">&lt;c:if test=&quot;返回boolean类型数据的el表达式&quot;&gt;
+
+&lt;/c:if&gt;
+</code></pre>
+</li>
+<li><p>choose标签</p>
+<pre><code class="html">&lt;c:choose&gt;
+    &lt;c:when test=&quot;判断条件1&quot;&gt;&lt;/c:when&gt;
+    &lt;c:when test=&quot;判断条件2&quot;&gt;&lt;/c:when&gt;
+    ...
+    &lt;c:otherwise&gt;&lt;/c:otherwise&gt;
+&lt;/c:choose&gt;
+</code></pre>
+</li>
+<li><p>foreach标签</p>
+<ol>
+<li><p>foreach简单使用</p>
+<pre><code class="html">&lt;c:forEach var=&quot;迭代变量&quot; begin=&quot;开始&quot; end=&quot;结束&quot; step=&quot;步长&quot; varStatus=&quot;迭代变量状态&quot;&gt;
+    ${迭代变量}
+&lt;/c:forEach&gt;
+</code></pre>
+</li>
+<li><p>foreach实际使用</p>
+<pre><code class="html">&lt;c:forEach items=&quot;要遍历的集合 使用el表达式获取&quot; var=&quot;迭代变量&quot; varStatus=&quot;迭代变量状态&quot;&gt;
+    ${迭代变量}
+&lt;/c:forEach&gt;
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="第三章-综合案例和开发模式"><a href="#第三章-综合案例和开发模式" class="headerlink" title="第三章-综合案例和开发模式"></a>第三章-综合案例和开发模式</h1><h2 id="案例-完成转账的案例v1"><a href="#案例-完成转账的案例v1" class="headerlink" title="案例-完成转账的案例v1"></a>案例-完成转账的案例v1</h2><h3 id="一-需求"><a href="#一-需求" class="headerlink" title="一.需求"></a>一.需求</h3><ul>
+<li>当单击提交按钮，付款方向收款方按照输入的金额转账。</li>
+</ul>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103317.png" alt="img"></p>
+<h3 id="二-分析"><a href="#二-分析" class="headerlink" title="二,分析"></a>二,分析</h3><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103318.png" alt="image-20210729112956601"> </p>
+<h3 id="三-实现"><a href="#三-实现" class="headerlink" title="三,实现"></a>三,实现</h3><h4 id="1-案例的准备工作"><a href="#1-案例的准备工作" class="headerlink" title="1.案例的准备工作"></a>1.案例的准备工作</h4><ul>
+<li><p>数据库的准备</p>
+<pre><code>create database day25;
+use day25;
+create table account(
+    id int primary key auto_increment,
+    name varchar(20),
+    money double
+);
+
+insert into account values (null,&#39;zs&#39;,1000);
+insert into account values (null,&#39;ls&#39;,1000);
+insert into account values (null,&#39;ww&#39;,1000);
+</code></pre></li>
+<li><p>页面</p>
+<pre><code>&lt;%@ page contentType=&quot;text/html;charset=UTF-8&quot; language=&quot;java&quot; %&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+  &lt;title&gt;Insert title here&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;form method=&quot;post&quot; action=&quot;&quot;&gt;
+  &lt;table border=&quot;1px&quot; width=&quot;500px&quot; align=&quot;center&quot;&gt;
+    &lt;tr&gt;
+      &lt;td&gt;付款方&lt;/td&gt;
+      &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;from&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;收款方&lt;/td&gt;
+      &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;to&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;金额&lt;/td&gt;
+      &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;money&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan=&quot;2&quot;&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre></li>
+<li><p>jar包</p>
+</li>
+<li>工具类</li>
+<li>配置文件</li>
+</ul>
+<h4 id="2-代码实现"><a href="#2-代码实现" class="headerlink" title="2.代码实现"></a>2.代码实现</h4><ul>
+<li>UserServlet</li>
+</ul>
+<pre><code class="java">package com.itheima.web;
+
+import com.itheima.utils.C3P0Utils;
+import org.apache.commons.dbutils.QueryRunner;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.sql.SQLException;
+
+@WebServlet(&quot;/transfer&quot;)
+public class TransferServlet extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try {
+            //0.中文乱码处理
+            request.setCharacterEncoding(&quot;UTF-8&quot;);
+            response.setContentType(&quot;text/html;charset=UTF-8&quot;);
+            // 1.获取请求参数【付款方、收款方、金额】
+            String from = request.getParameter(&quot;from&quot;); //付款方
+            String to = request.getParameter(&quot;to&quot;);     //收款方
+            double money = Double.parseDouble(request.getParameter(&quot;money&quot;));     //转账金额
+            // 2.处理业务【判断付款方收款方是否存在 金额是否合理 假设一切OK】
+            // 3.操作数据库【两个update语句 钱减少 钱增加】rows1 rows2
+            QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
+            String sql1 = &quot;update account set money=money-? where name=?&quot;;
+            int rows1 = queryRunner.update(sql1, money, from);
+            String sql2 = &quot;update account set money=money+? where name=?&quot;;
+            int rows2 = queryRunner.update(sql2, money, to);
+            // 4.根据处理结果进行响应
+            if(rows1&gt;0 &amp;&amp; rows2&gt;0){
+                response.getWriter().print(&quot;转账成功！&quot;);
+            }else{
+                response.getWriter().print(&quot;转账失败！&quot;);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.getWriter().print(&quot;服务器异常！&quot;);
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
+    }
+}
+</code></pre>
+<h3 id="四-小结"><a href="#四-小结" class="headerlink" title="四.小结"></a>四.小结</h3><ol>
+<li>转账功能：操作数据库 付款方钱减少 收款方钱增加</li>
+<li>编写TransferServlet<ol>
+<li>获取请求参数</li>
+<li>处理业务</li>
+<li>响应</li>
+</ol>
+</li>
+</ol>
+<h2 id="知识点-开发模式"><a href="#知识点-开发模式" class="headerlink" title="知识点-开发模式"></a>知识点-开发模式</h2><h3 id="1-目标-5"><a href="#1-目标-5" class="headerlink" title="1.目标"></a>1.目标</h3><ul>
+<li>理解模式二(MVC)和模式三(三层架构)</li>
+</ul>
+<h3 id="2-讲解-4"><a href="#2-讲解-4" class="headerlink" title="2.讲解"></a>2.讲解</h3><h4 id="2-1JSP的开发模式一【了解】"><a href="#2-1JSP的开发模式一【了解】" class="headerlink" title="2.1JSP的开发模式一【了解】"></a>2.1JSP的开发模式一【了解】</h4><p>jsp+javabean：实现</p>
+<pre><code> javaBean:实体类。特点：私有化的属性、公共的getter setter方法、无参的构造。
+</code></pre><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103319.png" alt="image-20201209173731685" style="zoom:60%;"></p>
+<p>问题：</p>
+<p>​    1.所有的代码都在jsp中  会存在大量代码冗余  不利于代码维护修改 </p>
+<p>​    2.jsp已经属于上个时代的技术了 过时了 jsp执行效率非常低 jsp–&gt;翻译成java代码–&gt;编译class文件–&gt;执行</p>
+<h4 id="2-2JSP的开发模式二"><a href="#2-2JSP的开发模式二" class="headerlink" title="2.2JSP的开发模式二"></a>2.2JSP的开发模式二</h4><p>​    JSP【html】 + Servlet + JavaBean 称为MVC的开发模式.</p>
+<p>​    <strong>MVC:开发模式</strong></p>
+<p>​    M：model 模型 （javaBean：处理业务封装数据）</p>
+<p>​    V：View 视图  （JSP|html：展示数据）</p>
+<p>​    C：controller 控制器 （Servlet：接收请求进行分发，做为控制器）</p>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103320.png" alt="img"></p>
+<h4 id="2-3模式三-三层架构"><a href="#2-3模式三-三层架构" class="headerlink" title="2.3模式三: 三层架构"></a>2.3模式三: 三层架构</h4><ul>
+<li>软件中分层：按照不同功能分为不同层，通常分为三层：表现层(web层)，业务层，持久(数据库)层。</li>
+</ul>
+<p>  <img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103321.png" alt="img"></p>
+<ul>
+<li>不同层次包名的命名</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>分层</th>
+<th>包名(公司域名倒写)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表现层(web层)</td>
+<td>com.itheima.web        编写Servlet</td>
+</tr>
+<tr>
+<td>业务层(service层)</td>
+<td>com.itheima.service   编写Service类</td>
+</tr>
+<tr>
+<td>持久层(数据库访问层)</td>
+<td>com.itheima.dao           编写Dao类</td>
+</tr>
+<tr>
+<td>JavaBean</td>
+<td>com.itheima.bean         封装数据</td>
+</tr>
+<tr>
+<td>工具类</td>
+<td>com.itheima.utils           编写工具类</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103322.png" alt="image-20210814123710601"></p>
+<ul>
+<li>分层的意义:<ol>
+<li>解耦：降低层与层之间的耦合性。 </li>
+<li>可维护性：提高软件的可维护性，对现有的功能进行修改和更新时不会影响原有的功能。</li>
+<li>可扩展性：提升软件的可扩展性，添加新的功能的时候不会影响到现有的功能。</li>
+<li>可重用性：不同层之间进行功能调用时，相同的功能可以重复使用。</li>
+</ol>
+</li>
+</ul>
+<p>缺点：代码量增多，结构复杂，当新增功能时，需要web、service、dao分别写一次。</p>
+<p>但是利大于弊！所以今后的开发全部使用三层架构进行代码编写。</p>
+<p>好的代码：低耦合+高内聚</p>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103323.png" alt="img"></p>
+<h3 id="3-小结-4"><a href="#3-小结-4" class="headerlink" title="3.小结"></a>3.小结</h3><ol>
+<li>模式一：jsp+javabean</li>
+<li>模式二：MVC<ol>
+<li>M：model  javabean 封装数据</li>
+<li>V：view     jsp|html    展示数据</li>
+<li>C：controller servlet  接收请求，调用业务处理，响应</li>
+</ol>
+</li>
+<li>三层架构：<ol>
+<li>表现层【web】： com.itheima.web  编写Servlet类<ol>
+<li>获取请求参数</li>
+<li>调用业务处理</li>
+<li>响应</li>
+</ol>
+</li>
+<li>业务层【service】：com.itheima.service  编写Service类<ol>
+<li>处理业务</li>
+<li>调用dao</li>
+</ol>
+</li>
+<li>持久层【dao】：com.itheima.dao   编写dao类    <ol>
+<li>操作数据库</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="案例-完成转账的案例v2"><a href="#案例-完成转账的案例v2" class="headerlink" title="案例-完成转账的案例v2"></a>案例-完成转账的案例v2</h2><h3 id="一-需求-1"><a href="#一-需求-1" class="headerlink" title="一.需求"></a>一.需求</h3><ul>
+<li>使用三层架构改写转账案例</li>
+</ul>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103317.png" alt="img"></p>
+<h3 id="二-分析-1"><a href="#二-分析-1" class="headerlink" title="二,分析"></a>二,分析</h3><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103324.png" alt="image-20210814143913354"> </p>
+<h3 id="三-实现-1"><a href="#三-实现-1" class="headerlink" title="三,实现"></a>三,实现</h3><ul>
+<li>TransferServlet</li>
+</ul>
+<pre><code class="java">package com.itheima.web;
+
+import com.itheima.service.TransferService;
+import com.itheima.utils.C3P0Utils;
+import org.apache.commons.dbutils.QueryRunner;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.sql.SQLException;
+
+@WebServlet(&quot;/transfer&quot;)
+public class TransferServlet extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try {
+            //0.中文乱码处理
+            request.setCharacterEncoding(&quot;UTF-8&quot;);
+            response.setContentType(&quot;text/html;charset=UTF-8&quot;);
+            //1.获取请求参数【付款方、收款方、金额】
+            String from = request.getParameter(&quot;from&quot;); //付款方
+            String to = request.getParameter(&quot;to&quot;);     //收款方
+            double money = Double.parseDouble(request.getParameter(&quot;money&quot;));     //转账金额
+            //2.调用业务处理
+            TransferService transferService = new TransferService();
+            boolean flag = transferService.transfer(from,to,money);
+            //3.响应
+            if(flag){
+                response.getWriter().print(&quot;转账成功！&quot;);
+            }else{
+                response.getWriter().print(&quot;转账失败！&quot;);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.getWriter().print(&quot;服务器异常！&quot;);
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
+    }
+}
+</code></pre>
+<ul>
+<li>TransferService</li>
+</ul>
+<pre><code class="java">package com.itheima.service;
+
+import com.itheima.dao.TransferDao;
+
+import java.sql.SQLException;
+
+public class TransferService {
+
+    /**
+     * 转账业务
+     * @param from  付款方
+     * @param to    收款方
+     * @param money 转账金额
+     * @return 转账是否成功  true|false
+     */
+    public boolean transfer(String from, String to, double money) throws SQLException {
+        //1.处理业务【判断付款方 收款方是否存在 转账金额是否合理  假设一切正常】
+        //2.调用dao
+        TransferDao transferDao = new TransferDao();
+        //2.1：付款方钱减少
+        int rows1 = transferDao.reduceMoney(from,money);
+
+        //2.2：收款方钱增加
+        int rows2 = transferDao.addMoney(to,money);
+        //3.根据dao处理结果判断转账是否成功 并返回
+        if(rows1&gt;0 &amp;&amp; rows2&gt;0){
+            return true;
+        }
+        return false;
+    }
+}
+</code></pre>
+<ul>
+<li>TransferDao</li>
+</ul>
+<pre><code class="java">package com.itheima.dao;
+
+import com.itheima.utils.C3P0Utils;
+import org.apache.commons.dbutils.QueryRunner;
+
+import java.sql.SQLException;
+
+public class TransferDao {
+
+    /**
+     * 付款方钱减少
+     * @param from
+     * @param money
+     * @return
+     */
+    public int reduceMoney(String from, double money) throws SQLException {
+        //1.操作数据库
+        QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
+        String sql = &quot;update account set money = money-? where name=?&quot;;
+        return queryRunner.update(sql,money,from);
+    }
+
+    /**
+     * 收款方钱增加
+     * @param to
+     * @param money
+     * @return
+     */
+    public int addMoney(String to, double money) throws SQLException {
+        //1.操作数据库
+        QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
+        String sql = &quot;update account set money = money+? where name=?&quot;;
+        return queryRunner.update(sql,money,to);
+    }
+}
+</code></pre>
+<h3 id="四-小结-1"><a href="#四-小结-1" class="headerlink" title="四.小结"></a>四.小结</h3><ul>
+<li>web层  com.itheima.web  XxxServlet<ul>
+<li>获取请求参数</li>
+<li>调用业务处理</li>
+<li>响应</li>
+</ul>
+</li>
+<li>service  com.itheima.service XxxService<ul>
+<li>处理业务</li>
+<li>调用dao</li>
+</ul>
+</li>
+<li>dao  com.itheima.dao  XxxDao<ul>
+<li>操作数据库</li>
+</ul>
+</li>
+</ul>
+<h2 id="案例-完成转账的案例v3"><a href="#案例-完成转账的案例v3" class="headerlink" title="案例-完成转账的案例v3"></a>案例-完成转账的案例v3</h2><h3 id="一-需求-2"><a href="#一-需求-2" class="headerlink" title="一.需求"></a>一.需求</h3><ul>
+<li>当单击提交按钮，付款方向收款方安照输入的金额转账。 使用手动事务进行控制</li>
+</ul>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103317.png" alt="img"></p>
+<h3 id="二-分析-2"><a href="#二-分析-2" class="headerlink" title="二,分析"></a>二,分析</h3><h4 id="1-DBUtils实现事务管理"><a href="#1-DBUtils实现事务管理" class="headerlink" title="1.DBUtils实现事务管理"></a>1.DBUtils实现事务管理</h4><table>
+<thead>
+<tr>
+<th>API</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QueryRunner()</td>
+<td>创建QueryRunner对象. 手动提交事务时使用</td>
+</tr>
+<tr>
+<td>query(connection，String sql, Object[] params, ResultSetHandler<t> rsh)</t></td>
+<td>查询(需要传入Connection)</td>
+</tr>
+<tr>
+<td>update(connection，String sql, Object… params)</td>
+<td>更新</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-思路"><a href="#2-思路" class="headerlink" title="2.思路"></a>2.思路</h4><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103325.png" alt="image-20191212153634611"> </p>
+<h3 id="三-实现-2"><a href="#三-实现-2" class="headerlink" title="三,实现"></a>三,实现</h3><ul>
+<li>TransferService</li>
+</ul>
+<pre><code class="java">package com.itheima.service;
+
+import com.itheima.dao.TransferDao;
+import com.itheima.utils.C3P0Utils;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class TransferService {
+
+    /**
+     * 转账业务
+     * @param from  付款方
+     * @param to    收款方
+     * @param money 转账金额
+     * @return 转账是否成功  true|false
+     * 需求：转账包含两个操作：一个钱减少，一个钱增加，只有当钱减少和钱增加两个操作都执行成功时，才表示转账成功，如果有一个失败，则转账失败，付款方和收款方的金额应该不变
+     * 分析：要将转账的两个操作封装成为一个整体，使用事务  事务的特性：将多个操作作为一个整体执行，要成功，都成功，要失败，都失败
+     * 事务的使用：
+     *      1.开启事务          ：connection.setAutoCommit(false);
+     *      2.执行操作          :钱减少、钱增加
+     *      3.事务提交或事务回滚  ：true：connection.commit();     false|exception:connection.rollback();
+     * 事务使用细节：执行操作所有的connection连接对象要是同一个，如果不是同一个，则不能进行事务控制
+     * 事务使用的地方：
+     *      事务使用在service层，将多个数据库操作作为一个整体执行。
+     */
+    public boolean transfer(String from, String to, double money) throws Exception {
+
+        /********1.开启手动事务*******/
+        Connection connection = C3P0Utils.getConnection();
+        connection.setAutoCommit(false);
+
+
+        try {
+            //1.处理业务【判断付款方 收款方是否存在 转账金额是否合理  假设一切正常】
+            //2.调用dao
+            TransferDao transferDao = new TransferDao();
+            //2.1：付款方钱减少
+            int rows1 = transferDao.reduceMoney(connection,from,money);
+
+            //人为制作异常 用于测试
+            //int i = 1/0;
+
+            //2.2：收款方钱增加
+            int rows2 = transferDao.addMoney(connection,to,money);
+            //3.根据dao处理结果判断转账是否成功 并返回
+            if(rows1&gt;0 &amp;&amp; rows2&gt;0){
+                //转账成功 提交事务
+                connection.commit();
+                return true;
+            }else{
+                //转账失败 回滚事务
+                connection.rollback();
+                return false;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+            //发生异常 回滚事务
+            connection.rollback();
+            return false;
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>TransferDao</li>
+</ul>
+<pre><code class="java">package com.itheima.dao;
+
+import com.itheima.utils.C3P0Utils;
+import org.apache.commons.dbutils.QueryRunner;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class TransferDao {
+
+    /**
+     * 付款方钱减少
+     * @param from
+     * @param money
+     * @return
+     */
+    public int reduceMoney(Connection connection, String from, double money) throws SQLException {
+        //1.操作数据库
+        //注意：多个操作使用同一个connection时，才能进行事务控制  所以此时创建QueryRunner对象时使用无参构造方法
+        QueryRunner queryRunner = new QueryRunner();
+        String sql = &quot;update account set money = money-? where name=?&quot;;
+        return queryRunner.update(connection,sql,money,from);
+    }
+
+    /**
+     * 收款方钱增加
+     * @param to
+     * @param money
+     * @return
+     */
+    public int addMoney(Connection connection, String to, double money) throws SQLException {
+        //1.操作数据库
+        QueryRunner queryRunner = new QueryRunner();
+        String sql = &quot;update account set money = money+? where name=?&quot;;
+        return queryRunner.update(connection,sql,money,to);
+    }
+}
+</code></pre>
+<h3 id="四-小结-2"><a href="#四-小结-2" class="headerlink" title="四.小结"></a>四.小结</h3><ol>
+<li>事务使用步骤<ol>
+<li>手动开启事务：connection.setAutoCommit(false);</li>
+<li>执行操作：多个操作需要使用同一个连接对象connection</li>
+<li>事务提交或事务回滚：connection.commit();     connection.rollback();</li>
+</ol>
+</li>
+<li>事务使用位置：使用在Service层</li>
+<li>通过在Service层获取connection对象 传递到dao层进行使用操作数据库。</li>
+</ol>
+<h2 id="案例-完成转账的案例v4"><a href="#案例-完成转账的案例v4" class="headerlink" title="案例-完成转账的案例v4"></a>案例-完成转账的案例v4</h2><h3 id="一-需求-3"><a href="#一-需求-3" class="headerlink" title="一.需求"></a>一.需求</h3><ul>
+<li>当单击提交按钮，付款方向收款方安照输入的金额转账。 使用事务进行控制</li>
+</ul>
+<p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103317.png" alt="img"></p>
+<h3 id="二-分析-3"><a href="#二-分析-3" class="headerlink" title="二,分析"></a>二,分析</h3><h4 id="1-ThreadLocal"><a href="#1-ThreadLocal" class="headerlink" title="1.ThreadLocal"></a>1.ThreadLocal</h4><p>​    在“事务传递参数版”中，我们必须修改方法的参数个数，传递连接对象，才可以完成整个事务操作。如果不传递参数，是否可以完成？在JDK中给我们提供了一个工具类：ThreadLocal，此类可以在一个线程中共享数据。</p>
+<p>​    java.lang.ThreadLocal,该类提供了线程局部 (thread-local) 变量，用于在当前线程中共享数据。ThreadLocal工具类<strong>底层就是一个Map，key存放的当前线程，value存放需要共享的数据</strong></p>
+<pre><code class="java">//模拟ThreadLocal类 
+public class ThreadLocal{
+    private Map&lt;Thread,Object&gt; map = new HashMap&lt;Thread,Object&gt;();
+
+    public void set(Connection conn){
+        map.put(Thread.currentThread(),conn); //以当前线程对象作为key
+    }
+
+    public Object get(){
+        return map.get(Thread.currentThread()); //只有当前线程才能取出value数据
+    }
+}
+ThreadLocal:实现在当前线程下共享数据【范围小很多】  
+类似于ServletContext在当前应用下共享数据【范围大一些】
+结论：向ThreadLocal对象中添加的数据只能在当前线程下使用。
+</code></pre>
+<h4 id="2-思路-1"><a href="#2-思路-1" class="headerlink" title="2.思路"></a>2.思路</h4><p><img src="https://cdn.statically.io/gh/Chenm4/typoraImg@main/202208061103326.png" alt="image-20191212155332778"></p>
+<h3 id="三-代码"><a href="#三-代码" class="headerlink" title="三,代码"></a>三,代码</h3><ul>
+<li>ConnectionManager</li>
+</ul>
+<pre><code class="java">package com.itheima.utils;
+
+import java.sql.Connection;
+
+public class ConnectionManager {
+    //使用ThreadLocal工具类在同一个线程中共享数据
+    private static ThreadLocal&lt;Connection&gt; t = new ThreadLocal&lt;&gt;();
+
+    //获取Connection对象
+    public static Connection getConnection() throws Exception {
+        Connection connection = t.get();
+        if(connection==null){
+             connection = C3P0Utils.getConnection();
+             t.set(connection);
+        }
+        return connection;
+    }
+}
+</code></pre>
+<ul>
+<li>UserService</li>
+</ul>
+<pre><code class="java">package com.itheima.service;
+
+import com.itheima.dao.TransferDao;
+import com.itheima.utils.C3P0Utils;
+import com.itheima.utils.ConnectionManager;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class TransferService {
+
+    /**
+     * 转账业务
+     * @param from  付款方
+     * @param to    收款方
+     * @param money 转账金额
+     * @return 转账是否成功  true|false
+    */
+    public boolean transfer(String from, String to, double money) throws Exception {
+
+        /********1.手动开启事务*******/
+        Connection connection = ConnectionManager.getConnection();
+        connection.setAutoCommit(false);
+
+        try {
+            //1.处理业务【判断付款方 收款方是否存在 转账金额是否合理  假设一切正常】
+            //2.调用dao
+            TransferDao transferDao = new TransferDao();
+            //2.1：付款方钱减少
+            int rows1 = transferDao.reduceMoney(from,money);
+
+            //人为制作异常 用于测试
+            //int i = 1/0;
+
+            //2.2：收款方钱增加
+            int rows2 = transferDao.addMoney(to,money);
+            //3.根据dao处理结果判断转账是否成功 并返回
+            if(rows1&gt;0 &amp;&amp; rows2&gt;0){
+                //转账成功 提交事务
+                connection.commit();
+                return true;
+            }else{
+                //转账失败 回滚事务
+                connection.rollback();
+                return false;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+            //发生异常 回滚事务
+            connection.rollback();
+            return false;
+        }
+
+    }
+}
+</code></pre>
+<ul>
+<li>UserDao</li>
+</ul>
+<pre><code class="java">package com.itheima.dao;
+
+import com.itheima.utils.C3P0Utils;
+import com.itheima.utils.ConnectionManager;
+import org.apache.commons.dbutils.QueryRunner;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class TransferDao {
+
+    /**
+     * 付款方钱减少
+     * @param from
+     * @param money
+     * @return
+     */
+    public int reduceMoney(String from, double money) throws Exception {
+        //1.操作数据库
+        //注意：多个操作使用同一个connection时，才能进行事务控制  所以此时创建QueryRunner对象时使用无参构造方法
+        QueryRunner queryRunner = new QueryRunner();
+        String sql = &quot;update account set money = money-? where name=?&quot;;
+        return queryRunner.update(ConnectionManager.getConnection(),sql,money,from);
+    }
+
+    /**
+     * 收款方钱增加
+     * @param to
+     * @param money
+     * @return
+     */
+    public int addMoney(String to, double money) throws Exception {
+        //1.操作数据库
+        QueryRunner queryRunner = new QueryRunner();
+        String sql = &quot;update account set money = money+? where name=?&quot;;
+        return queryRunner.update(ConnectionManager.getConnection(),sql,money,to);
+    }
+}
+</code></pre>
+<h3 id="四-小结-3"><a href="#四-小结-3" class="headerlink" title="四.小结"></a>四.小结</h3><ol>
+<li>ThreadLocal：java中一个工具类，用于在同一线程中共享数据。</li>
+<li>使用ThreadLocal存储Connection对象在同一线程中共享，这样Service和dao层获取Connection连接对象，就直接从ThreadLocal中拿，得到的就是同一个Connection对象，就可以实现事务控制。</li>
+</ol>
+<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><ol>
+<li><p>EL表达式</p>
+<ol>
+<li><p>概念：用于在jsp页面中获取域对象中存储的数据 目的：简化jsp页面数据获取 语法：${EL表达式}</p>
+</li>
+<li><p>获取域对象中存储的数据</p>
+<ol>
+<li>简单类型数据获取 ：${key}</li>
+<li>数组类型数据获取：${key[下标]}</li>
+<li>list集合数据获取：${key[下标]} 或${key.get(下标)}</li>
+<li>map集合数据获取：${key[“map的key”]} 或${key.get(“map的key”)} 或者 ${key.map的key}</li>
+<li>javabean属性值获取：${key.javabean属性名称}</li>
+</ol>
+<p>注意：</p>
+<p>​    1.EL获取数据 从作用域范围小的到大的进行查找，找到就停止，找不到返回””</p>
+<p>​    2.EL获取数据会进行自动类型转换</p>
+<p>​    3.EL获取key中包含特殊字符的数据 </p>
+<p>​                ${requestScope[“key”]}</p>
+<p>​                ${key[“map的key”]}</p>
+</li>
+<li><p>执行运算</p>
+<ol>
+<li>+：在这里表示加运算，不进行字符串拼接，如果+号两边有一方无法转为数字类型，则报错</li>
+<li>empty：<ol>
+<li>判断对象是否为null 为null返回true</li>
+<li>判断String为null或者””  如果是返回true</li>
+<li>判断list集合为null或长度为0 如果是返回true</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>JSTL标签库</p>
+<ol>
+<li><p>使用步骤</p>
+<ol>
+<li><p>添加jar包到项目</p>
+</li>
+<li><p>在要使用jstl标签的jsp页面引入jstl标签库</p>
+<p>&lt;%@ taglib prefix=”c” uri=”<a href="http://java.sun.com/jsp/jstl/core&quot;" target="_blank" rel="noopener">http://java.sun.com/jsp/jstl/core&quot;</a> %&gt;</p>
+</li>
+<li><p>if标签的使用</p>
+<p>如果test属性值为true，则执行if标签体中的内容</p>
+<pre><code class="html">&lt;c:if test=&quot;el表达式 返回boolean类型的结果&quot;&gt;&lt;/c:if&gt;
+</code></pre>
+</li>
+<li><p>foreach标签的使用</p>
+<pre><code class="html">&lt;c:forEach items=&quot;要遍历的集合|数组&quot; var=“迭代变量”&gt; 
+${迭代变量}
+&lt;/c:forEach&gt;
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>开发模式</p>
+<ol>
+<li>MVC开发模式<ul>
+<li>m：model 模型 javabean  封装数据</li>
+<li>v：view     视图  jsp            展示数据</li>
+<li>c：controller 控制器 Servlet  接收请求，调用业务处理，给出响应</li>
+</ul>
+</li>
+<li>三层架构<ol>
+<li>web层  com.itheima.web  xxxServlet<ul>
+<li>获取请求参数</li>
+<li>调用业务处理</li>
+<li>响应</li>
+</ul>
+</li>
+<li>service层  com.itheima.service  xxxService<ul>
+<li>处理业务</li>
+<li>调用dao</li>
+</ul>
+</li>
+<li>dao层  com.itheima.dao     xxxDao<ul>
+<li>操作数据库</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>转账案例</p>
+<ol>
+<li>传统方式实现转账案例</li>
+<li>三层架构实现转账案例</li>
+<li>手动事务控制实现转账</li>
+<li>使用ThreadLocal统一管理connection对象  实现事务控制转账</li>
+</ol>
+</li>
+<li><p>练习：</p>
+<ol>
+<li>==传统方式实现转账案例==</li>
+<li>==三层架构实现转账案例==</li>
+<li>手动事务控制实现转账</li>
+<li>使用ThreadLocal</li>
+<li>JSTL中if和forEach标签的使用</li>
+<li>使用EL表达式获取数据</li>
+</ol>
+</li>
+</ol>
+<p>​        </p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
+                <li class="wechat-code"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061411135.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2022/08/09/关于失眠/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                关于失眠</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2022/08/06/Mybatis/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061255254.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Mybatis</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz",
+        appKey: "bfvLFp8vPRNo3A3Dt11mlo4C",
+        path: window.location.pathname,
+        placeholder: "对待女朋友要像对待代码一样  在我心里你永远没错  错了也是我来改",
+        serverURLs: ''
+      })
+  }
+</script>
+
+
+
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="zhaoshengmu.top" class="profile gravatar"><img src="https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png" itemprop="image" alt="朝生暮" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="zhaoshengmu.top" itemprop="url" rel="author">朝生暮</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>记得花香，便对得起这时光</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            // PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2023 John Doe<br>
+      powered_by <a href="http://zhaoshengmu.top/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;">&copy 2022</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.zhaoshengmu.top/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">朝生暮</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+
+<!--<script src="__cdn1.lncld.net_static_js_3.0.4_av.js"></script>-->
+<script src='//unpkg.com/valine@1.5.1/dist/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/Chenm4/typoraImg@main/202208052151008.bmp">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">朝生暮的小屋~</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="https://weibo.com/u/2144294960" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/技术/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  技术
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/生活/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/资源/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随想/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/转载/">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  转载
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/tags/悦读/">
+                  <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  影视
+                </a>
+              </li>
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/图集/">
+                  <i class="fa fa-photo" aria-hidden="true"></i>
+                  图集
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+              <li>
+                <a href="/lab/">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                  Lab
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/client/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-android faa-vertical" aria-hidden="true"></i>
+            客户端
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  /*-66是缩小的大小*/
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -5px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+
+<meting-js
+
+    id="7575508256"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.1"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+
+
+
+<script>
+  (function () {
+    var a_idx = 0;
+    window.onclick = function (event) {
+      var a = ["❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤",
+              "❤敬业❤", "❤诚信❤", "❤友善❤","❤陈某❤","❤最帅❤"];
+
+      var heart = document.createElement("b"); //创建b元素
+      heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+
+      document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+      a_idx = (a_idx + 1) % a.length;
+      heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+
+      var f = 16, // 字体大小
+              x = event.clientX - f * 2, // 横坐标
+              y = event.clientY - f / 2, // 纵坐标
+              c = randomColor(), // 随机颜色
+              a = 1, // 透明度
+              s = 1.2; // 放大缩小
+
+      var timer = setInterval(function () { //添加定时器    setInterval是重复调用一个函数或执行一个代码片段
+        if (a <= 0) {
+          document.body.removeChild(heart);
+          clearInterval(timer);
+        } else {
+          heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                  c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                  s + ");";
+          y--;
+          a -= 0.016;
+          s += 0.006;
+        }
+      }, 15)
+    }
+    // 随机颜色
+    function randomColor() {
+      return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+              .random() * 255)) + ")";
+
+    }
+  }());
+</script>
+
+
+<!--<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>-->
+<script>
+    /**
+     * Copyright (c) 2016 hustcc
+     * License: MIT
+     * Version: v1.0.1
+     * GitHub: https://github.com/hustcc/canvas-nest.js
+     **/
+    !
+        function() {
+            function n(n, e, t) {
+                return n.getAttribute(e) || t
+            }
+            function e(n) {
+                return document.getElementsByTagName(n)
+            }
+            function t() {
+                var t = e("script"),
+                    o = t.length,
+                    i = t[o - 1];
+                var color = randomColor()
+                // window.alert(color)
+
+                return {
+                    l: o,
+                    z: n(i, "zIndex", -1),
+                    o: n(i, "opacity", .99),
+                    c: n(i, "color", (color)),
+                    n: n(i, "count", 299)
+                }
+            }
+            function randomColor() {
+                // var color = ["217,104,9"]
+                var color = ["254,67,101","17,63,61","20,68,106","217,104,9"]
+
+                // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+                //     .random() * 255)) + ")";
+                return color[(~~Math.random() * color.length)]
+            }
+            function o() {
+                a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                    c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+            }
+            function i() {
+                r.clearRect(0, 0, a, c);
+                var n, e, t, o, m, l;
+                s.forEach(function(i, x) {
+                    for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e],
+                    null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+                }),
+                    x(i)
+            }
+            var a, c, u, m = document.createElement("canvas"),
+                d = t(),
+                l = "c_n" + d.l,
+                r = m.getContext("2d"),
+                x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                    function(n) {
+                        window.setTimeout(n, 1e3 / 45)
+                    },
+                w = Math.random,
+                y = {
+                    x: null,
+                    y: null,
+                    max: 2e4
+                };
+            m.id = l,
+                m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o,
+                e("body")[0].appendChild(m),
+                o(),
+                window.onresize = o,
+                window.onmousemove = function(n) {
+                    n = n || window.event,
+                        y.x = n.clientX,
+                        y.y = n.clientY
+                },
+                window.onmouseout = function() {
+                    y.x = null,
+                        y.y = null
+                };
+            for (var s = [], f = 0; d.n > f; f++) {
+                var h = w() * a,
+                    g = w() * c,
+                    v = 2 * w() - 1,
+                    p = 2 * w() - 1;
+                s.push({
+                    x: h,
+                    y: g,
+                    xa: v,
+                    ya: p,
+                    max: 6e3
+                })
+            }
+            u = s.concat([y]),
+                setTimeout(function() {
+                        i()
+                    },
+                    100)
+        } ();
+</script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"superSample":2,"hOffset":130,"vOffset":-120,"position":"right","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+</html>
