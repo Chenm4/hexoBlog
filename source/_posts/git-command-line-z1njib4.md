@@ -1,8 +1,7 @@
 ---
 title: Git命令行
-updated: '2023-03-23 09:11:19'
-excerpt: >-
-  [https_blogcsdnnetbjbz_cxyarticledetails](https_blogcsdnnetbjbz_cxyarticledetails?ops_request_misc=%b%request%fid%%a%%%c%scm%%a%%%dspm=)目录前言发展过程集中式与分布式的区别debianlinux安装git配置git环境_gitconfigglobal创建本地空仓库_gitinit新建文件添加到本地仓库_gitaddgitcommitm改写提交_gitcommitamend
+updated: '2023-03-23 09:48:39'
+excerpt: ''
 tags:
   - 技术
   - git
@@ -16,7 +15,7 @@ comments: true
 
 * [https://blog.csdn.net/bjbz_cxy/article/details/](https://blog.csdn.net/bjbz_cxy/article/details/116703787?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167946854916800188539900%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167946854916800188539900&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-116703787-null-null.142^v76^control,201^v4^add_ask,239^v2^insert_chatgpt&utm_term=git&spm=1018.2226.3001.4187)
 * 目录前言发展过程集中式与分布式的区别Debian/Linux安装Git配置git环境：git config --global创建本地空仓库：git init新建文件添加到本地仓库：git add、git commit -m改写提交：git commit --amend查看历史提交日志：git log回滚代码仓库：git reset --hard查看提交之后文件是否做了改动：git status工作区与缓存区修改缓存区内容：git add、git co.
-* 2023-03-22 19:34:29​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230911776.png)​
+* 2023-03-22 19:34:29​​
 
 ---
 
@@ -40,6 +39,8 @@ comments: true
 * git pull
 
   * git pull origin master：这将会从名为 origin 的远程仓库中获取最新的更改，并将它们合并到本地的 master 分支中。一定注意的是本地仓库是哪个它录取后就是合并到这个本地仓库的。它相当于fetch 和 merge两个功能
+  * 如果有冲突则需要输入commit的message信息，如果不想在合并时输入合并消息，您可以在 **pull** 命令中使用 **--no-edit** 选项。这将使用默认的合并消息，通常包括合并的分支名称和一些其他信息。
+  * ​git pull --rebase 命令是将本地分支与远程分支合并的一种方式。它会将本地分支的提交放在远程分支的提交之后，从而使提交历史线性化。​
 * git reset --hard 要回滚id
 
   * 1.回滚到指定历史版本[^2]
@@ -47,7 +48,7 @@ comments: true
   * 觉得log打印内容过多，可以用 git log --pretty=oneline选项简洁输出
 * git log 
 
-  * 查看可回滚的历史（不包括远程仓库的提交历史）
+  * 查看可回滚的历史（不包括远程仓库的提交历史），如果过多则用 q 退出，添加-online参数会简洁
   * git log filename查看特定文件的可回滚历史
 
 * git push
@@ -173,15 +174,15 @@ cd test
 git init
 ```
 
-​![](https://github.com/Chenm4/ImageOnline/blob/master//siyuan/hexo/202303230859929.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230934224.png)​
 
 初始化后会生成git的配置文件目录，普通的"ls"命令是看不到的，我们需要使用ls -ah查看隐藏目录
 
-​![](https://github.com/siyuan/hexo/202303230852751.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230934122.png)​
 
 进入目录后可以看到它的相关配置文件
 
-​![](https://github.com/siyuan/hexo/202303230852567.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230934421.png)​
 
 ## 新建文件添加到本地仓库：git add、git commit -m
 
@@ -195,7 +196,7 @@ git init
 touch test.c
 ```
 
-​![](https://raw.githubusercontent.com/Chenm4/ImageOnline/master/siyuan/hexo/202303222222244.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230934932.png)​
 
 使用git add命令将文件添加到本地仓库的提交缓存
 
@@ -227,29 +228,29 @@ git commit --amend
 
 输入上面的命令后会进入如下编辑器界面：
 
-​![](https://github.com/siyuan/hexo/202303230853373.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945347.png)​
 
 我们输入Y选中是
 
 可以看到刚刚的注释信息
 
-​![](https://github.com/siyuan/hexo/202303230853691.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945221.png)​
 
 在界面中按下“i”即可进入编辑界面
 
-​![](https://github.com/siyuan/hexo/202303230852173.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935545.png)​
 
 修改完成后按下ctrl+o键
 
-​![](https://github.com/siyuan/hexo/202303230852510.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935856.png)​
 
 在按下回车，就会提示已写入，用#是注释，不会被提交，git会自动过滤
 
-​![](https://github.com/siyuan/hexo/202303230852918.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935131.png)​
 
 下面的G和O这种符号在ascii里对应ctrl键，所以就是ctrl+x
 
-​![](https://github.com/siyuan/hexo/202303230852812.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935011.png)​
 
 按下ctrl+x(不分大小写)即可退出编辑界面
 
@@ -263,7 +264,7 @@ git commit --amend
 git log
 ```
 
-​![](https://github.com/siyuan/hexo/202303230852458.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935159.png)​
 
 可以看到没有生成新的版本号，而是直接改写了刚刚提交的注释
 
@@ -331,11 +332,11 @@ git reset --hard 要回滚id
 
 第一行的commit后面的字符串就是我们的哈希id
 
-​![](https://github.com/siyuan/hexo/202303230852604.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935412.png)​
 
 回滚的时候我们只需要字符，其它的都不需要！
 
-​![](https://github.com/siyuan/hexo/202303230852673.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935023.png)​
 
 ### 2.回滚当前仓库指向的版本
 
@@ -357,7 +358,7 @@ git reset --hard HEAD~3
 
 如果觉得log打印内容过多，可以加上--pretty=oneline选项简洁输出
 
-​![](https://github.com/siyuan/hexo/202303230852950.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935195.png)​
 
 ## 查看提交之后文件是否做了改动：git status
 
@@ -367,11 +368,11 @@ git reset --hard HEAD~3
 
 我们修改一下刚刚提交的test.c文件，在里面随便输点字符
 
-​![](https://github.com/siyuan/hexo/202303230854449.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944633.png)​
 
 保存退出，然后使用git status查看
 
-​![](https://github.com/siyuan/hexo/202303230852818.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935846.png)​
 
 可以看到报出了修改，这里我的环境语言是中文，如果是英文则对应的修改是AM，A是未修改
 
@@ -385,13 +386,13 @@ touch min.c   # 就是新建.c文件
 
 然后使用status查看一下
 
-​![](https://github.com/siyuan/hexo/202303230852908.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935323.png)​
 
 如果不是中文会在后面写一个Untracked代表未提交
 
 我们使用git add提交到缓存区文件后，使用git status也可以查看到当前文件的状态
 
-​![](https://github.com/siyuan/hexo/202303230852992.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935461.png)​
 
 对应的英文是：modified
 
@@ -415,7 +416,7 @@ modified：新文件，但未提交
 
 缓存区：这里存放了你使用git add命令提交的文件描述信息，它位于.git目录下的index文件中
 
-​![](https://github.com/siyuan/hexo/202303230852346.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935845.png)​
 
 有的低版本中叫stage
 
@@ -469,7 +470,7 @@ git add min.c
 
 在使用git status查看是否有没有添加的：
 
-​![](https://github.com/siyuan/hexo/202303230852251.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230935314.png)​
 
 可以看到test.c没有提交，在使用git add将test.c添加进来就可以了
 
@@ -499,7 +500,7 @@ git add --all
 
 下面这个演示，我将min.c文件修改了，并使用git checkout -- file回到了之前修改的状态
 
-​![](https://github.com/siyuan/hexo/202303230852315.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936510.png)​
 
 注意这个功能不能一直迭代恢复，如你恢复到了修改前的版本，你想再次回滚回滚到修改前在之前的版本是不行的。
 
@@ -511,13 +512,13 @@ git add --all
 git log test.c
 ```
 
-​![](https://github.com/siyuan/hexo/202303230852231.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936227.png)​
 
 ```bash
 git log min.c
 ```
 
-​![](https://github.com/siyuan/hexo/202303230852865.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936208.png)​
 
 可以看到min.c文件可回滚版本较少，因为它是后来添加进来的。
 
@@ -536,7 +537,7 @@ git commit -m "new"
 
 更新完成后可以在使用log查看一下，会发现多出一个历史版本
 
-​![](https://github.com/siyuan/hexo/202303230852937.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936427.png)​
 
 即便你更新了一个文件，也会生成一个新的历史版本，注意历史版本里只包含了你更新的文件，你刚刚只add了min.c文件，所以新的历史版本里只有更新min.c文件，你当前的工作其它文件没有在这个历史版本里。
 
@@ -544,21 +545,21 @@ git commit -m "new"
 
 如果我们使用普通的命令，rm删除文件，git状态会提示你删除了文件，你只需要使用add重新提交一次就可以了。
 
-​![](https://github.com/siyuan/hexo/202303230852201.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936113.png)​
 
 当然你也可以使用git rm删除文件，但是也需要使用git commit提交一次
 
-​![](https://github.com/siyuan/hexo/202303230852575.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936146.png)​
 
 可以看下status的状态
 
-​![](https://github.com/siyuan/hexo/202303230852227.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936273.png)​
 
 ## 查看提交历史：git reflog
 
 git reflog可以查看当前版本库的提交历史，凡是对仓库版本进行迭代的都会出现在这个里面，包括你回滚版本都会出现在这个历史中
 
-​![](https://github.com/siyuan/hexo/202303230854208.png)
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945963.png)
 
 * 区别于git log：
 
@@ -611,7 +612,7 @@ git reset
 git checkout d.c
 ```
 
-​![](https://github.com/siyuan/hexo/202303230852975.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936531.png)​
 
 可以看到文件又恢复了
 
@@ -633,7 +634,7 @@ git checkout -b dev
 git branch
 ```
 
-​![](https://github.com/siyuan/hexo/202303230852311.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936239.png)​
 
 git checkout -b dev等价于
 
@@ -654,7 +655,7 @@ git checkout 后面如果是分支名称则切换过去
 git checkout master
 ```
 
-​![](https://github.com/siyuan/hexo/202303230852249.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936709.png)​
 
 git checkout的作用是检出，如果是文件的话，会放弃对文件的缓存区操作，但是要使用reset重置一下变更才行。
 
@@ -670,13 +671,13 @@ git checkout的作用是检出，如果是文件的话，会放弃对文件的�
 
 在使用git merge dev将其合并
 
-​![](https://github.com/siyuan/hexo/202303230852656.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937025.png)​
 
 这里需要说一点，如果你在任何分支下创建文件，没有提交到仓库，那么它在所有仓库都是可见的，比如你在分支dev中创建了一个文件，没有使用git add和git commit提交，此时你切换到master，这个文件依旧存在的，因为你创建的文件在工作目录中，你切换仓库时git只会更新跟仓库有关的文件，无关的文件依然存放在工作区。
 
 同时我们可以看到历史版本中有分支提交的历史
 
-​![](https://github.com/siyuan/hexo/202303230852902.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937958.png)​
 
 ## git查看分支：git branch -a
 
@@ -746,47 +747,47 @@ Enter same passphrase again：
 
 生成之后你就会看到这样的界面:
 
-​![](https://github.com/siyuan/hexo/202303230852432.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937273.png)​
 
 生成的ssh文件如果不使用-f指定的话会生成在用户目录下的.ssh目录中，.ssh是隐藏文件，可以使用ls -ah看到，使用cd ~进入用户主目录，然后cd进入到.ssh目录中可以看到文件
 
-​![](https://raw.githubusercontent.com/Chenm4/ImageOnline/master/siyuan/hexo/202303230847711.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937479.png)​
 
 id_rsa是私匙，id_rsa.pub是公匙，id_rsa不能告诉任何人，只有公钥可以，ssh采用的是非对称加密。
 
 接着在github上添加你的公钥
 
-​![](https://github.com/siyuan/hexo/202303230852143.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944913.png)​
 
-​![](https://github.com/siyuan/hexo/202303230852771.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936492.png)​
 
 最后在输入你的登录密码就可以了
 
-​![](https://github.com/siyuan/hexo/202303230852268.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937543.png)​
 
 这样ssh就添加成功了~
 
-​![](https://github.com/siyuan/hexo/202303230853206.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937375.png)​
 
 你可以添加如很多个ssh，比如你有多台电脑，在每个电脑上都配置ssh然后添加进来就可以了，git需要这个是要确定你是主人，确定是主人的机器推送的才可以推送到仓库中，但是你可以创建公开仓库，别人只能拉取不能推送到这个仓库中，你可以给其它人权限。
 
 找到你要开放的仓库，选择Manage access然后使用invite a cikkaborator添加成员就可以了。
 
-​![](https://github.com/siyuan/hexo/202303230853172.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937208.png)​
 
 ## github上创建仓库
 
 我们可以在github上创建一个仓库
 
-​![](https://github.com/siyuan/hexo/202303230853504.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937021.png)​
 
 创建时记得选上readme文件，因为这个文件是github上的md文件，用来显示项目简介的，建议选上，日后我会教大家如何去写md文件，或者可以去使用一些在线的md文件生成网站也可以。
 
-​![](https://github.com/siyuan/hexo/202303230853199.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937378.png)​
 
 创建完成之后就是这个样子的
 
-​![](https://github.com/siyuan/hexo/202303230853701.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230938372.png)​
 
 什么也没有，只有一个readme文件
 
@@ -796,7 +797,7 @@ id_rsa是私匙，id_rsa.pub是公匙，id_rsa不能告诉任何人，只有公�
 
 首先选择仓库的code找到github生成的远程仓库链接
 
-​![](https://github.com/siyuan/hexo/202303230853170.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230936275.png)​
 
 然后关联
 
@@ -810,7 +811,7 @@ git remote add origin git@github.com:beiszhihao/test.git
 git push -u origin master
 ```
 
-​![](https://github.com/siyuan/hexo/202303230853181.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230937740.png)​
 
 这里我来解释一下
 
@@ -834,21 +835,21 @@ Warning: Permanently added 'github.com,13.229.188.59' (RSA) to the list of known
 
 注意第一次的时候加上-u就可以了，因为我们本地其它可能有很多分支也提交上去，以后只提交最新代码就可以了git push origin master，不需要在提交其它分支
 
-​![](https://github.com/siyuan/hexo/202303230853154.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230938587.png)​
 
 这个时候你可以在github上看到有提交记录
 
-​![](https://github.com/siyuan/hexo/202303230853773.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230938422.png)​
 
 但是什么都没有，因为这个分支是main，我们提交的是master
 
 选中它然后切换到master
 
-​![](https://github.com/siyuan/hexo/202303230853971.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944818.png)​
 
 默认是没有master的，这是我们新添加的分支
 
-​![](https://github.com/siyuan/hexo/202303230853927.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944906.png)​
 
 看到有文件了。
 
@@ -862,19 +863,19 @@ github上已经默认是main作为主仓库了，这个原因是因为种族运�
 
 使用git clone会自动帮我们初始化
 
-​![](https://github.com/siyuan/hexo/202303230853886.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944338.png)​
 
 鉴于刚刚的，我们上传的代码在远程仓库中有一个默认的main和master，由于我们最初上传的分支是master，所以github给我们创建了一个新的分支叫master，并没有关联到main中，我们拉取时，默认拉取的是main分支
 
 所以我们可以使用**git clone -b 分支名 仓库地址**  来指定分支
 
-​![](https://github.com/siyuan/hexo/202303230853814.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230946032.png)​
 
 ## github提交本地仓库到远程仓库：git add、git commit、git push
 
 我们修改了master上的分支代码，然后使用git add提交到缓存区，在使用commit提交到本地仓库，在使用push推送到远程就可以了，非常简单，命令都是我们学过的
 
-​![](https://github.com/siyuan/hexo/202303230853502.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230946366.png)​
 
 ## git修改分支名称：git branch
 
@@ -886,7 +887,7 @@ git branch -m 分支名 新的分支名
 
 在你当前工作区修改了文件或者其它功能时，你想要切换或者创建到其它分区是不可能的，如：
 
-​![](https://github.com/siyuan/hexo/202303230853827.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230946612.png)​
 
 我们分支修改了内容，想要切换到其它分区git会终止你这样操作，为的是防止丢失当前工作区内容。
 
@@ -904,7 +905,7 @@ git stash list
 
 那么此时我们就可以切换到其它分支了
 
-​![](https://github.com/siyuan/hexo/202303230853622.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945311.png)​
 
 当在别的分支做完事情之后，在切换回刚刚的分支，然后在刚刚的分支中将状态恢复
 
@@ -912,7 +913,7 @@ git stash list
 git stash pop
 ```
 
-​![](https://github.com/siyuan/hexo/202303230853722.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230946847.png)​
 
 一般情况下，我们在修改代码时，突然来了一个新的需求，让我们先去做这个需求，但是此时我们正在写的代码还没有完成，是不可以提交的，所以我们先使用git stash保存当前工作状态，在拉取一个分支去这个分支里面干活，干完活之后回到之前的分支，在将工作内容恢复出来继续干活
 
@@ -956,7 +957,7 @@ git会检查master做了哪些修改，然后同步到我们的分支上，此�
  git remote show origin
 ```
 
-​![](https://github.com/siyuan/hexo/202303230854334.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944515.png)​
 
 如果在里面没有看到删除后的分支就代表这个分支在远程已经被删除了。
 
@@ -972,13 +973,13 @@ git会检查master做了哪些修改，然后同步到我们的分支上，此�
 git merge master --allow-unrelated-histories
 ```
 
-​![](https://github.com/siyuan/hexo/202303230854065.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944685.png)​
 
 ## git拉取远程所有分支：git fetch
 
 当我们在本地进行开发时，有时会发现有些分支看不见
 
-​![](https://github.com/siyuan/hexo/202303230853840.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230946735.png)​
 
 可以使用git fetch把远程全部分支拉取下来，同时也包括这些分支的仓库版本，log日志等，这个操作不会进行合并。
 
@@ -988,7 +989,7 @@ git fetch
 
 拉取后结果如下：
 
-​![](https://github.com/siyuan/hexo/202303230853531.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945870.png)​
 
 也可以拉取指定分支的最新内容：
 
@@ -1047,7 +1048,7 @@ git submodule update
 
 ## git查看不同分支的文件差异：git diff
 
-​![](https://github.com/siyuan/hexo/202303230853410.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230946780.png)​
 
 ## git查看仓库信息：git remote
 
@@ -1059,7 +1060,7 @@ git remote
 
 使用remote -v可以查看更详细的权限信息
 
-​![](https://github.com/siyuan/hexo/202303230853289.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945916.png)​
 
 fetch代表可以拉取仓库，push代表可以推送。
 
@@ -1071,7 +1072,7 @@ git查看日志简洁方法：git log
 git log --graph --pretty=oneline --abbrev-commit
 ```
 
-​![](https://github.com/siyuan/hexo/202303230854867.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230944815.png)​
 
 注意前面的字符串是有效的，你可以用它来切换版本或者合并分支。
 
@@ -1175,7 +1176,7 @@ sudo git init --bare txt.git
 
 很遗憾它报了个错
 
-​![](https://github.com/siyuan/hexo/202303230853188.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945350.png)​
 
 这是因为我们新建的用户没有sudo权限，我们执行如下命令
 
@@ -1191,7 +1192,7 @@ git  ALL=(ALL:ALL) ALL
 
 这样我们就可以执行sudo权限了，如果提示没有权限，则切回到可以执行sudo的用户中，执行上面的操作，在切回git。
 
-​![](https://github.com/siyuan/hexo/202303230853354.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945231.png)​
 
 我们在改变一下文件所属用户与组，让这个文件属于当前用户与组
 
@@ -1223,7 +1224,7 @@ git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
 
 好了现在可以让你的小伙伴们来克隆txt.git这个仓库了。
 
-​![](https://github.com/siyuan/hexo/202303230853225.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945284.png)​
 
 注意，你的服务器需要安装ssh服务
 
@@ -1235,7 +1236,7 @@ sudo apt install openssh-server
 
 不然的话可能出现如下状况，ssh无法解析主机名：
 
-​![](https://github.com/siyuan/hexo/202303230853302.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945298.png)​
 
 ## Git问题总汇
 
@@ -1247,6 +1248,19 @@ sudo apt install openssh-server
 
   * 写好解释后，按键盘左上角"Esc"键，退出“插入”模式；
   * 退出的话，按键盘上的"**:wq&quot;；**注意是**冒号+wq**,按回车键即可。
+* push之前忘记pull
+
+  * ```js
+    $ git push
+    To github.com:Chenm4/ImageOnline.git
+     ! [rejected]        master -> master (fetch first)
+    error: failed to push some refs to 'github.com:Chenm4/ImageOnline.git'
+    hint: Updates were rejected because the remote contains work that you do
+    hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: (e.g., 'git pull ...') before pushing again.
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+    ```
 
 # git命令总结
 
@@ -1478,7 +1492,7 @@ sudo apt install openssh-server
 
 这里我整理了一份word文档
 
-​![](https://raw.githubusercontent.com/Chenm4/ImageOnline/master/siyuan/hexo/202303222226918.png)​
+​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230945019.png)​
 
 有需要的同学可以在这里下载:[https://download.csdn.net/download/bjbz_cxy/14004358](https://download.csdn.net/download/bjbz_cxy/14004358 "https://download.csdn.net/download/bjbz_cxy/14004358")
 
