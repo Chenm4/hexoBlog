@@ -1,6 +1,6 @@
 ---
 title: Git命令行
-updated: '2023-03-23 09:05:31'
+updated: '2023-03-23 09:11:19'
 excerpt: >-
   [https_blogcsdnnetbjbz_cxyarticledetails](https_blogcsdnnetbjbz_cxyarticledetails?ops_request_misc=%b%request%fid%%a%%%c%scm%%a%%%dspm=)目录前言发展过程集中式与分布式的区别debianlinux安装git配置git环境_gitconfigglobal创建本地空仓库_gitinit新建文件添加到本地仓库_gitaddgitcommitm改写提交_gitcommitamend
 tags:
@@ -16,7 +16,7 @@ comments: true
 
 * [https://blog.csdn.net/bjbz_cxy/article/details/](https://blog.csdn.net/bjbz_cxy/article/details/116703787?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167946854916800188539900%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167946854916800188539900&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-116703787-null-null.142^v76^control,201^v4^add_ask,239^v2^insert_chatgpt&utm_term=git&spm=1018.2226.3001.4187)
 * 目录前言发展过程集中式与分布式的区别Debian/Linux安装Git配置git环境：git config --global创建本地空仓库：git init新建文件添加到本地仓库：git add、git commit -m改写提交：git commit --amend查看历史提交日志：git log回滚代码仓库：git reset --hard查看提交之后文件是否做了改动：git status工作区与缓存区修改缓存区内容：git add、git co.
-* 2023-03-22 19:34:29​![](https://github.com/Chenm4/ImageOnline/blob/master//siyuan/hexo/202303230905038.png)​
+* 2023-03-22 19:34:29​![](https://github.com/Chenm4/ImageOnline/raw/master//siyuan/hexo/202303230911776.png)​
 
 ---
 
