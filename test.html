@@ -1,101 +1,36 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<style>
-  .aplayer .aplayer-lrc {
-    height: 35px;
-  }
-  .aplayer .aplayer-lrc p{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px !important;
-  }
-  .aplayer .aplayer-lrc p.aplayer-lrc-current{
-    color: #FF1493;
-  }
-  /*-66是缩小的大小*/
-  .aplayer.aplayer-narrow .aplayer-body{
-    left: -5px !important;
-  }
-  .aplayer.aplayer-fixed .aplayer-lrc {
-    display: none;
-  }
-  .aplayer .aplayer-lrc.aplayer-lrc-hide {
-      display:none !important;
-  }
-  .aplayer.aplayer-fixed .lrc-show {
-    display: block;
-    background: rgba(255, 255, 255, 0.8);
-  }
-</style>
+<article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <div class="post-entry">
+        <div class="feature">
+            <a href="<%- url_for(post.path) %>">
+                <div class="overlay">
+                    <i class="iconfont icon-text">
+                    </i>
+                </div>
+                <img width="150" height="150" src="<%= post.photos[0] %>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+            </a>
+        </div>
+        <h1 class="entry-title">
+            <a href="<%- url_for(post.path) %>">
+                <%= post.title %></a>
+        </h1>
+        <div class="p-time">
+            <i class="iconfont icon-time">
+            </i>
+            <%= date(post.date, 'YYYY-M-D') %></div>
+        <p>
+            <%= post.description %></p>
+        <footer class="entry-footer">
+            <div class="post-more">
+                <a href="<%- url_for(post.path) %>">
+                    <i class="iconfont icon-caidan">
+                    </i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <hr>
+</article>
 
-<meting-js
-<% for (i in theme.aplayer) {%>
-    <%- i %>="<%- theme.aplayer[i] %>"
-<% } %>
-</meting-js>
-<script>
-  $(function(){
-    $('body').on('click', '.aplayer', function(){
-      if($('.aplayer-button').hasClass('aplayer-play')) {
-        $('.aplayer-lrc').removeClass('lrc-show');
-      } else {
-        $('.aplayer-lrc').addClass('lrc-show');
-      }
-    })
-  });
-</script>
-
-
-
-
-<script>
-  (function () {
-    var a_idx = 0;
-    window.onclick = function (event) {
-      var a = ["❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤",
-              "❤敬业❤", "❤诚信❤", "❤友善❤","❤陈某❤","❤最帅❤"];
-
-      var heart = document.createElement("b"); //创建b元素
-      heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
-
-      document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
-      a_idx = (a_idx + 1) % a.length;
-      heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
-
-      var f = 16, // 字体大小
-              x = event.clientX - f * 2, // 横坐标
-              y = event.clientY - f / 2, // 纵坐标
-              c = randomColor(), // 随机颜色
-              a = 1, // 透明度
-              s = 1.2; // 放大缩小
-
-      var timer = setInterval(function () { //添加定时器    setInterval是重复调用一个函数或执行一个代码片段
-        if (a <= 0) {
-          document.body.removeChild(heart);
-          clearInterval(timer);
-        } else {
-          heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
-                  c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
-                  s + ");";
-          y--;
-          a -= 0.016;
-          s += 0.006;
-        }
-      }, 15)
-    }
-    // 随机颜色
-    function randomColor() {
-      return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
-              .random() * 255)) + ")";
-
-    }
-  }());
-</script>
-
-
-<!--<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>-->
 <script>
     /**
      * Copyright (c) 2016 hustcc
@@ -123,7 +58,7 @@
                     z: n(i, "zIndex", -1),
                     o: n(i, "opacity", .99),
                     c: n(i, "color", (color)),
-                    n: n(i, "count", 150)
+                    n: n(i, "count", 299)
                 }
             }
             function randomColor() {
@@ -195,4 +130,3 @@
                     100)
         } ();
 </script>
-

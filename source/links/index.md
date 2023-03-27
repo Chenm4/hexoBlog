@@ -13,14 +13,14 @@ links:
     - url: https://zhaoshengmu.top
       img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png
       name: 博客
-      desc: 
-    - url: https://shino.cc/fgvf
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: Google
-      desc: Google 镜像
+      desc:
   - group: 小伙伴们
     desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
     items:
+    - url:  www.hexo.terwer.space
+      img: https://hexo.terwer.space/img/photo.svg
+      name: Terwer
+      desc: 就是这个大佬写的hexo博客自动发布工具！
     - url:  www.orangesummerr.com
       img: https://img.orangesummerr.com/blog/2022/08/08/62f01494af9fb.jpg
       name: 橘夏

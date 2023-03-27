@@ -9,6 +9,7 @@ categories:
   - _posts
 permalink: /post/git-command-line-z1njib4.html
 comments: true
+photos:https://images.pexels.com/photos/1227497/pexels-photo-1227497.jpeg
 ---
 
 ---
