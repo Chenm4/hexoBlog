@@ -20,7 +20,7 @@
     "hexo-generator-feed": "^1.2.2",
     "hexo-generator-index": "^0.2.1",
     "hexo-generator-json-content": "^2.2.0",
-    "hexo-generator-tag": "^0.2.0",
+    "hexo-generator-tag": "^2.0.0",
     "hexo-git-backup": "^0.1.2",
     "hexo-helper-live2d": "^3.1.1",
     "hexo-renderer-ejs": "^0.3.1",
