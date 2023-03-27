@@ -126,7 +126,7 @@ serverURLs: https://miyruwe8.api.lncldglobal.com
 # Waline
 waline:
   enable: true
-  serverURL: https://zhaoshengmu.top/#服务端地址
+  serverURL: https://du1lahgi.api.lncldglobal.com #服务端地址
   visitor: true #统计阅读量
   comment_count: true #统计评论数
   avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
