@@ -116,7 +116,7 @@ aplayer:
   mutex: true
 
 # Valine
-valine: true
+valine: false
 #v_appId: MIyrUwE8znnXEAPY3V0CA3xX-MdYXbMMI
 #v_appKey: BjqrvOtagtUwwojIAxcKSmFP
 v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
@@ -125,8 +125,8 @@ serverURLs: https://miyruwe8.api.lncldglobal.com
 
 # Waline
 waline:
-  enable: false
-  serverURL: https://chenm4-github-io-test-luqdt4is6-chenm4.vercel.app/#服务端地址
+  enable: true
+  serverURL: https://chenm4-github-io-test-8eqmxbpwe-chenm4.vercel.app/#服务端地址
   visitor: true #统计阅读量
   comment_count: true #统计评论数
   avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
