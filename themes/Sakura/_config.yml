@@ -117,8 +117,6 @@ aplayer:
 
 # Valine
 valine: false
-#v_appId: MIyrUwE8znnXEAPY3V0CA3xX-MdYXbMMI
-#v_appKey: BjqrvOtagtUwwojIAxcKSmFP
 v_appId: Staaz3FNbHAxBLecD9DFjhfu-gzGzoHsz
 v_appKey: bfvLFp8vPRNo3A3Dt11mlo4C
 serverURLs: https://miyruwe8.api.lncldglobal.com
@@ -127,7 +125,7 @@ serverURLs: https://miyruwe8.api.lncldglobal.com
 waline:
   enable: true
 #  serverURL: https://du1lahgi.api.lncldglobal.com # 服务端地址
-  serverURL: zhaoshengmu.top # 服务端地址
+  serverURL: chenm4-github-io-test-38ti.vercel.app # 服务端地址
   visitor: true #统计阅读量
   comment_count: true #统计评论数
   avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
