@@ -58,11 +58,11 @@ bg:
   - https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434096.png
   - https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061434218.png
 #  - https://s3.bmp.ovh/imgs/2022/08/05/ade048f4e0761e4d.png
-  - https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aba66bd1-03ea-482d-811b-4ea202c3baf2/d84bc247-ec07-4f51-a855-f45ec4a7f3a9.gif
+#  - https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aba66bd1-03ea-482d-811b-4ea202c3baf2/d84bc247-ec07-4f51-a855-f45ec4a7f3a9.gif
 
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass:
+bgclass: filter-grid
 
 # startdash url, title, desc img
 #startdash:
@@ -77,10 +77,10 @@ siteBuildingTime: 06/8/2022
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/Chenm4, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409435.png}
-  sina: {url: https://weibo.com/u/2144294960, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409437.png}
+  github: {url: http://github.com, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409435.png}
+  sina: {url: https://weibo.com, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409437.png}
   wangyiyun: {url: https://music.163.com/#/user/home?id=1357895709, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409438.png}
-  zhihu: {url: https://weibo.com/u/2144294960, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409439.png}
+  zhihu: {url: https://zhihu.com, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409439.png}
   email: {url: http://weibo.com/mashirozx?is_all=1, img: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb/202208061409440.svg}
 #  wechat: {url: /#, qrcode: ./hexo-theme-sakura-master/source/Image/weixin.jpg, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png}
 #  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png}
