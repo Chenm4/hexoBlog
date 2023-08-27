@@ -1,5 +1,5 @@
 ---
-title: JSP&三层架构
+title: JSP三层架构
 author: 朝生暮
 avatar: https://img-1313111331.cos.ap-nanjing.myqcloud.com/webImage/hexoWeb202208061248833.png
 authorLink: zhaoshengmu.top
