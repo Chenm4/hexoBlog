@@ -1,17 +1,3 @@
----
-title: 英语作文
-date: '2023-11-30 20:54:38'
-updated: '2023-12-05 15:46:34'
-tags:
-  - web
-  - 悦读
-categories:
-  - 转
-  - 载
-permalink: /post/english-essay-2iwtxq.html
-comments: true
-toc: true
----
 
 # 英语作文
 
@@ -212,18 +198,16 @@ toc: true
 
            <span style="font-weight: bold;" data-type="strong">As a senior student from Peking University who is exceedingly interested in cultural communication, I am writing to apply for the volunteer position in your center.</span> 
 
-           I am convinced that I am qualified for the position because first, during my college years, Ifocused all my attention on my major —Cross-cultural Exchange. It was my hard work that enabled me to accumulate adequate knowledge of cultures around the world. Second, compared with studentsof other majors, I possess richer experience in communicating with foreigners, since I have served as avolunteer for several international conferences.
+           <span style="font-weight: bold;" data-type="strong">I am convinced that I am qualified for the position because first</span>, during my college years, I focused all my attention on my major — Cross-cultural Exchange. <span style="font-weight: bold;" data-type="strong">It was my hard work that enabled me to accumulate adequate knowledge of cultures around the world.</span>  <span style="font-weight: bold;" data-type="strong">Second, compared with students of other majors</span>, I possess richer experience in communicating with foreigners, since I have served as avolunteer for several international conferences.
 
-           If I have the opportunity to be a volunteer for your organization, I will do my utmost to fulfill myduties.
+           <span style="font-weight: bold;" data-type="strong">If I have the opportunity to be a volunteer for your organization, I will do my utmost to fulfill my duties.</span>
 
                                                                                                                                                                                                                                                                         Yours sincerely,
 
                                                                                                                                                                                                                                                                                     Li Ming
 * 推荐信
 
-  * Your foreign friend Jack is planning a trip to China. He is very interested in traditional Chinese
-
-    festivals and intends to participate in relevant activities. Write an e-mail to
+  * Your foreign friend Jack is planning a trip to China. He is very interested in traditional Chinese festivals and intends to participate in relevant activities. Write an e-mail to
 
     1. recommend a Chinese festival, and
     2. give reasons for your recommendation.
@@ -238,3 +222,5 @@ toc: true
                                                                                                                                                                                                                                                                         Yours sincerely,
 
                                                                                                                                                                                                                                                                                     Li Ming
+
+‍
