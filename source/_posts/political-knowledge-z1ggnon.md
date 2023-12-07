@@ -1,11 +1,3 @@
----
-title: 政治知识点
-date: '2023-11-18 08:50:06'
-updated: '2023-11-28 09:04:57'
-permalink: /post/political-knowledge-z1ggnon.html
-comments: true
-toc: true
----
 
 # 政治知识点
 
@@ -50,10 +42,12 @@ toc: true
 
 # 2023年11月2日
 
-* > 马克思主义与中国实际的“第一次结合"是指马克思主义与中国新民主主义革命相结合,这在中国共产党成立以后,尤其是在毛泽东探索中国革命新道路的时候就开始了。 C 错误。
+* > 马克思主义与中国实际的“第一次结合"是指<span style="font-weight: bold;" data-type="strong">马克思主义与中国新民主主义革命相结合</span>,这在中国共产党成立以后,尤其是在毛泽东探索中国革命新道路的时候就开始了。 C 错误。
   >
 
-* > 1949年1月22日，李济深、沈钧儒等民主党派的领导人和著名的无党派民主人士55人联合发表《对时局的意见》。这个政治声明表明，中国各民主党派和无党派民主人士公开自愿地接受了中国共产党的领导，决心走人民革命的道路，拥护建立人民民主的新中国。D错误。1949年9月中国人民政治协商会议第一届全体会议的召开及完成创建新中国的任务，标志着中国共产党领导的多党合作和政治协商制度正式确立。C错误。
+* > 1949年1月22日，李济深、沈钧儒等民主党派的领导人和著名的无党派民主人士55人联合发表 <span style="font-weight: bold;" data-type="strong">《对时局的意见》</span> 。这个政治声明表明，<span style="font-weight: bold;" data-type="strong">中国各民主党派和无党派民主人士公开自愿地接受了中国共产党的领导</span>，决心走人民革命的道路，拥护建立人民民主的新中国。
+  >
+  > 1949年9月中国人民政治协商会议第一届全体会议的召开及完成创建新中国的任务，标志着中国共产党领导的多党合作和政治协商制度正式确立
   >
 
 * > 不同时期对富农的态度：  
@@ -104,7 +98,7 @@ toc: true
 * > 生产方式是指人们为获取物质生活资料而进行的生产活动的方式，是生产力和生产关系的统一体。
   >
 
-* > 在自然界打上人类的印记，使之成为人化的自然，但不能改变自然界的客观实在性![image](assets/image-20231104215700-rxzlrzk.png) 
+* > 在自然界打上人类的印记，使之成为人化的自然，但不能改变自然界的客观实在性![image](http://127.0.0.1:6806/assets/image-20231104215700-rxzlrzk.png) 
   >
 
 * ‍
@@ -314,7 +308,7 @@ toc: true
   >
   > <span style="font-weight: bold;" data-type="strong">②土改基本完成，即1952年年底之后国内的</span><span style="font-weight: bold;" data-type="strong">主要矛盾</span> <span style="font-weight: bold;" data-type="strong">——工人阶级和资产阶级的矛盾</span>
   >
-  > <span style="font-weight: bold;" data-type="strong">③社会主义改造完成后中国社会的</span><span style="font-weight: bold;" data-type="strong">主要矛盾</span> <span style="font-weight: bold;" data-type="strong">——人民日益增长的物质文化需要同落后的社会生产之间的矛盾</span>
+  > <span style="font-weight: bold;" data-type="strong">③社会主义改造完成后中国社会的</span><span style="font-weight: bold;" data-type="strong">主要矛盾</span> <span style="font-weight: bold;" data-type="strong">——</span> <span style="font-weight: bold;" data-type="strong">人民日益增长的物质文化需要同落后的社会生产之间的矛盾</span>
   >
   > <span style="font-weight: bold;" data-type="strong">④社会基本矛盾——生产力与生产关系的矛盾和经济基础与上层建筑的矛盾</span>
   >
@@ -677,7 +671,7 @@ toc: true
 
 # 2023年11月8日
 
-​![image](assets/image-20231108203513-giel2bo.png)​
+​![image](http://127.0.0.1:6806/assets/image-20231108203513-giel2bo.png)​
 
 ‍
 
@@ -1145,8 +1139,6 @@ toc: true
     >
     > 公有制是主体，量大
     >
-
-‍
 
 * 按劳分配本质就是按生产要素分配
 
@@ -1777,7 +1769,7 @@ toc: true
 * > 政党第一个字就是政 是首位是第一属性 所以是根和魂
   >
 
-​![quicker_a44f7f4f-3cf2-4715-ac1a-fef6fc1af57e-20231126193524-j1wn9b0](assets/ScreenShot/quicker_a44f7f4f-3cf2-4715-ac1a-fef6fc1af57e-20231126193524-j1wn9b0.png)
+​![quicker_a44f7f4f-3cf2-4715-ac1a-fef6fc1af57e-20231126193524-j1wn9b0](http://127.0.0.1:6806/assets/ScreenShot/quicker_a44f7f4f-3cf2-4715-ac1a-fef6fc1af57e-20231126193524-j1wn9b0.png)
 
 # 2023年11月26日
 
@@ -2012,8 +2004,8 @@ toc: true
 
 ## 肖八3
 
-* 周边外交理念：亲诚惠容  
-  周边外交方针：以邻为善，以邻为伴
+* **周边外交理念：亲诚惠容
+  周边外交方针：以邻为善，以邻为伴**
 
   求同存异、相互尊重、互学互鉴是中国<span style="font-weight: bold;" data-type="strong">构建新型政党关系的理念</span>
 
@@ -2870,7 +2862,7 @@ toc: true
 * > 在资本主义条件下，劳动是否是生产性的，并<span style="font-weight: bold;" data-type="strong">不取决于劳动是生产物质产品还是提供服务</span>，而<span style="font-weight: bold;" data-type="strong">取决于劳动能否为资本家带来剩余价值</span>，<span style="font-weight: bold;" data-type="strong">只有创造剩余价值的劳动才是生产性劳动。</span> 
   >
 
-* ​![image](assets/image-20231128220815-junaunu.png)​
+* ​![image](http://127.0.0.1:6806/assets/image-20231128220815-junaunu.png)​
 
   * 绝对剩余价值
     <span style="font-weight: bold;" data-type="strong">==剩余价值率=剩余劳动时间/必要劳动时间==</span>  
@@ -3924,7 +3916,7 @@ toc: true
 
 * 不变资本是以生产资料形态存在的资本。生产资料的价值<span style="font-weight: bold;" data-type="strong">通过工人的具体劳动被转移到新产品</span>中，其转移的价值量不会大于它原有的价值量。
 
-* ​![image](assets/image-20231201212535-dx3l1c3.png)​
+* ​![image](http://127.0.0.1:6806/assets/image-20231201212535-dx3l1c3.png)​
 
   * 生产成本为：不变资本200万元+可变资本100万元=300万元；平均利润为：<span style="font-weight: bold;" data-type="strong">生产成本300万元x平均利润率20%=60万元</span>。根据公式：<span style="font-weight: bold;" data-type="strong">垄断价格=成本+平均利润+垄断利润 </span> ，<span style="font-weight: bold;" data-type="strong">垄断价格=300万元+60万元+240万元=600万元</span>。生产了100辆汽车，则每辆汽车的销售价格为600万元/100=6万元、因此，<span style="font-weight: bold;" data-type="strong">正确答案是 D.</span> ​
 
@@ -4445,11 +4437,11 @@ toc: true
 
 * 统一战线
 
-  本质要求～大团结大联合，本质是团结联合而不是什么批评
+  * 本质要求～大团结大联合，本质是团结联合而不是什么批评
 
-  关键～求同存异，发扬团结-批评-团结
+    关键～求同存异，发扬团结-批评-团结
 
-  <span style="font-weight: bold;" data-type="strong">最鲜明特征～党的领导</span>
+    <span style="font-weight: bold;" data-type="strong">最鲜明特征～党的领导</span>
 
 * 把中国卷入资本主义的世界市场是过程
 
@@ -4472,13 +4464,13 @@ toc: true
 
   建国  政协                 （建国协商各个党派）
 
-* “公义胜私欲”是中华传统美德的<span style="font-weight: bold;" data-type="strong">根本要求</span>
+* “公义胜私欲”是中华传统美德的<span style="font-weight: bold;" data-type="strong">根本要求</span>，因为过去封建王朝的时候希望都想着国家和王朝
 
-* 党 的领导是中国特色社会主义法治之魂，是我们的法治同西方资本主义国家的法治最大的区别
+* 党的领导是中国特色社会主义法治之魂，是我们的法治同西方资本主义国家的法治最大的区别
 
-* 习近平指出， 我们维护国际公平正义，反对霸权霸道霸凌行径，扩大本组织“朋友圈”,构建起对话不 对抗、结伴不结盟的伙伴关系
+* 习近平指出， 我们维护国际公平正义，反对霸权霸道霸凌行径，扩大本组织“朋友圈”,<span style="font-weight: bold;" data-type="strong">构建起对话不对抗、结伴不结盟</span>的伙伴关系
 
-* 可以这样理解，事物变化有好有坏，发展的趋势是向前的。所以变化的实质不会是发展
+* 可以这样理解，<span style="font-weight: bold;" data-type="strong">事物变化有好有坏，发展的趋势是向前的</span>。所以<span style="font-weight: bold;" data-type="strong">变化的实质不会是发展</span>
 
 * 无论怎么发展，人类的生存都依赖于自然界。
 
@@ -4528,7 +4520,7 @@ toc: true
 
   开滦五矿～未完全胜利（开胃）
 
-* 长征精神是爱国主义为核心民族精神最高体现
+* 长征精神是<span style="font-weight: bold;" data-type="strong">爱国主义为核心民族精神最高体现</span>
 
 * 真理标准问题的讨论，只是为党重新确立思想路线作了思想理论准备，而<span style="font-weight: bold;" data-type="strong">党的十一届三中全会才重新确立了党的思想路线</span>。
 
@@ -4568,19 +4560,19 @@ toc: true
     <span style="font-weight: bold;" data-type="strong">助记：甲流</span>
   * 流通手段：一手交钱 一手交货
 
-    支付手段：延期付款or债务
+    <span style="font-weight: bold;" data-type="strong">支</span>付手段：延<span style="font-weight: bold;" data-type="strong">期</span>付款or债务
 
     价值：用货币来衡量
 
-* 科学发展观最鲜明的精神实质是解放思想、实事求是、与时俱进、求真务实。
+* 科学发展观最鲜明的精神实质是解放思想（邓）、实事求是（邓）、与时俱进(江)、求真务实（胡）。
 
-* 改革开放开始后的一个很长时期内，我国经济体制改革的核心问题是如何正确认识和处理计划与市场的关系。
+* 改革开放开始后的一个很长时期内，我国经济体制改革的<span style="font-weight: bold;" data-type="strong">核心问题是如何正确认识和处理计划与市场的关系</span>。
 
-* 调查研究是获得真知灼见的源头活水，是贯彻群众路线的有效途径。
+* 调查研究是获得真知灼见的源头活水，是贯彻群众路线的<span style="font-weight: bold;" data-type="strong">有效途径</span>。
 
 * 发展基层民主，是实现人民有效政治参与的重要渠道，<span style="font-weight: bold;" data-type="strong">是人民当家作主的有效途径，是社会主义民主最广泛的实践。</span>
 
-* 改革的实质和目标是要从根本上改变束缚我国生产力发展的经济体制
+* 改革的实质和目标是要<span style="font-weight: bold;" data-type="strong">从根本上改变束缚我国生产力发展的经济体制</span>
 
 * 创新不是最根本的，我们也有创新
 
@@ -4590,11 +4582,9 @@ toc: true
 
 * 李大钊：
 
-  《法俄革命之比较观》，向中国人民<span style="font-weight: bold;" data-type="strong">第一次正确地阐述了十月革命的性质</span>。
-
-  《庶民的胜利》《布尔什维主义的胜利》两篇文章，深刻揭露了第一次世界大战的本质，<span style="font-weight: bold;" data-type="strong">歌颂了十月革命和布尔什维主义的胜利</span>。
-
-  《我的马克思主义观》一文，对马克思的唯物史观、剩余价值学说和阶级斗争理论作了比较系统的介绍。
+  * 《法俄革命之比较观》，向中国人民<span style="font-weight: bold;" data-type="strong">第一次正确地阐述了十月革命的性质</span>。
+  * 《庶民的胜利》《布尔什维主义的胜利》两篇文章，深刻揭露了第一次世界大战的本质，<span style="font-weight: bold;" data-type="strong">歌颂了十月革命和布尔什维主义的胜利</span>。
+  * 《我的马克思主义观》一文，对马克思的唯物史观、剩余价值学说和阶级斗争理论作了比较系统的介绍。
 
 * 中共扩大的六届七中全会原则通过了 《关于若干历史问题的决议》(简称《决议》,这一《决议》使全党特别是党的<span style="font-weight: bold;" data-type="strong">高级干部对中国革命基本问题的认识达到了一致</span>。
 
@@ -4602,17 +4592,17 @@ toc: true
 
 * 在整个理想体系中，<span style="font-weight: bold;" data-type="strong">社会理想是最根本、最重要的，而个人理想则从属于社会理想。</span>
 
-* 最根本的是社会理想（绘本），实现共产主义是我们的远大理想
+* 最<span style="font-weight: bold;" data-type="strong">根本</span>的是<span style="font-weight: bold;" data-type="strong">社会理想</span>（绘本），实现<span style="font-weight: bold;" data-type="strong">共产主义</span>是我们的<span style="font-weight: bold;" data-type="strong">远大理想</span>
 
 * <span style="font-weight: bold;" data-type="strong">权利保障                  （前线条例践行死罪）</span>
 
-  宪法保障：前提
+  <span style="font-weight: bold;" data-type="strong">宪</span>法保障：<span style="font-weight: bold;" data-type="strong">前</span>提
 
-  立法保障：重要条件
+  <span style="font-weight: bold;" data-type="strong">立</span>法保障：重要<span style="font-weight: bold;" data-type="strong">条</span>件
 
-  行政保障：关键
+  <span style="font-weight: bold;" data-type="strong">行</span>政保障：关<span style="font-weight: bold;" data-type="strong">键</span>
 
-  司法保障：最后防线
+  <span style="font-weight: bold;" data-type="strong">司</span>法保障：<span style="font-weight: bold;" data-type="strong">最</span>后防线
 * <span style="font-weight: bold;" data-type="strong">全面依法治国            （李前只管四种手机）</span>
 
   科学立法：前提
@@ -4645,51 +4635,983 @@ toc: true
 
 * 生态：
 
-  国家<span style="font-weight: bold;" data-type="strong">公</span>园，<span style="font-weight: bold;" data-type="strong">主</span>体（主公）
+  * 国家<span style="font-weight: bold;" data-type="strong">公</span>园，<span style="font-weight: bold;" data-type="strong">主</span>体（主公）
 
-  <span style="font-weight: bold;" data-type="strong">自</span>然保护区，核<span style="font-weight: bold;" data-type="strong">心</span>（自信）
+    <span style="font-weight: bold;" data-type="strong">自</span>然保护区，核<span style="font-weight: bold;" data-type="strong">心</span>（自信）
 
-  生态保护红线，生命线、底线
+    生态保护红线，生命线、底线
 
-  山林湖草沙，共同体
-
-* 人工智能不可能取代或超越人类意识，是因为：
-
-  * 第一， 人类意识是知情意的统一体，而人工智能只是对人类的理性智能的模拟和扩展，不具备 情感、信念、意志等人类意识形式；
-  * 第二，社会性是人的意识所固有的本质属性，而人 工智能不可能真正具备人类的社会属性；
-  * 第三，人类的自然语言是思维的物质外壳和意识的现实形式，而人工智能难以完全具备理解自然语言真实意义的能力；
-  * 第四，人工智能能够获得人类意识中可以化约为数字信号的内容，但人脑中总有许多东西是无法被化约的。
+    山林湖草沙，共同体
 
 * <span style="font-weight: bold;" data-type="strong">生产力是社会进步的根本内容，是衡量社会发展进步的根本尺度。</span>
 
 * 单个资本家追求<span style="font-weight: bold;" data-type="strong">超额剩余价值</span>赚的更多了，别的资本家纷纷模仿改进提高劳动生产率，这样就使得整个资本家阶级<span style="font-weight: bold;" data-type="strong">普遍获得剩余价值。</span>
 
-  而在全社会的劳动生产率提高后，生产单位产品的必要劳动时间减少，所以单位产品所包含的价值减少，所以生活资料的价值下降，而补偿劳动力价值的必要社会劳动时间减少
+  而在全社会的劳动生产率提高后，生产单位产品的必要劳动时间减少，所以单位产品所包含的价值减少，所以生活资料的价值下降，而<span style="font-weight: bold;" data-type="strong">补偿劳动力价值的必要社会劳动时间减少</span>
 
-* 改进技术后：(资本家想赚更多钱肯定要让剩余价值最大化啊！)
+* 我国<span style="font-weight: bold;" data-type="strong">经济发展和经济工作的</span>​<span style="font-weight: bold;" data-type="strong">主线</span><span style="font-weight: bold;" data-type="strong">是供给侧结构性改革，主题才是高质量发展</span>。
 
-  <span style="font-weight: bold;" data-type="strong">补偿劳动力价值的必要劳动时间缩短，而剩余劳动时间相对延长！！！</span>
-
-* 我国<span style="font-weight: bold;" data-type="strong">经济发展和经济工作的主线是供给侧结构性改革，主题才是高质量发展</span>。
-
-* 增进民生福祉
+* <span style="font-weight: bold;" data-type="strong">增进民生福祉</span>
 
   1⃣️坚持立党为公、执政为民的本质要求
 
-  2⃣️社会主义生产的根本目的
+  2⃣️社会主义生产的<span style="font-weight: bold;" data-type="strong">根本目的</span>
 
-  3⃣️全面建设社会主义现代化国家的应有之义
+  3⃣️全面建设社会主义现代化国家的应有之义(正面的都可以往上写）
 
   中国共产党的<span style="font-weight: bold;" data-type="strong">中心任务是现代化 民族复兴</span>
 
-* 19 世纪70至80年代，列强从侵占中国周边邻国发展到蚕食中国边疆地区，使中国陷入“边疆危机”。
+* 党的十三大提出了党在社会主义初级阶段的基本路线，即“一个中心、两个基本点”。这集中体现了我国社会主义现代化建设的战略布局
 
-* “没有调查，没有发言权”是毛泽东在《反对本本主义》一文中提出的。
+* 过渡时期的总路线体现了社会主义工业化和社会主义改造的紧密结合，<span style="font-weight: bold;" data-type="strong">体现了</span>​<span style="font-weight: bold;" data-type="strong">解放生产力与发展生产力、变革生产关系与发展生产力</span><span style="font-weight: bold;" data-type="strong">的有机统一。</span>
 
-* 党的十三大提出了党在社会主义初级阶段的基本路线，即“一个中心、两个基本 点”。这集中体现了我国社会主义现代化建设的战略布局
-
-* 过渡时期的总路线体现了社会主义工业化和社 会主义改造的紧密结合，<span style="font-weight: bold;" data-type="strong">体现了解放生产力与发展生产力、变革生产关系与发展生产力的有机统一。</span>
-
-* 马克思主义中国化时代化的理论创新成果是毛泽东思想、中国特色社会主义理论体系和习近平新时代中国特色社会主义思想，而不是精神谱系。
+* 马克思主义中国化时代化的<span style="font-weight: bold;" data-type="strong">理论创新成果</span>是<span style="font-weight: bold;" data-type="strong">毛泽东思想、中国特色社会主义理论体系和习近平新时代中国特色社会主义思想</span>，而不是精神谱系。
 
 * 辩证唯物主义和唯心和旧唯物的<span style="font-weight: bold;" data-type="strong">根本区别在于实践</span>
+
+## 徐涛卷3
+
+* 题干中的“在中国得到充分检验……在中国得到充分贯彻……在中国得到充分彰显”都是在讲<span style="font-weight: bold;" data-type="strong">马克思主义在当代的价值问题</span>，而<span style="font-weight: bold;" data-type="strong">不是讲社会根源、基本立场和科学内涵</span>。
+
+* 一方面，物质运动离不开时间和空间物质运动总是在一定的时间和空间中进行；另一方面，时间和空间也不能脱离物质运动没有离开物质运动的“纯粹的”时间和空间。
+
+* 社会主义的<span style="font-weight: bold;" data-type="strong">本质是解放生产力，发展生产力，消灭剥削，消除两极分化，最终达到共同富裕</span>。  选项 C, 中国特色社会主义最本质的特征是中国共产党的领导。  选项 D, 社会主义的<span style="font-weight: bold;" data-type="strong">根本任务是发展生产力。</span>
+
+* <span style="font-weight: bold;" data-type="strong">全过程人民民主是社会主义民主政治的</span>​<span style="font-weight: bold;" data-type="strong">本质属性</span>
+
+* 习近平在江苏考察时强调“中国式现代化关键在科技现代化”
+
+* 建设现代化国家，教育是根本，科技是关键，人才是基础
+
+* 新教材中指出：“中国特色大国外交牢牢把握服务民族复兴、促进人类进步这条主线。”
+
+* “为中国人民谋幸福、为中华民族谋复兴”是中国共产党人的初心和使命。
+
+* 坚持走<span style="font-weight: bold;" data-type="strong">和平发展道路</span>是新时代中国外交的<span style="font-weight: bold;" data-type="strong">基本原则</span>。
+
+* 推动构建<span style="font-weight: bold;" data-type="strong">人类命运共同体</span>是新时代对外工作的<span style="font-weight: bold;" data-type="strong">总目标</span>
+
+* 三湾改编是建设<span style="font-weight: bold;" data-type="strong">无产阶级领导的新型人民军队的重要开端</span>。
+
+  * 选项 A,古田会议决议是中国共产党和红军建设的纲领性文献。
+  * 选项 B,南昌起义是中国共产党创建人民军队和武装夺取政权的开端。
+  * 选项 D,八七会议是由大革命失败到土地革命战争兴起的历史性转变。
+
+* 新民主主义社会开始向社会主义社会过渡指的是<span style="font-weight: bold;" data-type="strong">社会主义改造</span>
+
+* <span style="font-weight: bold;" data-type="strong">民族民主革命任务的完成指的是土地改革的完成</span>
+
+* 东北振兴：
+
+  首要，粮食安全
+
+  方向，产业升级
+
+  关键，科技创新
+
+  根基，实体经济
+
+* 历史人物有促进有阻碍，<span style="font-weight: bold;" data-type="strong">杰出人物是促进</span>
+
+* 商品是劳动产品，生产商品的劳动可区分为具体劳动和抽象劳动。（雇佣工人的劳动是剩余和必要劳动）
+
+* 坚持党作为最高政治领导力量，是国家和民族兴旺发达的根本所在，是全国各族人民幸福安康的根本所在，对于实现中华民族伟大复兴具有根本性意义。
+
+* 全面深化改革开放是新时代坚持和发展中国特色社会主义的根本动力。<span style="font-weight: bold;" data-type="strong">一般动力都和生产力 经济有点关系</span>
+
+* 建设教育强国。建设教育强国，是全面建成社会主义现代化强国的战略先导，是实现高水平科技自立自强的重要支撑，是促进全体人民共同富裕的有效 途径，是以中国式现代化全面推进中华民族伟大复兴的基础工程。
+
+* 建设教育强国是实现共同富裕的有效途径，而不是制度基础。实现共同富裕的制度基础是社会主义基本经济制度。
+
+* 进入新时代，人民军队的使命任务概括起来就是“四个战略支撑”:为巩固中国共产党领导和我国社会主义制度提供战略支撑；为捍卫国家主权、统一和领土完整提供战略支撑；为维护我国海外利益提供战略支撑；为促进<span style="font-weight: bold;" data-type="strong">世界和平</span>与发展提供战略支撑。
+
+* 进入新时代，人民军队的使命任务概括起来就是“四个战略支撑”:
+
+  1.为巩固中国共产党领导和我国社会主义制度提供战略支撑；
+
+  2.为捍卫国家主权、统一和领土完整提供战略支撑；
+
+  3.为维护我国海外利益提供战略支撑；
+
+  4.为促进世界和平与发展提供战略支撑。（注意⚠️）
+
+* 1842年8月29日，清政府派钦差大臣耆英、伊里布与英国签订了中国近代史上第一个不平等条约——《南京条约》。接着，1843年10月，签订了中英《虎门条约》。因此，正确答案为 B、C 选项。  【干扰选项辨析】  选项 A,1844年7月，中美签订《望厦条约》。  选项 D,1844年10月，中法签订《黄埔条约》
+
+  * <span style="font-weight: bold;" data-type="strong">中美望夏中法黄，英国老虎南京王</span>
+
+* 完备的法律规范体系，是中国特色社会主义法治体系的前提，是法治国家、法治政府、法治社会的制度基础。
+
+* 中国共产党的领导是中国特色社会主义最本质的特征，是社会主义法治最根本的保证。
+
+* 人身权利主要包括<span style="font-weight: bold;" data-type="strong">生命健康权、人身自由权、人格尊严权、住宅安全权、通信自由权</span>。
+
+  社会经济权利主要包括<span style="font-weight: bold;" data-type="strong">劳动权、休息权、社会保障权、物质帮助权</span>。
+
+  * 人身：活着住房子不住监狱，打电话不被骂
+
+    经济：劳动后能休息，有物质有保障
+
+* 同盟 结盟 都错
+
+## 徐涛卷4
+
+* 《共产党宣言》是马克思和恩格斯为世界上第一个无产阶级政党——<span style="font-weight: bold;" data-type="strong">共产主义者同盟撰写的纲领</span>，是每一个共产党人必读的经典。
+
+  * 《资本论》系统阐述了<span style="font-weight: bold;" data-type="strong">剩余价值理论</span>，被誉为“工人阶级的圣经”。   <span style="font-weight: bold;" data-type="strong">《反杜林论》全面阐述了马克思主义理论体系</span>。《关于费尔巴哈的提纲》首次确立了<span style="font-weight: bold;" data-type="strong">科学的实践观</span>。
+
+* 物质生产方式是社会存在和发展的基础及决定性力量。
+
+* 在商品经济中，价值规律的表现形式是，商品的价格围绕商品的价值自发波动。由于供求关系变动的影响，商品价格总是时而高于价值，时而低于价值，不可避免地围绕价值这个中心上下波动。
+
+* 价值规律的表现形式是，商品的价格围绕商品的价值自发波动
+
+  价值规律的主要内容:商品交换以价值量为基础
+
+* <span style="font-weight: bold;" data-type="strong">资本主义基本矛盾是经济危机的根本原因</span>，<span style="font-weight: bold;" data-type="strong">相对过剩是本质特征</span>
+
+* 全面深化<span style="font-weight: bold;" data-type="strong">改革开放</span>是新时代坚持和发展中国特色社会主义的<span style="font-weight: bold;" data-type="strong">根本动力</span>。
+
+* 人民满意是发展教育的<span style="font-weight: bold;" data-type="strong">根本尺度</span>。
+
+* 中特教育强国
+
+  根本保证：党领导
+
+  根本任务：立德树人
+
+  根本目标：为党育人，为国育才
+
+  重要使命：伟大复兴
+
+  基本路径：理念体系制度内容方法治理现代化
+
+  核心功能：中国式现代化
+
+  根本问题：什么怎样为谁培养人
+
+  根本尺度：人民满意
+
+* 政治安全是国家安全的根本
+
+  * 人民安全是宗旨
+
+    政治安全是根本
+
+    经济安全是基础
+
+* 1925年5月，以<span style="font-weight: bold;" data-type="strong">五卅运动</span>为起点，掀起了全国范围的<span style="font-weight: bold;" data-type="strong">大革命高潮</span>。
+
+* 1924年，<span style="font-weight: bold;" data-type="strong">国民党一大实际上确定了联俄、联共、扶助农工</span>的三大革命政策。这样，国民党一大的成功召开，<span style="font-weight: bold;" data-type="strong">标志着第一次国共合作的正式形成</span>。
+
+* 1923年6月召开的中国共产党第三次全国代表大会，就国共合作的方针和办法作出了正式的决定。
+
+* 《天朝田亩制度》的主张，从根本上否定了封建社会的基础即封建地主的土地所有制，体现了广大农民要求平均分配土地的强烈愿望。因此，解放战争时期的土地改革不能算是“首次否定”。
+
+* 中华人民共和国的成立，标志着中国的新民主主义革命取得了基本的胜利。
+
+* 社会主义改造的完成，建立了社会主义基本制度，完成了中华民族有史以来最为广泛而深刻的社会变革。
+
+* 土地制度改革，是中国共产党领导广大农民从根本上摧毁中国封建制度根基的社会大变革。
+
+* 1.农业社会主义改造：
+
+  互助组（社会主义萌芽）
+
+  初级社（半社会主义）
+
+  高级社（社会主义）
+
+  2.手工业的社会主义改造：
+
+  手工业供销小组（社会主义萌芽）
+
+  手工业“供销”合作社（半社会主义）
+
+  手工业“生产”合作社（社会主义）
+
+  3.资本主义工商业的社会主义改造：
+
+  初级形式的国家资本主义（社会主义因素）
+
+  个别企业的公私合营（半社会主义）
+
+  全行业的公私合营（社会主义）
+
+  记忆方法：
+
+  农业和手工业的改造都是“组”一“社”一“社”三个阶段(后两步结尾名字相似)；
+
+  资本主义工商业的改造也是后两步相似(“公私合营”)。
+
+* 在推进资本主义工商业社会主义改造的过程中，依次经历了初级形式的国家资本主义一个别企业的公私合营一全行业的公私合营三个阶段，其中使企业具有社会主义因素的是初级形式的国家资本主义。
+
+* 道德是反映社会经济关系的特殊意识形态。道德的产生、发展和变化，归根结底源于社会经济关系。
+
+* 目前我国正在从航天大国走向航天强国。
+
+* 神舟十三号载人飞行标志着我国空间站关键技术验证阶段任务圆满完成。
+
+* 神舟十四号载人飞行是我国空间站建造阶段的第二次飞行，也是该阶段的首次载人飞行任务。
+
+* 神舟十六号任务是我国载人航天工程进入空间站应用与发展阶段的首次载人飞行任务。
+
+* 十三-验证
+
+  十四-建设期首次载人
+
+  十六-应用期首次载人
+
+* 神舟十三号载人飞行标志着我国空间站关键技术验证阶段任务圆满完成
+
+  神舟十四号载人飞行是我国空间站建造阶段的第二次飞行，也是该阶段的首次载人飞行任务
+
+  神舟十六号任务是我国载人航天工程进入空间站应用与发展阶段的首次载人飞行任
+
+* 时空的存在是客观的，不以人的意志为转移，并不会随人的认识的发展而拓展。
+
+* 物质世界的运动是绝对的，整个物质世界的时空是无限的。物质运动与时间和空间是不可分割的，证明了时间和空间的客观性。
+
+* 实践之所以能成为检验真理的唯一标准，是由真理的本性和实践的特点决定的。从真理的本性看，真理是人们对客观事物及其发展规律的正确反映，它的本性在于主观和客观相符合。从实践的特点看，实践具有直接现实性。实践的直接现实性是它的客观实在性的具体表现。
+
+* 真理的客观性决定了真理的一元性。
+
+* <span style="font-weight: bold;" data-type="strong">外交方针和外交理念是不一样的。坚持</span>​<span style="font-weight: bold;" data-type="strong">亲诚惠容和与邻为善</span> <span style="font-weight: bold;" data-type="strong">、</span>​<span style="font-weight: bold;" data-type="strong">以邻为伴</span><span style="font-weight: bold;" data-type="strong">周边</span>​<span style="font-weight: bold;" data-type="strong">外交方针</span> <span style="font-weight: bold;" data-type="strong">，秉持亲诚忠容的周边</span>​<span style="font-weight: bold;" data-type="strong">外交理念</span> <span style="font-weight: bold;" data-type="strong">。今年是亲诚惠容周边外交理念提出10周年，要记住。</span>
+* **周边外交理念：亲诚惠容
+  周边外交方针：以邻为善，以邻为伴**
+
+* 社会总价值，劳动力价值
+
+  * 社会总产品在价值形态上又叫社会总价值，总＝生产资料转移价值➕社必劳➕剩余劳
+
+    ✔️在产品中的（生产资料）的转移价值(c)
+
+    ✔️凝结在产品中的由工人在（必要劳动）时间里创造的价值(v)
+
+    ✔️凝结在产品中的由工人在（剩余劳动）时间里创造的价值(m)。
+  * 劳动力的价值＝养家糊口➕训练
+
+* 第一国际搭配工人，十月革命搭配殖民
+
+  * 第一国际：
+
+    促进马克思主义与工人运动结合
+
+    初步确立了马克思主义在工人运动的指导地位
+  * 十月革命：
+
+    加速世界殖民体系瓦解
+
+    殖民地民族解放
+
+* 就是xxx——内涵
+
+  “深化、丰富了”——有“了”是意义
+
+  * 马克思主义中国化时代化的科学内涵，具体包含三层意思：
+
+    第一，运用马克思主义的立场、观点和方法，
+
+    第二，总结和提炼中国革命、建设、改革的实践经验并将其上升为理论
+
+    第三，运用中国人民喜闻乐见的
+
+    以全新的视野进一步深化和丰富了对共产党执政规律、社会主义建设规律、人类社会发展规律的认识 <span style="font-weight: bold;" data-type="strong">是意义</span>
+
+* 民营经济是非公有制经济的主要经济组织形式，是推进中国式现代化的<span style="font-weight: bold;" data-type="strong"></span>，是高质量发展的重要基础。
+
+  * 主力军：这是一支已有悠久历史和丰富经验的军队，它在历史上多次成功完成了任务。在遇到困难的任务时，人们通常会依赖主力军来取得成功。
+  * 生力军：这是为了满足特定需求而紧急建立的新编制。这个新组成的团队或单位的所有成员都<span style="font-weight: bold;" data-type="strong">必须具备应对任务所需的能力和态度</span>。
+
+* 国有企业
+
+  * 中国特色社会主义的【重要物质基础】和【<span style="font-weight: bold;" data-type="strong">政治基础</span>】
+
+    我们党执政兴国的【重要支柱】和【依靠力量】
+* 【民营经济】是非公有制经济的主要经济组织形式，是推进中国式现代化的【生力军】，是【高质量发展的重要基础】。
+
+* 统战工作的本质要求是大团结大联合，解决的就是<span style="font-weight: bold;" data-type="strong">人心和力量</span>问题。
+
+* 统战工作的关键是要<span style="font-weight: bold;" data-type="strong">坚持求同存异，发扬“团结—批评—团结”的优良传统，在尊重多样性中寻求一致性</span>
+
+* 应有之义是大帽子，<span style="font-weight: bold;" data-type="strong">只要是正面词语都能选</span>
+
+  * 文化繁荣兴盛是实现中华民族伟大复兴的精神支撑，是建设社会主义现代化强国的应有之义，是满足人民日益增长的美好生活需要的内在要求，是在世界文化激荡中站稳脚跟的前提基础。
+
+* 【新发展理念】是一个系统的理论体系，回答了关于（发展的目的、动力、方式、路径）等一系列理论和实践问题，阐明了我们党关于（发展的政治立场、价值导向、发展模式、发展道路）等重大政治问题。
+
+  * 不能说是绿水青山回答了关于（发展的目的、动力、方式、路径）等一系列理论和实践...
+  * 绿水青山这一理念，阐明了经济发展与生态环境保护之间的关系，揭示了保护生态环境就是保护生产力、改善生态环境就是发展生产力的道理，指明了实现发展和保护协同共生的新路径。
+
+* 1.维新与守旧：<span style="font-weight: bold;" data-type="strong">要不要变辛巴</span>
+
+  （变法 兴民权 废八股）第一，要不要变法；第二，要不要兴民权、设议院，实行君主立宪；第三，要不要废八股、改科举和兴西学。
+* 2.改良派与革命派：
+
+  要不要以革命手段推翻清王朝
+
+  要不要推翻帝制，实行共和
+
+  要不要社会革命
+
+* 《反对本本主义》
+
+  ✔️“没有调查，没有发言权”
+
+  ✔️“中国革命斗争的胜利要靠中国同志了解中国情况”
+
+  ✔️“调查就像‘十月怀胎’,解决问题就像‘一朝分娩’,调查就是解决问题”
+
+  表现了毛泽东开辟新道路、创造新理论的革命首创精神。
+
+* 和谐 <span style="font-weight: bold;" data-type="strong">中华文明核心价值理念</span>
+
+  爱国 公民应该遵循的<span style="font-weight: bold;" data-type="strong">最基本的价值准则</span>
+
+  诚信是<span style="font-weight: bold;" data-type="strong">个人立身处世的基本价值规范</span>，是社会存续发展的重要价值基石。
+
+* 践行社会主义核心价值观是文化建设的举措，而不是新时代新的文化使命。
+
+* 中亚命运共同体四个坚持：<span style="font-weight: bold;" data-type="strong">全是相公</span>
+
+  * 全--普遍安全
+
+    是--世代友好
+
+    相--守望相助
+
+    公--共同发展
+
+## 徐涛卷5
+
+* 人的发展指人的体力、智力、个性和交往能力等的发展，其中<span style="font-weight: bold;" data-type="strong">最根本的是</span>​<span style="font-weight: bold;" data-type="strong">人的自由程度的提高</span>。
+
+* <span style="font-weight: bold;" data-type="strong">认识必然和争取自由</span>，<span style="font-weight: bold;" data-type="strong">是人类认识世界和改造世界的根本目标</span>，是一个历史性的过程。
+
+* 人类解放<span style="font-weight: bold;" data-type="strong">从根本上讲是社会长期发展进步的结果</span>。
+
+* 阶级斗争<span style="font-weight: bold;" data-type="strong">根源于阶级之间物质利益的根本对立，根源于社会经济关系的冲突</span>。
+
+* <span style="font-weight: bold;" data-type="strong">源泉：剩余劳动——剩余价值——资本积累——资本主义扩大再生产  前者是后者的源泉</span>   劳驾您积累积累再生产
+
+* 更高水平开放型经济体制的重点：<span style="font-weight: bold;" data-type="strong">制度型开放</span>
+
+* 新闻：
+
+  第一位要求，<span style="font-weight: bold;" data-type="strong">坚持正确政治方向</span>
+
+  关键，<span style="font-weight: bold;" data-type="strong">管好用好互联网</span>
+
+* <span style="font-weight: bold;" data-type="strong">总目标应该是一个宏大的，不容易实现的</span>
+
+  * 新时代对外工作：
+
+    1、出落点：维护国家主权、安全、发展利益
+
+    2、总目标：推动构建人类命运共同体
+
+    3、基本原则：坚持走和平发展道路
+
+* 护法运动的失败，标志着整个中国民族资产阶级领导的<span style="font-weight: bold;" data-type="strong">旧民主主义革命的终结</span>。新民主主义的开始是五四运动
+
+  * 五四运动实现了中国人民和中华民族自鸦片战争以来的<span style="font-weight: bold;" data-type="strong">第一次全面觉醒</span>。
+
+    中国同盟会的成立标志着中国资产阶级民主革命进入了一个新的阶段。
+
+    八国联军发动侵华战争，清政府战败签订的《辛丑条约》,标志着中国<span style="font-weight: bold;" data-type="strong">完全沦为半殖民地半封建社会</span>。
+
+* 中共三大正式决定共产党员以个人身份加入国民党
+
+* 1924年国民党一大事实上确定了联俄、联共、扶助农工三大革命政策。
+
+* 中共二大提出联合全国一切革命党派，联合资产阶级民主派，组成“民主主义的联合战线”。
+
+* <span style="font-weight: bold;" data-type="strong">三大改造→最伟大最深刻的社会变革</span>
+
+  <span style="font-weight: bold;" data-type="strong">解放战争时期的土地制度改革</span>，就已经采取了 <span style="font-weight: bold;" data-type="strong">“耕者有其田”的土地政策（第一次）</span> 
+
+  消除贫困、改善民生、逐步实现共同富裕，是中国特色社会主义的本质要求，是中国共产党的重要历史使命。
+
+* 人生目的是对“人为什么活着”这一人生根本问题的认识和回答，是人生观的核心，在人生实践中具有重要的作用。
+
+* 浙江 共同富裕示范区（因为浙江很富裕）
+
+  湖南 改革开放新高地（因为毛是湖南的）
+
+  深圳 社会主义先行示范区（不是雄安新区虽然他有区
+
+  雄安 现代化城市治理新模式
+
+* 中<span style="font-weight: bold;" data-type="strong">美</span>关系:不冲突 不对抗 相互尊重 合作共赢
+
+  中<span style="font-weight: bold;" data-type="strong">欧</span>关系:不针对 不依附 也不受制于他人
+
+  中国与<span style="font-weight: bold;" data-type="strong">东盟</span>关系:互相尊重 互利共赢 守望相助 包容互鉴
+
+  中美建交50年的外交经验:相互尊重 和平共处 合作共赢（习近平访问近日美国时提出的）
+
+* 规律对于人的实践活动是很重要的（<span style="font-weight: bold;" data-type="strong">但不是至关重要</span>）
+
+* 人们不可以改变规律，<span style="font-weight: bold;" data-type="strong">但可以改变规律发生作用的形式</span>
+
+* <span style="font-weight: bold;" data-type="strong">构时（狗屎）</span>
+
+  * 影响资本周转快慢的因素有很多，关键的因素有两个：一是资本周转的时间；二是生产资本中固定资本和流动资本的构成。
+
+* 第一、经济发展“失调”。具体表现为：
+
+  * 虚拟经济与实体经济发展失衡;
+
+    福利风险增加；
+
+    债务负担沉重。
+* 第二、政治体制“失灵”。具体表现为：
+
+  * 西式选举往往难以选贤；
+
+    政党利益可能凌驾于国家利益之上；
+
+    “民主陷阱”会阻碍国家治理；
+
+    <span style="font-weight: bold;" data-type="strong">传统精英政治走向衰落。</span>
+* 第三、社会融合机制“失效”。具体表现为：
+
+  * 社会极端思潮抬头；
+
+    社会流动性退化；
+
+    社会矛盾激化。
+
+* 1925年1月11日至22日，中共四大其重大成果有：<span style="font-weight: bold;" data-type="strong">提出了无产阶级在民主革命中的领导权问题和工农联盟问题</span>
+
+  * 三大国共要合作，四大领导工农忙
+
+* 邓小平指出，改革开放和各项工作成败的得失，判断的标准，应该<span style="font-weight: bold;" data-type="strong">主要看是否有利于发展社会主义社会的生产力，是否有利于增强社会主义国家的综合国力，是否有利于提高人民的生活水平。</span>
+
+  * <span style="font-weight: bold;" data-type="strong">三个有利于，国家，人民，社会</span>
+
+* 自贸试验区建设十周年。我国支持自贸试验区的建设旨在：
+
+  * 第一，以制度机制规范创新，提升创新举措“含金量”;
+
+    第二，对标国际高标准经贸规则，打造制度型开放高地；
+
+    第三，胸怀“国之大者”,服务国家区域重大战略；
+
+    第四，促进自主创新，<span style="font-weight: bold;" data-type="strong">推动在“卡脖子”领域实现突破</span>；
+
+    第五，扎实发挥“试验田”作用，助力新业态做优做强。
+
+* 理念是完善社会治理体系的先导，而制度是完善社会治理体系的保障。
+
+* 党的根本性建设是党的      政治      建设。根政（根正苗红）
+
+  党的基础性建设是党的      思想      建设。<span style="font-weight: bold;" data-type="strong">司机</span>
+
+* 反腐败是<span style="font-weight: bold;" data-type="strong">最彻底的自我革命</span>
+
+* 抗日民族统一战线具有一些<span style="font-weight: bold;" data-type="strong">新</span>的特点：
+
+  * <span style="font-weight: bold;" data-type="strong">第一，广泛的民族性和复杂的阶级矛盾。第二次只要是爱国的抗日的都可以加入统一战线，所以阶级复杂</span>
+
+    第二，国共双方有政权有军队的合作。国民党领导全国政权和军队，共产党领导局部政权和军队。
+
+    第三，没有正式的固定的组织形式和协商一致的具体的共同纲领。
+
+* 两次国共合作的<span style="font-weight: bold;" data-type="strong">主要斗争形式都是武装斗争</span>
+
+* 第一次合作是北洋军阀割据，第二次只要是爱国的抗日的都可以加入统一战线，所以阶级复杂
+
+* 三大作风：<span style="font-weight: bold;" data-type="strong">人民用理论进行自我批评</span>
+
+  * 党的七大第一次正式<span style="font-weight: bold;" data-type="strong">把理论和实践相结合的作风、和人民群众紧密联系在一起的作风和自我批评的作风</span>作为我们党的“三大优良作风”提出来。
+
+* 十大关系 以苏为鉴
+
+  人民矛盾 有别于苏
+
+  七届二中 两个转变
+
+  * 《论十大关系》的报告，明确提出要以苏为鉴、独立自主地探索适合中国情况的社会主义建设道路。其中，《论十大关系》中的第一大关系，即重工业和轻工业、农业的关系。
+  * 在《关于正确处理人民内部矛盾的问题》一文中，毛泽东明确提出要走一条有别于苏联的中国工业化道路。
+  * 1949年3月，中共七届二中全会提出，要把我国<span style="font-weight: bold;" data-type="strong">由农业国转变为工业国、由新民主主义社会转变为社会主义社会</span>。
+
+* 道德最基本的功能 <span style="font-weight: bold;" data-type="strong">认识规范调节</span>
+
+* 道德支撑法治，法治承载道德
+
+* 坚持依法治国和以德治国相结合，一要强化道德对法治的支撑作用，重视发挥道德的教化作用，提高全社会文明程度，为全面依法治国创造良好环境；二要把道德要求贯彻到法治建设中，以法治承载道德理念，引导全社会崇德向善；三要<span style="font-weight: bold;" data-type="strong">运用法治手段解决道德领域突出问题</span>，依法加强对群众反映强烈的失德行为的整治。
+
+* 习近平指出，继续推进生态文明建设，必须以新时代中国特色社会主义生态文明思想为指导，正确处理几个重大关系：
+
+  * 一是高质量发展和高水平保护的关系；✔
+
+    二是重点攻坚和协同治理的关系；✔
+
+    三是自然恢复和人工修复的关系；✔
+
+    四是外部约束和内生动力的关系；✔
+
+    五是“双碳”承诺和自主行动的关系✔
+
+## 徐涛卷6
+
+* 四个伟大        孟母做宫保鸡丁手抖变成业主
+
+  * 伟大梦想一目标(孟母)  
+    伟大工程一保障(宫保鸡丁）  
+    伟大斗争一手段新发展理念(手抖)  
+    伟大事业一主题(业主)
+* 新发展理念             (宫本武藏对绿箭心动，用开塞露内调)
+
+  * 共享——本质要求(宫本武藏
+
+    绿色——必要条件(绿箭
+
+    创新——第一动力 (心动
+
+    开放——必由之路(开塞露
+
+    协调——内在要求(内调
+
+* 史纲会议速记口诀：  
+
+  * 一大立党二大纲，三大合作党没枪，  
+    蒋汪先后叛革命，八七反抗国民党，  
+    古田政治来建军，遵义纠左否定王，  
+    瓦窑抗日新战线，洛川抗日十个纲，  
+    六届六中中国化，七大党章毛思想，  
+    三中财政须好转，二中重心才离乡，  
+    八大矛盾任务对，三年灾害人心慌，  
+    九中八字有调整，十一三中改开放，  
+    十一六中有决议，科学评价毛思想，  
+    拨乱反正才完成，主要矛盾不再长，  
+    十二又有新命题，特色社会主义强，  
+    十三初级分阶段，南方加快改开放，  
+    社会主义有本质，市场经济棒棒棒，  
+    十四经改定目标，十五邓论入党章，  
+    十六有了三代表，提出全面建小康，  
+    十七科学发展观，十八开启新辉煌！
+
+* 不是普遍交往
+
+  * <span style="font-weight: bold;" data-type="strong">生产方式的发展变革</span>是<span style="font-weight: bold;" data-type="strong">世界历史形成和发展的基础</span>。
+
+* 人类解放从根本上讲是<span style="font-weight: bold;" data-type="strong">社会长期发展进步的结果</span>。
+
+* 【中国社会主义建设的<span style="font-weight: bold;" data-type="strong">历史经验</span>】属于中特的【<span style="font-weight: bold;" data-type="strong">历史条件</span>】
+
+  【中国革命和建设】的成功实践，是【毛泽东思想】形成和发展的【实践基础】
+
+  【中国改革和现代化建设】是中特的【实践基础】
+
+  【<span style="font-weight: bold;" data-type="strong">认清中国国情</span>】是解决中国革命问题的【<span style="font-weight: bold;" data-type="strong">基本前提</span>】
+
+* 连续性从根本上决定了中华民族必然走自己的路    中华文明：连创包和统
+
+* 坚持在中华民族伟大复兴进程中推进祖国统一，这是统一的（历史方位）
+
+  坚持团结台湾同胞、争取台湾民心，这是统一的（根本动力）
+
+  坚持在祖国大陆发展进步基础上解决台湾问题，这是统一的（战略思路）
+
+  坚持推动两岸关系和平发展、融合发展，这是统一的（实践途径）
+
+  历史复兴，民心动力，解决思路，发展途径
+
+  * （自编）新时代党解决台湾问题的总体方略——<span style="font-weight: bold;" data-type="strong">心动进站，二十一位</span>
+
+    心动（民心、动力）——坚持团结台湾同胞、争取台湾民<span style="font-weight: bold;" data-type="strong">心</span>，这是统一的根本<span style="font-weight: bold;" data-type="strong">动</span>力。
+
+    进站（进步、战略）——坚持在祖国大陆发展<span style="font-weight: bold;" data-type="strong">进</span>步基础上解决台湾问题，这是统一的<span style="font-weight: bold;" data-type="strong">战</span>略思路。
+
+    二十——（两岸、实践）坚持推动<span style="font-weight: bold;" data-type="strong">两</span>岸关系和平发展、融合发展，这是统一的<span style="font-weight: bold;" data-type="strong">实</span>践途径。​
+
+    一位（统一、方位）​坚持在中华民族伟大复兴进程中推进祖国统<span style="font-weight: bold;" data-type="strong">一</span>，这是统一的历史方<span style="font-weight: bold;" data-type="strong">位</span>。​
+
+* 维新派与守旧派的论战，实质上是<span style="font-weight: bold;" data-type="strong">资产阶级思想与封建主义思想</span>在中国的第一次正面交锋。
+
+* 民主党派参加新政协并将在新中国参政，这标志着<span style="font-weight: bold;" data-type="strong">民主党派地位的根本变化</span>。它们不再是旧中国反动政权下的在野党，而成为中国人民民主专政的参加者
+
+* <span style="font-weight: bold;" data-type="strong">人民政治协商会议的召开</span>，标志着中国的新型政党制度——中国共产党领导的<span style="font-weight: bold;" data-type="strong">多党合作和政治协商制度的确立</span>。
+
+* 【以中国式现代化全面推进中华民族伟大复兴】是党的【中心任务】，也是新时代中国青年运动和青年工作的【鲜明主题】。
+
+  新时代青年工作的【内容】：
+
+  1⃣️汇聚起构建人类命运共同体的青春力量
+
+  2⃣️坚定不移全面从严治团
+
+  3⃣️巩固和扩大青年爱国统一战线
+
+* 1️⃣推动构建新型国际关系，就是要秉持<span style="font-weight: bold;" data-type="strong">相互尊重、公平正义、合作共赢</span>原则。
+
+  2️⃣维护<span style="font-weight: bold;" data-type="strong">国家主权、安全、发展利益</span>是我国对外工作的<span style="font-weight: bold;" data-type="strong">出发点和落脚点</span>，是中国外交的神圣使命。
+
+  3️⃣构建<span style="font-weight: bold;" data-type="strong">人类命运共同体</span>，就是要携手世界各国人民共同<span style="font-weight: bold;" data-type="strong">建设持久和平、普遍安全、共同繁荣、开放包容、清洁美丽的世界</span>。
+
+  4️⃣中美关系:不冲突 不对抗 相互尊重 合作共赢
+
+  中欧关系:<span style="font-weight: bold;" data-type="strong">不针对 不依附 也不受制于他人</span>
+
+  中国与东盟关系:<span style="font-weight: bold;" data-type="strong">互相尊重 互利共赢 守望相助 包容互鉴</span>
+
+  中美建交50年的外交经验:<span style="font-weight: bold;" data-type="strong">相互尊重 和平共处 合作共赢</span>（习近平访问近日美国时提出的）
+
+* 社会进步作为对社会前进发展的总概括，主要表现在两个方面：
+
+  一是<span style="font-weight: bold;" data-type="strong">社会形态从低级到高级</span>的发展；
+
+  二是<span style="font-weight: bold;" data-type="strong">同一社会形态内部的发展</span>。
+
+  【社会基本矛盾】具有不同的表现形式和解决方式，并从根本上影响和促进社会形态的变化和发展。
+
+  【生产力】是社会基本矛盾运动中最基本的动力因素，是人类社会发展和进步的最终决定力量。
+
+* 价值规律在对经济活动进行自发调节时，也会产生一些消极的后果。其一，导致社会资源浪费。其二，阻碍技术进步。其三，导致收入两极分化。
+
+  * 大量使用新技术会导致旧产业的工人大量失业，工人失业导致购买力下降，购买力下降的同时由于使用新技术提高了生产力，生产的产品越来越多，就导致生产出来的产品越来越买不出去，企业就大量破产，所以就是有新技术也不能轻易投入生产，就阻碍进步了
+  * <span style="font-weight: bold;" data-type="strong">资本积累是资本主义社会失业现象产生的根源。</span>
+
+* 正确认识和把握共产主义远大理想与中国特色社会主义共同理想的关系：
+
+  * 从时间上看，二者的关系是<span style="font-weight: bold;" data-type="strong">最终理想与阶段性理想</span>的关系；
+
+    从层次上看，二者的关系是<span style="font-weight: bold;" data-type="strong">最高纲领与最低纲领</span>的关系；
+
+    从范围上看，二者的关系也是<span style="font-weight: bold;" data-type="strong">全人类最高理想与当前全体中国人民理想</span>的关系。
+
+     <span style="font-weight: bold;" data-type="strong">“顶层设计与实践探索的关系”讲的是工作方法问题，而不是理想问题</span>。事实上，共产主义的实现是人类社会历史发展的规律和趋向，而不是设计出来的。
+
+* 改革开放是当代中国的鲜明标志和活力源泉，是决定中国命运的关键一招，也是实现中华民族伟大复兴的关键一招。
+
+* <span style="font-weight: bold;" data-type="strong">小步放大招</span>
+
+  * 关键一步 全面建成小康社会
+
+    关键一招 改革开放
+
+* 习近平新时代中国特色社会主义思想创立的时代背景：
+
+  第一，世界百年未有之大变局加速演进；
+
+  第二，中华民族伟大复兴进入关键时期；
+
+  第三，中国式<span style="font-weight: bold;" data-type="strong">现</span>代化全面推进拓展；
+
+  第四，科学社会主义在21世纪的中国焕发新的蓬勃生机；
+
+  第五，中国共产<span style="font-weight: bold;" data-type="strong">党</span>自我<span style="font-weight: bold;" data-type="strong">革</span>命开辟新的境界。
+
+  * <span style="font-weight: bold;" data-type="strong">献（现）歌（革）党 内（国内）外（国外）</span>
+
+* 体制可以改制度不可以改
+
+* 就三个：<span style="font-weight: bold;" data-type="strong">工资  市场  数据</span>  这三个完善分配制度
+
+  进一步坚持和完善社会主义基本分配制度：
+
+  新教材在强调1️⃣健全工资决定和正常增长机制，2️⃣健全生产要素由市场评价贡献、按贡献决定报酬的机制这两个知识点的基础上，新增【3️⃣“建立健全数据权属、公开、共享、交易规则，更好实现知识、技术、管理、数据等要素的价值”❗】这个新说法。
+
+* 走军民融合式发展路子<span style="font-weight: bold;" data-type="strong">是实现富国和强军相统一的重要途径</span>，而不是国家安全的举措。
+
+* 大革命失败的原因
+
+  * 大革命失败的经验教训主要有：首先，中国的民主革命必须建立包括工人、农民、小资产阶级和民族资产阶级在内的广泛的<span style="font-weight: bold;" data-type="strong">革命统一战线</span>；其次，在中国民主革命中，无产阶级领导权的<span style="font-weight: bold;" data-type="strong">中心问题是农民问题</span>；再其次，中国革命的<span style="font-weight: bold;" data-type="strong">主要斗争形式是武装斗争</span>，<span style="font-weight: bold;" data-type="strong">主要组织形式是军队</span>，无产阶级要实现对革命的领导，必须建立和掌握革命的武装；最后，领导中国革命的中国共产党必须<span style="font-weight: bold;" data-type="strong">不断加强思想上、政治上和组织上的建设</span>，善于把马克思主义普遍原理<span style="font-weight: bold;" data-type="strong">与中国革命具体实践相结合</span>，制定和实行正确的政治路线和组织路线，这是革命胜利的根本保证。
+
+* 抗战的三大口号。
+
+  * 1939年7月，中国共产党明确提出
+
+    “坚持抗战到底——反对中途妥协”
+
+    “巩固国内团结——反对内部分裂”
+
+    “力求全国进步——反对向后倒退”三大口号，坚决揭露打击汪精卫集团的叛国投降活动，继续争取同蒋介石集团合作抗日。
+
+    1935年12月9日，北平(今北京)学生举行声势浩大的抗日游行，喊出“反对华北自治”“打倒日本帝国主义”“停止内战，一致对外”等口号，遭到国民党军警镇压。
+
+* 宪法<span style="font-weight: bold;" data-type="strong">可以明确国家未来建设发展的</span>​<span style="font-weight: bold;" data-type="strong">根本任务和总目标</span>
+
+* 86年中国正式将不结盟原则写入政府工作报告，宣告了不结盟政策的诞生。<span style="font-weight: bold;" data-type="strong"><span style="font-weight: bold;" class="mark">说什么盟友那都是错的！！！</span></span>
+
+## 米鹏六套卷
+
+### 米鹏卷1
+
+* 直接经验和间接经验各有不同的作用，不能说哪个“更重要”
+
+* 两点论与重点论的辩证统一要求我们看问题既要全面地看，又要看主流、大势、发展趋势
+
+* 剩余价值率=剩余劳动时间➗必要劳动时间=剩余价值m➗可变资本v
+
+  绝对剩余价值生产：加班 （总时间延长）
+
+  相对剩余价值生产：压榨（总时间不变）
+
+* “四个现代化”<span style="font-weight: bold;" data-type="strong">关键在于科学技术现代化</span>
+
+* 解放和增强社会活力，是社会主义改革的内在要求和基本目的，也是新时代全面深化改革的关键所在，只有进一步解放和增强社会活力，激发全体人民的积极性、主动性、创造性，才能让一切劳动、知识、技术、管理、资本等要素的活力竞相迸发，让一切创造社会财富的源泉充分涌流。
+
+* 解放思想 思想前提
+
+  <span style="font-weight: bold;" data-type="strong">解放和发展生产力鲜明特征，首要任务，必然要求</span>
+
+  解放和增强社会活力 内在要求，基本目的，关键所在
+
+  * <span style="font-weight: bold;" data-type="strong">必然生产力，关键是活力</span>
+
+* 在新的起点上继续推动<span style="font-weight: bold;" data-type="strong">文</span>化繁荣、建设<span style="font-weight: bold;" data-type="strong">文</span>化强国、建设中华民族现代<span style="font-weight: bold;" data-type="strong">文</span>明，是我们在新时代新的<span style="font-weight: bold;" data-type="strong">文化使命</span>。
+
+  * <span style="font-weight: bold;" data-type="strong">文化使命找三文</span>
+
+* 以推动文化高质量发展（新发展格局的首要任务）为主题，
+
+  以深化文化领域供给侧结构性改革为主线，
+
+  以文化改革创新为根本动力，
+
+  以满足人民日益增长的精神文化生活需要为根本目的，
+
+  坚持稳中求进、守正创新，着力坚持和完善繁荣发展社会主义先进文化的制度，
+
+* 一国两制（两制不能等量齐观）
+
+  根本宗旨——维护国家主权、安全、发展利益，保持港澳长期繁荣稳定
+
+  最高原则——维护国家主权、安全、发展利益
+
+  <span style="font-weight: bold;" data-type="strong">最根本原则——爱国者治港</span>
+
+  历史方位——复兴中推进统一
+
+  战略思路——大陆发展上解决台湾问题
+
+  大政方针——“和平统一，一国两制”
+
+  政治基础——九二共识
+
+  <span style="font-weight: bold;" data-type="strong">实践基础——推动两岸和平发展，融合发展</span>
+
+  <span style="font-weight: bold;" data-type="strong">根本动力——团结台湾，争取民心</span>
+
+  必然要求——粉碎台独阴谋
+
+  外部条件——反对外部干涉
+
+  战略支撑——不放弃武力
+
+* 物质生产实践是人类最基本的实践活动
+
+  * 不是科学研究！！
+
+* 科学技术有时“表现为异已的、敌对的和统治的权力”,科技伦理是科技活动必须遵守的价值准则。
+
+* 科学社会主义基本原则<span style="font-weight: bold;" data-type="strong">揭示的是一般性规律</span>，而<span style="font-weight: bold;" data-type="strong">不是</span>向人们提供解决特殊问题的<span style="font-weight: bold;" data-type="strong">具体方案</span>。
+
+* 以加快<span style="font-weight: bold;" data-type="strong">建设金融强国为目标</span>，以推进金融高质量发展为主题，以深化金融供给侧结构性改革为主线，以金融队伍的纯洁性、专业性、战斗力为重要支撑，以全面加强监管、防范化解风险为重点
+
+* ❗ 建设教育强国❗
+
+  是全面建成社会主义现代化强国的<span style="font-weight: bold;" data-type="strong">战略先导</span>，
+
+  是实现高水平科技自立自强的<span style="font-weight: bold;" data-type="strong">重要支撑</span>；
+
+  是促进全体人民共同富裕的<span style="font-weight: bold;" data-type="strong">有效途径</span>，
+
+  是以中国式现代化全面推进中华民族伟大复兴的<span style="font-weight: bold;" data-type="strong">基础工程</span>
+
+  * <span style="font-weight: bold;" data-type="strong">预先支出途径(教育强国:战略先导，重要支撑，基础工程，有效途径)</span>
+
+* 国有企业是中国特色社会主义的<span style="font-weight: bold;" data-type="strong">重要物质基础和政治基础</span>
+
+  * 政治基础不会是民营企业
+
+    * 政治基础不可能是私有经济
+
+* 【李大钊】发表《我的马克思主义观》，标志着马克思主义<span style="font-weight: bold;" data-type="strong">在中国进入比较系统的传播阶段</span>。而不是翻译共产党宣言
+
+  【十月革命】推动中国先进分子把目光从西方转向东方，<span style="font-weight: bold;" data-type="strong">从资产阶级民主主义转向社会主义</span>。
+
+* 五一口号：民主党派有点像墙头草，共产党五一口号：你们来不来，民主党观望
+
+  迅速召开政协、人大、成立民主联合政府
+
+  <span style="font-weight: bold;" data-type="strong">奠定基础 揭开序幕</span>
+* 《对时局的意见》：共产党要胜利了，共产党主导的政协会议召开，民主党都来了，所以多党合作和政治协商格局制度的确定，才发表对时局意见表示愿意自愿接受党的领导
+
+  49年9月21日第一次政协
+
+  1、新民主主义性质的政协（区分重庆政协）
+
+  2、标志着<span style="font-weight: bold;" data-type="strong">政协制度的确立</span>
+
+  3、政协组织法、人民政府组织法、共同纲领 三个奠基性文件
+
+* 腿姐说考到南方谈话的内容全选
+
+* 全面依法治国的宏伟目标是建设法治中国，要以<span style="font-weight: bold;" data-type="strong">建设中国特色社会主义法治体系为总抓手</span>
+
+  * 体系才是抓手，路是线，抓不起来，所以“坚持走中特法治道路”不是抓手。很好理解，<span style="font-weight: bold;" data-type="strong">系好了才方便抓</span>
+
+### 米鹏卷2
+
+* 资本家购买的劳动力，在生产过程中创造了超过补偿劳动力的价值，从而形成了剩余价值，这是价值形成过程转变为价值增殖过程的关键
+
+* <span style="font-weight: bold;" data-type="strong">资本</span>的本质不是物，而<span style="font-weight: bold;" data-type="strong">是</span>一定的历史社会形态下的生产<span style="font-weight: bold;" data-type="strong">关系</span>
+
+* <span style="font-weight: bold;" data-type="strong">生产资料与劳动力的总和投入</span>到生产中形成的是<span style="font-weight: bold;" data-type="strong">生产资本</span>
+
+* 生产力和综合国力和改革都不一定，万一不是这方面的工作人员呢
+
+  * 要始终把人民放在心中最高位置，树立正确的政绩观，以人民满意不满意作为检验工作的最终评判标准
+
+* 加快构建新发展格局，是推动高质量发展的战略基点
+
+* <span style="font-weight: bold;" data-type="strong"><span style="font-weight: bold;" class="mark">高质量发展</span></span>     高质量发展（今年必考）                             自由，新点子，农要，安目希，升举
+
+  * 自（自立自强）          由（必由之路）
+
+    心（新发展格局）     机（战略基点）
+
+    农（农业现代化）     药（必然要求）
+
+    明（人民幸福安康）目（最终目的）
+
+* 党中央强调把<span style="font-weight: bold;" data-type="strong">铸牢中华民族共同体意识</span>作为 新时代党的民族工作的主线，
+
+  * 米老师说，今年考<span style="font-weight: bold;" data-type="strong">民族问题</span>就找<span style="font-weight: bold;" data-type="strong">共同体意识</span>
+
+* 近代中国的主要矛盾、革命性质，中华民族<span style="font-weight: bold;" data-type="strong">面临的历史任务都是近代社会的性质</span>决定的。
+
+* 认清中国社会的性质，就是说，认清中国的国情。 乃是<span style="font-weight: bold;" data-type="strong">认清一切革命问题的基本的根据</span>。故应选 B项。
+
+  * 基本依据就是基本国情
+
+* 《临时约法》就以根本大法的形式<span style="font-weight: bold;" data-type="strong">废除了两千多年来的封建君主专制制度</span>，确认了资产阶级共和国的政治制度
+
+* 1947年7 月至9月，中国共产党在西柏坡召开全国土地会议，制定和通过了 <span style="font-weight: bold;" data-type="strong">《中国土地法大纲》</span> ,明确规定“废除封建 性及半封建性剥削的土地制度，<span style="font-weight: bold;" data-type="strong">实行耕者有其田的土地制度”</span> 。
+
+* 毛泽东强调，关于正确处理人民内部矛盾的问题是社会主 义国家政治生活的主题。这一论断的根本着眼点，<span style="font-weight: bold;" data-type="strong">在于调动一切积极因素，团结一切可以团结的力量，把 全党的注意力转到社会主义建设上来。</span>
+
+  * <span style="font-weight: bold;" data-type="strong">虽然说是什么矛盾但是着眼点不涉及矛盾</span>
+
+* “法律的普遍适用性”,是指法律在本国主权范围内对所有人具有普遍的约束力。所有国 家机关、社会组织和公民个人都必须遵守法律，依法享有和行使法定职权与权利，承担和履行法定职责与 义务。B 项“法律的阶级性”是指法律是统治阶级意志的体现。C 项“法律的优先适用性”,是指当同一项 社会关系同时受到多种社会规范的调整而多种社会规范又相互矛盾时，要优先考虑法律规范的适用。
+
+  * <span style="font-weight: bold;" data-type="strong">普遍适用是好的，不可违抗是坏的方面</span>
+
+* 当好国家粮食稳产保供“<span style="font-weight: bold;" data-type="strong">压舱石</span>”,是东北的首要担 当
+
+* 实践创新为理论创新提供 不竭的动力源泉，认识的最终目的是为实践服务，指导实践，以满足人们生活和生产的需要，通过人的努力可以实现理论创新与实践创新的良性互动
+
+* 社会基本矛盾是历史发展的根本动力，而不是文化提供社会发展的根本动力
+
+* 文化：思精聚（思京剧）
+
+  * 第一，文化为社会发展提供<span style="font-weight: bold;" data-type="strong">思</span>想指引。
+  * 第二，文化为社会发展提供<span style="font-weight: bold;" data-type="strong">精</span>神动力。
+  * 第三，文化为社会发展提供凝<span style="font-weight: bold;" data-type="strong">聚</span>力量。
+
+* 垄断不能消除竞争，反而更剧烈的原因
+
+  * 1没有消除产生竞争的经济条件
+
+    2垄断靠竞争维持
+
+    3无法包罗万象
+  * 垄断价格的产生并没有否定价值规律，但<span style="font-weight: bold;" data-type="strong">改变了价值规律的作用形式</span>，市场价格即垄断价格是价值规律在垄断资本主义阶段作用的具体表现。
+
+* 1.1952年我国刚提出实现社会主义工业化的任务，工业化建设尚未开始。
+
+  2.<span style="font-weight: bold;" data-type="strong">民主革命遗留任务完成时间1952年</span>，后1953年进行三大改造。
+
+* 南方谈话，<span style="font-weight: bold;" data-type="strong">邓小平理论</span>逐渐走向<span style="font-weight: bold;" data-type="strong">成熟</span>，<span style="font-weight: bold;" data-type="strong">邓小平社会主义市场经济理论</span>的<span style="font-weight: bold;" data-type="strong">形成</span>
+
+  * 注意区分这两个！！！
+
+* 邓小平在南方谈话中的精辟论述
+
+  * 1️⃣从理论上突破了计划经济和市场经济是制度属性的观念
+
+    2️⃣从根本上解除了把计划经济和市场经济看做属于社会基本制度范畴的思想束缚
+
+    <span style="font-weight: bold;" data-type="strong">3️⃣标志着邓小平的社会主义市场经济理论的形成</span>
+
+    4️⃣也为党的十四大明确把建立社会主义市场经济体制作为我国经济体制改革的且标奠定了理论基础
+
+* 【绿水青山就是金山银山】是经济发展与生态环境保护的关系
+
+  【山水林田湖草沙】是生命共同体是另一个生态文明理念，<span style="font-weight: bold;" data-type="strong">理念强调的是系统观念，并非绿水青山就是金山银山说明的道理</span>。
+
+* 历史遗留任务有：
+
+  1．消灭国民党蒋介石集团在大陆的残余势力
+
+  2．实现全国大陆的解放和统一
+
+  3．建立各级地方的人民政权
+
+  4．<span style="font-weight: bold;" data-type="strong">没收官僚资本和完成全国土地改革</span>
+
+* 新中国成立后的最初三年，在着重完成民主革命的遗留任务的同时，社会主义革命的任务实际上也已经开始实行了，社会主义革命的任务是为建立公有制的生产关系。这主要表现在以下三个方面：
+
+  * 第一，没收官僚资本，确立社会主义国营经济的领导地位。
+  * 第二，开始将资本主义纳入国家资本主义轨道。
+  * 第三，引导个体农民在土地改革后逐步走上互助合作的道路。
+
+* 1978    十一届三中： <span style="font-weight: bold;" data-type="strong">（别和六中搞混淆）</span>
+
+  * <span style="font-weight: bold;" data-type="strong">①实践是检验真理的唯一标准</span>
+
+    <span style="font-weight: bold;" data-type="strong">②停止使用“以阶级斗争为纲”的口号</span>
+
+    <span style="font-weight: bold;" data-type="strong">③工作中心转移到经济建设上来</span>
+
+    <span style="font-weight: bold;" data-type="strong">④【实行改革开放】</span>
+* 1981    十一届六中《关于建国以来党的若干历史问题的决议》
+
+  * ①【“文化大革命”作总结】
+
+    ②实事求是地评价毛泽东的历史地位
+
+    ③科学论述毛泽东思想作为党的指导思想的伟大意义
+
+    ④思想上拨乱反正任务的完成
+
+* <span style="font-weight: bold;" data-type="strong">文化找文化</span>
+
+  爱国主义教育中坚持传承和发展中华优秀传统<span style="font-weight: bold;" data-type="strong">文化</span>的目的：
+
+  ①以中华优秀传统<span style="font-weight: bold;" data-type="strong">文化</span>涵育爱国主义精神
+
+  ②以爱国主义教育弘扬中华优秀传统<span style="font-weight: bold;" data-type="strong">文化</span>
+
+  * 发扬革命道德、传承红色基因是社会主义道德建设的另一内容，涵养积极进取开放包容理性 平和的国民心态也是做忠诚的爱国者的要求，两者都不是在爱国主义教育中坚持传承和发展中华优秀传 统文化的目的。
+
+* 中国政府主张多边主义，集团政治是单边主义的表现
+
+### 米鹏卷3
+
+* 沉着冷静、保持定力体现着静止，求进指的是运动发展。稳中求进强调相对静止中包含着运动的因素和趋势
+
+* 量变达到一定程度必然引起质变，这强调的是事物发展的形式与状态
+
+* 唯物史观和唯心史观根本分野就是社会存在和社会意识问题，而非社会形态更替
+
+* 在社会主义市场经济中，一方面，要充分利用价值规律，让市场在资源配置中起决定性作用；另一方面，也要认识到价值规律的局限性，更好发挥政府作用，使市场更加稳健地运行，更好地服务于提升综合国力和改善人民生活水平，坚决防止出现两极分化。
+
+* 逐利本性-防止犯法
+
+  价值规律-防两极分化
+
+* 垄断资本主义的实质：垄断资本凭借垄断地位，获取高额垄断利润（一直没有变）
+
+  * 兼并中小企业:途径
+
+    联盟:结果之一
+
+* 中国是一个半殖民地半封建的大国，经济政治发展极端不平衡，这一基本国情是红色政权能够存在发展的根本原因。
+
+  * 史纲根本原因：国情有关
+
+* 党的十三大把邓小平提出的“小康社会”思想和“三步走”的发展战略构想确定下来。故应选B项。
