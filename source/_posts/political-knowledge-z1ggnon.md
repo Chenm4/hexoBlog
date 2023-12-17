@@ -1787,11 +1787,9 @@ toc: true
 
 * <span style="font-weight: bold;" data-type="strong">人民性</span>是马克思主义的<span style="font-weight: bold;" data-type="strong">本质属性</span>，<span style="font-weight: bold;" data-type="strong">人民至上</span>是马克思主义的<span style="font-weight: bold;" data-type="strong">政治立场</span>。<span style="font-weight: bold;" data-type="strong">实践观点</span>是马克思主义<span style="font-weight: bold;" data-type="strong">首要的和基本的观点</span>。马克思主义的基本特征包括科学性、人民性、实践性、发展性。实现人的自由而全面的发展，是马克思主义追求的根本价值目标，也是共产主义社会的根本特征。D错误。
 
-* > 价值评价<span style="font-weight: bold;" data-type="strong">有科学与非科学之别</span>，评价结果<span style="font-weight: bold;" data-type="strong">有正确与错误之分</span>。
-  >
+* 价值评价<span style="font-weight: bold;" data-type="strong">有科学与非科学之别</span>，评价结果<span style="font-weight: bold;" data-type="strong">有正确与错误之分</span>。
 
-* > <span style="font-weight: bold;" data-type="strong">使用价值是价值的物质承担者，价值寓于使用价值之中</span>。A错误。<span style="font-weight: bold;" data-type="strong"><span style="font-weight: bold;" class="mark">决定商品交换的比例的不是商品的使用价值，而是价值</span></span>。C错误。<span style="font-weight: bold;" data-type="strong">抽象劳动是创造价值的唯一源泉</span>，D错误。B正确。
-  >
+* <span style="font-weight: bold;" data-type="strong">使用价值是价值的物质承担者，价值寓于使用价值之中</span>。A错误。<span style="font-weight: bold;" data-type="strong"><span style="font-weight: bold;" class="mark">决定商品交换的比例的不是商品的使用价值，而是价值</span></span>。C错误。<span style="font-weight: bold;" data-type="strong">抽象劳动是创造价值的唯一源泉</span>，D错误。B正确。
 
 * <span style="font-weight: bold;" data-type="strong"><span style="font-weight: bold;" class="mark">源泉知识点：</span></span>   <span style="font-weight: bold;" data-type="strong">劳驾您积累积累再生产</span>
 
@@ -1819,47 +1817,39 @@ toc: true
   4⃣️发达资本主义国家推行霸权主义和强权政治
 * 实事求是
 
-  * > 1⃣️<span style="font-weight: bold;" data-type="strong">实事：客观事物</span>
-    >
-    > 2⃣️<span style="font-weight: bold;" data-type="strong">求：求取，对我们党来说就是调查研究</span>
-    >
-    > 3⃣️<span style="font-weight: bold;" data-type="strong">是：（找到了）客观事物的内部联系，规律性</span>
-    >
+  * 1⃣️<span style="font-weight: bold;" data-type="strong">实事：客观事物</span>
 
-* > 实事求是，是马克思主义的<span style="font-weight: bold;" data-type="strong">根本观点</span>，也是党的<span style="font-weight: bold;" data-type="strong">思想路线的核心</span>，是党的<span style="font-weight: bold;" data-type="strong">根本思想路线</span>。
-  >
-  > 但群众路线是我们<span style="font-weight: bold;" data-type="strong">党的生命线和根本的工作路线</span>，是我们<span style="font-weight: bold;" data-type="strong">党永葆青春活力和战斗力的重要传家宝</span>
-  >
-  > 【三大法宝】：统一战线、武装斗争、党的建设 （战斗党） 战线武装党
-  >
+    2⃣️<span style="font-weight: bold;" data-type="strong">求：求取，对我们党来说就是调查研究</span>
 
-* > 十个明确✔统摄作用（写在概念最前面的）
-  >
-  > 十四个坚持✔基本方略
-  >
-  > 十三个方面成就 ✔理论与实践成果
-  >
-  > 六个必须坚持✔ 理论品格和鲜明特征
-  >
+    3⃣️<span style="font-weight: bold;" data-type="strong">是：（找到了）客观事物的内部联系，规律性</span>
 
-* > <span style="font-weight: bold;" data-type="strong">现代化的</span>​<span style="font-weight: bold;" data-type="strong">最终目标</span><span style="font-weight: bold;" data-type="strong">是</span>​<span style="font-weight: bold;" data-type="strong">实现人自由而全面的发展</span> <span style="font-weight: bold;" data-type="strong">。</span>​<span style="font-weight: bold;" data-type="strong">物质财富极大丰富、消费资料按需分配，社会关系高度和谐、人们精神境界极大提高</span>，是共产主义社会三个基本特征中的另外两个
-  >
+* 实事求是，是马克思主义的<span style="font-weight: bold;" data-type="strong">根本观点</span>，也是党的<span style="font-weight: bold;" data-type="strong">思想路线的核心</span>，是党的<span style="font-weight: bold;" data-type="strong">根本思想路线</span>。
 
-* > 加快实现高水平科技自立自强，是推动高质量发展的必由之路；加快构建新发展格局，是推动高质量发展的战略基点；农业强国是社会主义现代化强国的根基，推进农业现代化是实现高质量发展的必然要求；人民幸福安康是推动高质量发展的最终目的；更好统筹质的有效提升和量的合理增长是推动高质量发展的重要举措。
-  >
+  但群众路线是我们<span style="font-weight: bold;" data-type="strong">党的生命线和根本的工作路线</span>，是我们<span style="font-weight: bold;" data-type="strong">党永葆青春活力和战斗力的重要传家宝</span>
 
-* > 高质量发展（今年必考）                                                          <span style="font-weight: bold;" data-type="strong">自由，新点子，农要，安目希，升举</span>
-  >
-  > 必由之路：高水平科技自立自强【实现产业升级必须经过什么？】
-  >
-  > 战略基点：构建新发展格局（国内大循环为主体）【消费升级后社会需求能否完全依赖进口？】
-  >
-  > 必然要求：农业现代化【产业升级会影响西方利益，西方对我们实行封锁之后，我们最要紧的是什么？】
-  >
-  > 最终目的：人民幸福安康【产业升级消费升级谁受益？】
-  >
-  > 重要举措：统筹质的有效提升和量的合理增长                                
-  >
+  【三大法宝】：统一战线、武装斗争、党的建设 （战斗党） 战线武装党
+
+* 十个明确✔统摄作用（写在概念最前面的）
+
+  十四个坚持✔基本方略
+
+  十三个方面成就 ✔理论与实践成果
+
+  六个必须坚持✔ 理论品格和鲜明特征
+
+* <span style="font-weight: bold;" data-type="strong">现代化的</span>​<span style="font-weight: bold;" data-type="strong">最终目标</span><span style="font-weight: bold;" data-type="strong">是</span>​<span style="font-weight: bold;" data-type="strong">实现人自由而全面的发展</span> <span style="font-weight: bold;" data-type="strong">。</span>​<span style="font-weight: bold;" data-type="strong">物质财富极大丰富、消费资料按需分配，社会关系高度和谐、人们精神境界极大提高</span>，是共产主义社会三个基本特征中的另外两个
+
+* 高质量发展（今年必考）                                                          <span style="font-weight: bold;" data-type="strong">自由，新点子，农要，安目希，升举</span>
+
+  必由之路：高水平科技自立自强【实现产业升级必须经过什么？】
+
+  战略基点：构建新发展格局（国内大循环为主体）【消费升级后社会需求能否完全依赖进口？】
+
+  必然要求：农业现代化【产业升级会影响西方利益，西方对我们实行封锁之后，我们最要紧的是什么？】
+
+  最终目的：人民幸福安康【产业升级消费升级谁受益？】
+
+  重要举措：统筹质的有效提升和量的合理增长
 
 * 牢牢守住安全发展这条底线是构建新发展格局的重要前提和保障。  <span style="font-weight: bold;" data-type="strong">底线是安全</span>
 
@@ -1870,17 +1860,15 @@ toc: true
 
 * 1934年4月，由中国共产党提出，宋庆龄、何香凝、李杜等1779人领衔，以“中国民族武装自卫委员会筹备委员会”名义，发表《中国人民对日作战的基本纲领》，在该纲领上签字的群众达几十万人。
 
-* > 1933年11月《反日反蒋的初步协定》
-  >
-  > 1934年4月《中国人民对日作战的基本纲领》
-  >
-  > 1935年8月1日《为抗日救国告全体同胞书》(八一宣言）
-  >
-  > 1936年5月《停战议和一致抗日通电》
-  >
+* 1933年11月《反日反蒋的初步协定》
 
-* > 1948年4月30日，中共中央提出的“<span style="font-weight: bold;" data-type="strong">五一口号</span>”得到各民主党派和社会各界的热烈响应，<span style="font-weight: bold;" data-type="strong">揭开了中国共产党同各党派、各团体、各族各界人士协商建国的序幕</span>，奠定了中国共产党领导的多党合作和政治协商制度的基础。<span style="font-weight: bold;" data-type="strong">人民政协会议的召开</span>，标志着中国共产党领导的<span style="font-weight: bold;" data-type="strong">多党合作和政治协商制度的确立。</span> 五一口号 :叫人开会成立政府    五一之前有一个对时局意见《对时局的意见》：共产党要胜利了，共产党主导的政协会议召开，民主党都来了，所以多党合作和政治协商格局制度的确定，才发表对时局意见表示...
-  >
+  1934年4月《中国人民对日作战的基本纲领》
+
+  1935年8月1日《为抗日救国告全体同胞书》(八一宣言）
+
+  1936年5月《停战议和一致抗日通电》
+
+* 1948年4月30日，中共中央提出的“<span style="font-weight: bold;" data-type="strong">五一口号</span>”得到各民主党派和社会各界的热烈响应，<span style="font-weight: bold;" data-type="strong">揭开了中国共产党同各党派、各团体、各族各界人士协商建国的序幕</span>，奠定了中国共产党领导的多党合作和政治协商制度的基础。<span style="font-weight: bold;" data-type="strong">人民政协会议的召开</span>，标志着中国共产党领导的<span style="font-weight: bold;" data-type="strong">多党合作和政治协商制度的确立。</span> 五一口号 :叫人开会成立政府    五一之前有一个对时局意见《对时局的意见》：共产党要胜利了，共产党主导的政协会议召开，民主党都来了，所以多党合作和政治协商格局制度的确定，才发表对时局意见表示...
 * 《<span style="font-weight: bold;" data-type="strong">关于正确处理人民内部矛盾的问题》</span> 中<span style="font-weight: bold;" data-type="strong">处理人民内部矛盾的具体方针</span>：
 
   * 政治思想：团结—批评—团结
@@ -1901,12 +1889,11 @@ toc: true
 
 * <span style="font-weight: bold;" data-type="strong">法律至上的表现：</span>
 
-  * > 1⃣️，<span style="font-weight: bold;" data-type="strong">普遍适用性</span>：法律对所有人具有普遍的约束力（<span style="font-weight: bold;" data-type="strong">只有约束，强调遵守</span>）
-    >
-    > 2⃣️，<span style="font-weight: bold;" data-type="strong">优先适应性</span>：校规等社会规范和法律同时违法，优先收到法律<span style="font-weight: bold;" data-type="strong">处罚</span>
-    >
-    > 3⃣️，<span style="font-weight: bold;" data-type="strong">不可违犯性</span>：任何儿违反法律必然受到惩罚（<span style="font-weight: bold;" data-type="strong">强调违反，惩罚</span>）
-    >
+  * 1⃣️，<span style="font-weight: bold;" data-type="strong">普遍适用性</span>：法律对所有人具有普遍的约束力（<span style="font-weight: bold;" data-type="strong">只有约束，强调遵守</span>）
+
+    2⃣️，<span style="font-weight: bold;" data-type="strong">优先适应性</span>：校规等社会规范和法律同时违法，优先收到法律<span style="font-weight: bold;" data-type="strong">处罚</span>
+
+    3⃣️，<span style="font-weight: bold;" data-type="strong">不可违犯性</span>：任何儿违反法律必然受到惩罚（<span style="font-weight: bold;" data-type="strong">强调违反，惩罚</span>）
 
 * 【一带一路】
 
@@ -1915,22 +1902,17 @@ toc: true
     精神（力量源泉）：和平合作、开放包容、互学互鉴、互利共赢  
     目标：高标准，惠民生，可持续一带一路是“丝路”
 
-* > 可见，<span style="font-weight: bold;" data-type="strong">货币是</span>在长期交换过程中形成的<span style="font-weight: bold;" data-type="strong">固定充当一般等价物的商品</span>，是商品经济<span style="font-weight: bold;" data-type="strong">内在矛盾发展的产物</span>，货币的本质体现一种社会关系。
-  >
+* 可见，<span style="font-weight: bold;" data-type="strong">货币是</span>在长期交换过程中形成的<span style="font-weight: bold;" data-type="strong">固定充当一般等价物的商品</span>，是商品经济<span style="font-weight: bold;" data-type="strong">内在矛盾发展的产物</span>，货币的本质体现一种社会关系。
 
-* > 因为中国民族资产阶级是一个爱国的阶级，<span style="font-weight: bold;" data-type="strong">在政治上有影响力</span>，在经济上和技术上有重要的作用。
-  >
+* 因为中国民族资产阶级是一个爱国的阶级，<span style="font-weight: bold;" data-type="strong">在政治上有影响力</span>，在经济上和技术上有重要的作用。
 
-* > 在抗日民族统一战线中，<span style="font-weight: bold;" data-type="strong">中间势力主要是指民族资产阶级、开明绅士和地方实力派</span>，<span style="font-weight: bold;" data-type="strong">不存在谁代表谁</span>的问题。<span style="font-weight: bold;" data-type="strong">根本不是一路人。</span>
-  >
-  > “三三制”政权中的<span style="font-weight: bold;" data-type="strong">中间派包括民族资产阶级和开明绅士</span>，<span style="font-weight: bold;" data-type="strong">不包括地方实力派</span>。<span style="font-weight: bold;" data-type="strong">这是因为地方实力派也想抗日</span>
-  >
+* 在抗日民族统一战线中，<span style="font-weight: bold;" data-type="strong">中间势力主要是指民族资产阶级、开明绅士和地方实力派</span>，<span style="font-weight: bold;" data-type="strong">不存在谁代表谁</span>的问题。<span style="font-weight: bold;" data-type="strong">根本不是一路人。</span>
 
-* > 毛泽东系统解决了如何把以农民为主要成分的革命军队建设成为一支无产阶级性质的、具有严格纪律的、同人民群众保持亲密联系的新型人民军队的问题，解决了<span style="font-weight: bold;" data-type="strong">如何开展人民革命战争，应当实行什么样的战略战术，如何巩固国防</span>等一系列重大方针问题。
-  >
+  “三三制”政权中的<span style="font-weight: bold;" data-type="strong">中间派包括民族资产阶级和开明绅士</span>，<span style="font-weight: bold;" data-type="strong">不包括地方实力派</span>。<span style="font-weight: bold;" data-type="strong">这是因为地方实力派也想抗日</span>所以把它算在抗日民族统一战线里面
 
-* > 提出走自己的路、建设中国特色社会主义，丰富发展了毛泽东思想关于社会主义建设道路理论；提出中国正处于并将长期处于社会主义初级阶段，丰富发展了毛泽东思想关于中国社会主义发展阶段理论；<span style="font-weight: bold;" data-type="strong">提出中国式现代化，建设富强民主文明和谐美丽的社会主义现代化国家，丰富发展了毛泽东思想关于社会主义“四个现代化”理论；提出全面从严治党，推进党的建设新的伟大工程，以党的自我革命引领社会革命，丰富发展了毛泽东思想关于党的建设理论；</span> 提出走和平发展道路，推动构建人类命运共同体，丰富发展了毛泽东思想关于独立自主和平外交的理论；等等。
-  >
+* 毛泽东系统解决了如何把以农民为主要成分的革命军队建设成为一支无产阶级性质的、具有严格纪律的、同人民群众保持亲密联系的新型人民军队的问题，解决了<span style="font-weight: bold;" data-type="strong">如何开展人民革命战争，应当实行什么样的战略战术，如何巩固国防</span>等一系列重大方针问题。
+
+* 提出走自己的路、建设中国特色社会主义，丰富发展了毛泽东思想关于社会主义建设道路理论；提出中国正处于并将长期处于社会主义初级阶段，丰富发展了毛泽东思想关于中国社会主义发展阶段理论；<span style="font-weight: bold;" data-type="strong">提出中国式现代化，建设富强民主文明和谐美丽的社会主义现代化国家，丰富发展了毛泽东思想关于社会主义“四个现代化”理论；提出全面从严治党，推进党的建设新的伟大工程，以党的自我革命引领社会革命，丰富发展了毛泽东思想关于党的建设理论；</span> 提出走和平发展道路，推动构建人类命运共同体，丰富发展了毛泽东思想关于独立自主和平外交的理论；等等。
 
 * 中国共产党领导关系中国特色社会主义的性质、方向和命运。中国特色社会主义之所以是社会主义，究其根本就在于<span style="font-weight: bold;" data-type="strong">坚持科学社会主义基本原则，在于坚持中国共产党的领导。</span>
 
@@ -1940,11 +1922,9 @@ toc: true
 
   * ①十一届三全 改现新时期。
 
-* > 优秀传统文化，是<span style="font-weight: bold;" data-type="strong">区别于其他民族</span>的根本特征
-  >
+* 优秀传统文化，是<span style="font-weight: bold;" data-type="strong">区别于其他民族</span>的根本特征
 
-* > 中共二大在制定反帝反封建的民主革命纲领的同时，也强调为实现反帝反军阀的革命目标，<span style="font-weight: bold;" data-type="strong">必须联合全国一切革命党派，联合资产阶级民主派，组成“民主主义的联合战线”</span> ，这标志着党明确<span style="font-weight: bold;" data-type="strong">提出了统一战线政策</span>。
-  >
+* 中共二大在制定反帝反封建的民主革命纲领的同时，也强调为实现反帝反军阀的革命目标，<span style="font-weight: bold;" data-type="strong">必须联合全国一切革命党派，联合资产阶级民主派，组成“民主主义的联合战线”</span> ，这标志着党明确<span style="font-weight: bold;" data-type="strong">提出了统一战线政策</span>。
 
 * 毛泽东<span style="font-weight: bold;" data-type="strong">1956年</span>提出马克思主义基本原理与中国具体实际 <span style="font-weight: bold;" data-type="strong">“第二次结合”</span> 的任务
 
@@ -2049,19 +2029,17 @@ toc: true
 
   国家利益至上——<span style="font-weight: bold;" data-type="strong">要求和原则</span>
 
-* 秦桧理念，双0方针
+* <span style="font-weight: bold;" data-type="strong">秦桧理念，双0方针</span>
 
   * 周边外交<span style="font-weight: bold;" data-type="strong">理念</span>：<span style="font-weight: bold;" data-type="strong">亲诚惠容</span>
 
-    周边外交方针：以邻为善，以邻为伴
+    周边外交<span style="font-weight: bold;" data-type="strong">方针</span>：以邻为善，以邻为伴
 
-    求同存异、相互尊重、互学互鉴是中国构建新型政党关系的理念
+    求同存异、相互尊重、互学互鉴是中国<span style="font-weight: bold;" data-type="strong">构建新型政党关系的理念</span>
 
 * 辛亥革命和太平天国都是阶级矛盾
 
   * 任务是反帝的运动就是民族矛盾，任务是反封的运动就是阶级矛盾
-
-    本题<span style="font-weight: bold;" data-type="strong">只有辛亥革命是反封</span>
 
 * 从哲学上看，
 
@@ -2078,7 +2056,7 @@ toc: true
   * 劳动生产率指的是劳动者生产使用价值的效率。它的高低可以用单位劳动时间内生产的商品数量来测量，也可以用单位商品中所耗费的劳动时间来测量。
   * 商品的价值是<span style="font-weight: bold;" data-type="strong">凝结在商品中的无差别的一般人类劳动</span>，价值量是由劳动者生产商品所耗费的劳动量决定的，而<span style="font-weight: bold;" data-type="strong">劳动量则按照劳动时间来计量</span>。因此，在单位劳动时间内，<span style="font-weight: bold;" data-type="strong">劳动者耗费的劳动量不变，生产的价值总量也不变</span>。
 
-* <span style="font-weight: bold;" data-type="strong">人民立场是中国共产党的根本政治立场</span>
+* <span style="font-weight: bold;" data-type="strong">人民立场</span><span style="font-weight: bold;" data-type="strong">是中国共产党的根本政治立场</span>
 
 * 群众路线：
 
@@ -2100,10 +2078,7 @@ toc: true
 
 ## 肖八3
 
-* **周边外交理念：亲诚惠容
-  周边外交方针：以邻为善，以邻为伴**
-
-  求同存异、相互尊重、互学互鉴是中国<span style="font-weight: bold;" data-type="strong">构建新型政党关系的理念</span>
+* 秦桧理念，双0方针
 
 * 毛泽东在《星星之火，可以燎原》一文中指出，红军、游击队和红色区域的建立和发展，<span style="font-weight: bold;" data-type="strong">是半殖民地中国在无产阶级领导之下的农民斗争的</span>​<span style="font-weight: bold;" data-type="strong"></span><span style="font-weight: bold;" data-type="strong">和半殖民地农民斗争发展的必然结果</span>，并且无疑义地是促进全国革命高潮的最重要因素。
 
@@ -2111,8 +2086,7 @@ toc: true
 
 * 中华文明：连创包和统
 
-* > 以其先进性、人民性、真实性站在人类道义制高点上，彰显出独特而强大的价值观优势    社会主义核心价值观的特征   “真仙人”：真实性、先进性、人民性       别搞混
-  >
+* 以其先进性、人民性、真实性站在人类道义制高点上，彰显出独特而强大的价值观优势    社会主义核心价值观的特征   “真仙人”：真实性、先进性、人民性       别搞混
 
   * <span style="font-weight: bold;" class="mark"><span style="font-weight: bold;" data-type="strong">真先人</span></span>
 
@@ -2152,19 +2126,15 @@ toc: true
 
 * 商品的使用价值和价值的矛盾、生产商品的具体劳动和抽象劳动的矛盾，<span style="font-weight: bold;" data-type="strong">根源于私人劳动和社会劳动的矛盾</span>。
 
-* 腿姐：<span style="font-weight: bold;" data-type="strong">社会劳动与私人劳动的矛盾</span>是商品经济的【基本矛盾】，<span style="font-weight: bold;" data-type="strong">其他三对矛盾均根源于他</span>
-
-  （什么 你不知道是哪四对？:劳动二重性，商品二因素，<span style="font-weight: bold;" data-type="strong">商品与货币</span>，<span style="font-weight: bold;" data-type="strong">私人劳动与社会劳动</span>）
+* 腿姐：<span style="font-weight: bold;" data-type="strong">社会劳动与私人劳动的矛盾</span>是商品经济的【基本矛盾】，<span style="font-weight: bold;" data-type="strong">其他三对矛盾均根源于他</span>（什么 你不知道是哪四对？:劳动二重性，商品二因素，<span style="font-weight: bold;" data-type="strong">商品与货币</span>，<span style="font-weight: bold;" data-type="strong">私人劳动与社会劳动</span>）
 
   劳动二重性：<span style="font-weight: bold;" data-type="strong">具体劳动和抽象劳动</span>
 
   商品二因素：<span style="font-weight: bold;" data-type="strong">使用价值和价值</span>
 
-* > 私有制商品经济条件下，私人劳动和社会劳动之间的矛盾是商品经济的基本矛盾。在资本主义制度下，这种矛盾进一步发展成资本主义的基本矛盾，即生产社会化和生产资料资本主义私人占有之间的矛盾。
-  >
+* 私有制商品经济条件下，私人劳动和社会劳动之间的矛盾是商品经济的基本矛盾。在资本主义制度下，这种矛盾进一步发展成资本主义的基本矛盾，即生产社会化和生产资料资本主义私人占有之间的矛盾。
 
-* > 劳动不是使用价值的唯一源泉（但也是源泉），剩余劳动是剩余价值的唯一源泉。源泉知识点
-  >
+* 劳动不是使用价值的唯一源泉（但也是源泉），剩余劳动是剩余价值的唯一源泉。源泉知识点
 
 * ①要素价值论:混淆了价值形成的源泉和价值形成的条件之间的关系。
 
@@ -2173,12 +2143,11 @@ toc: true
   ③效用价值伦:没有看到使用价值不具有同质性，因而无法进行量的比较。
 * 新民主主义经济纲领的三大内容
 
-  * > 1，<span style="font-weight: bold;" data-type="strong">没收封建地主土地阶级的土地归农民所有（主要内容）</span>
-    >
-    > 2，<span style="font-weight: bold;" data-type="strong">没收官僚资产阶级的垄断资本归新民主主义的国家所有</span>
-    >
-    > 3，保护民族工商业（<span style="font-weight: bold;" data-type="strong">极具特色的内容</span>）
-    >
+  * 1，<span style="font-weight: bold;" data-type="strong">没收封建地主土地阶级的土地归农民所有（主要内容）</span>
+
+    2，<span style="font-weight: bold;" data-type="strong">没收官僚资产阶级的垄断资本归新民主主义的国家所有</span>
+
+    3，保护民族工商业（<span style="font-weight: bold;" data-type="strong">极具特色的内容</span>）
 
 * 毛泽东思想时间线
 
@@ -2190,62 +2159,58 @@ toc: true
 
 * 社会主义现代化
 
-  <span style="font-weight: bold;" data-type="strong">根基</span>：<span style="font-weight: bold;" data-type="strong">农业强国</span>
+  * <span style="font-weight: bold;" data-type="strong">根基</span>：<span style="font-weight: bold;" data-type="strong">农业强国</span>
 
-  <span style="font-weight: bold;" data-type="strong">应有之义</span>：<span style="font-weight: bold;" data-type="strong">人民民主</span>
+    <span style="font-weight: bold;" data-type="strong">应有之义</span>：<span style="font-weight: bold;" data-type="strong">人民民主</span>
 
-  <span style="font-weight: bold;" data-type="strong">首要任务</span>：<span style="font-weight: bold;" data-type="strong">高质量发展   </span>​<span style="font-weight: bold;" data-type="strong">高手</span>
+    <span style="font-weight: bold;" data-type="strong">首要任务</span>：<span style="font-weight: bold;" data-type="strong">高质量发展   </span>​<span style="font-weight: bold;" data-type="strong">高手</span>
 
-  <span style="font-weight: bold;" data-type="strong">内在要求</span>：<span style="font-weight: bold;" data-type="strong">尊重、顺应、保护自然</span>
+    <span style="font-weight: bold;" data-type="strong">内在要求</span>：<span style="font-weight: bold;" data-type="strong">尊重、顺应、保护自然</span>
 
-  <span style="font-weight: bold;" data-type="strong">战略支撑</span>：<span style="font-weight: bold;" data-type="strong">科技教育人才</span>
+    <span style="font-weight: bold;" data-type="strong">战略支撑</span>：<span style="font-weight: bold;" data-type="strong">科技教育人才</span>
+  * 实体经济作为构建<span style="font-weight: bold;" data-type="strong">现代</span>​<span style="font-weight: bold;" data-type="strong">产业</span><span style="font-weight: bold;" data-type="strong">体系的根基</span>
 
-* 实体经济作为构建<span style="font-weight: bold;" data-type="strong">现代产业体系的根基</span>
+    农业强国作为<span style="font-weight: bold;" data-type="strong">社会主义现代化</span>​<span style="font-weight: bold;" data-type="strong">强国</span><span style="font-weight: bold;" data-type="strong">的根基</span>
 
-  农业强国作为<span style="font-weight: bold;" data-type="strong">社会主义现代化强国的根基</span>
+    <span style="font-weight: bold;" data-type="strong">实体经济是</span>​<span style="font-weight: bold;" data-type="strong">产业层面</span>
 
-  <span style="font-weight: bold;" data-type="strong">实体经济是</span>​<span style="font-weight: bold;" data-type="strong">产业层面</span>
+    <span style="font-weight: bold;" data-type="strong">农业是</span>​<span style="font-weight: bold;" data-type="strong">国家层面</span>
 
-  <span style="font-weight: bold;" data-type="strong">农业是</span>​<span style="font-weight: bold;" data-type="strong">国家层面</span>
+* 教育强国
 
-* > 教育强国
-  >
-  > ●必须以坚持党对教育事业的全面领导为【根本保证】
-  >
-  > ●以立德树人为【根本任务】
-  >
-  > ●以为党育人、为国育才为【根本目标】
-  >
-  > ●以服务中华民族伟大复兴为【重要使命】
-  >
-  > ●以教育理念、体系、制度、内容、方法、治理●现代化为【基本路径】
-  >
-  > ●以支撑引领中国式现代化为【核心功能】
-  >
-  > ●最终是办好【人民满意】的教育
-  >
+  * 必须以坚持党对教育事业的全面领导为【根本保证】
 
-* > 立德树人——根本任务
-  >
-  > 为党育人，为国育才——根本目标
-  >
-  > 服务中华民族伟大复兴——重要使命
-  >
+    以立德树人为【根本任务】
 
-* > 标本兼治是新时代推进反腐败斗争的鲜明特征
-  >
-  > 依靠制度优势：多管齐下
-  >
-  > 法治优势：零容忍，全覆盖，无禁区
-  >
-  > 反腐败的具体内容：限制权力
-  >
-  > “鲜明特征”的提法：
-  >
-  > ①解放和发展社会生产力是改革开放的鲜明特征和首要任务。
-  >
-  > ②把<span style="font-weight: bold;" data-type="strong">党内法规体系纳入中国特色社会主义法治体系，是我国法治</span>​<span style="font-weight: bold;" data-type="strong">区别于其他国家法治</span><span style="font-weight: bold;" data-type="strong">的鲜明特征</span>。
-  >
+    以为党育人、为国育才为【根本目标】
+
+    以服务中华民族伟大复兴为【重要使命】
+
+    以教育理念、体系、制度、内容、方法、治理●现代化为【基本路径】
+
+    以支撑引领中国式现代化为【核心功能】
+
+    最终是办好【人民满意】的教育
+
+* 立德树人——根本任务
+
+  为党育人，为国育才——根本目标
+
+  服务中华民族伟大复兴——重要使命
+
+* 标本兼治是新时代推进反腐败斗争的鲜明特征
+
+  依靠制度优势：多管齐下
+
+  法治优势：零容忍，全覆盖，无禁区
+
+  反腐败的具体内容：限制权力
+
+  “鲜明特征”的提法：
+
+  ①解放和发展社会生产力是改革开放的鲜明特征和首要任务。
+
+  ②把<span style="font-weight: bold;" data-type="strong">党内法规体系纳入中国特色社会主义法治体系，是我国法治</span>​<span style="font-weight: bold;" data-type="strong">区别于其他国家法治</span><span style="font-weight: bold;" data-type="strong">的鲜明特征</span>。
 
 * > ⭕️中国旧式农民战争的最高峰：太平太国✓             义和团❌（经常混淆考）
   >
@@ -6512,7 +6477,7 @@ toc: true
 
 * 使用价值是价值的物质承担者，价值寓于使用价值之中
 
-* 商品的使用价值和价值的矛盾、生产商品的具体劳动和抽象劳动的矛盾，根源于私人劳动和社会劳动的矛盾。
+* 商品的使用价值和价值的矛盾、生产商品的具体劳动和抽象劳动的矛盾，根源于<span style="font-weight: bold;" data-type="strong">私人劳动和社会劳动</span>的矛盾。
 
 * 资本：不变资本 + 可变资本
 
@@ -6558,25 +6523,23 @@ toc: true
 
   逻辑与历史—逻辑的东西和历史的东西是辩证统一的【逻辑历史辩证统一】
 
-* 公社实行了一系列新的政策，如建立革命秩序、恢复生产、实行政教分离和男女平等。特别是采取了两项重要措施，用以防止国家机关工作人员由社会公仆变为社会主人：一是规定所有公职人员无论职位高低，实行全面的选举制和撤换制；二是取消高薪制，规定任何工作人员年薪不得超过熟练工人的工薪水平。
-
 * 不给钱，不给权
 
-* 政教分离，男女平等一般是无产阶级的优点
+  * 政教分离，男女平等一般是无产阶级的优点
 
-  巴黎公社它有无产阶级政权，但是没有建立无产阶级政党
+    巴黎公社它有无产阶级政权，但是<span style="font-weight: bold;" data-type="strong">没有建立无产阶级政党</span>
 
-  所以他的重要举措是规定公职人员无论职位的高低都实行全面的选举和撤换制度
+    所以他的重要举措是规定公职人员无论职位的高低都实行全面的选举和撤换制度
 
-  取消高薪制任何工作人员一年的薪资水平不得超过一个熟练工人的工资水平
+    取消高薪制任何工作人员一年的薪资水平不得超过一个熟练工人的工资水平
 
 * <span style="font-weight: bold;" data-type="strong">劳</span>动二重性理论是“理解政治经济学的<span style="font-weight: bold;" data-type="strong">枢</span>纽”。不是剩余价值理论
 
 * 没有政治化
 
-  * 国际金融资本的垄断成为当代资本主义最突出、最鲜明、最主要的特征。一是金融垄断寡头化。二是金融垄断国际化。三是经济虚拟化、产业空心化
+  * 国际金融资本的垄断成为当代资本主义<span style="font-weight: bold;" data-type="strong">最突出、最鲜明、最主要</span>的特征。一是金融垄断寡头化。二是金融垄断国际化。三是经济虚拟化、产业空心化
 
-* 金融垄断资本最鲜明最突出最主要的特征——“瓜果空虚” （寡国）
+* 金融垄断资本最鲜明最突出最主要的特征——“<span style="font-weight: bold;" data-type="strong">瓜果空虚</span>” （寡国）
 
 * <span style="font-weight: bold;" data-type="strong">利润转化为平均利润，价值也就转化为生产价格。</span> 生产价格是商品价值的转化形式，是生产成本与平均利润之和。A正确。生产价格随着商品价值的变化而变动，生产商品的社会必要劳动时间减少，生产价格就会降低；反之，生产价格就会提高。C错误。生产价格是价值的转化形式，商品按照生产价格而不是价值出售并不违背价值规律，而是价值规律的实现形式发生了变化。虽然从个别部门来看，资本家获得的平均利润与本部门工人创造的剩余价值可能不一致，但从全社会来看，整个资本家阶级获得的利润总额与雇佣工人所创造的剩余价值总额是相等的。B正确，D错误。
 
@@ -6705,7 +6668,7 @@ toc: true
 
 * 公有制经济=社会主义性质=社会主义经济
 
-* 建成世界一流军队是<span style="font-weight: bold;" data-type="strong">中国特</span>色社会主义新时代的强军目标
+* 建成世界一流军队是<span style="font-weight: bold;" data-type="strong">中国特</span>色社会主义新时代的<span style="font-weight: bold;" data-type="strong">强军目标</span>
 
 * 人民立场是中国共产党的<span style="font-weight: bold;" data-type="strong">根本政治立场</span>
 
@@ -6779,9 +6742,9 @@ toc: true
 
   国家利益至上——要求和原则
 
-* 周边外交理念：亲诚惠容
+* 周边外交理念：<span style="font-weight: bold;" data-type="strong">亲诚惠容</span>
 
-  周边外交方针：以邻为善，以邻为伴
+  周边外交方针：<span style="font-weight: bold;" data-type="strong">以邻为善，以邻为伴</span>
 
   真实亲诚是中国加强同发展中国家团结合作的理念；
 
@@ -6819,9 +6782,9 @@ toc: true
 
   农业是国家层面
 
-* 以立德树人为根本任务，以为党育人、为国育才为根本目标
+* <span style="font-weight: bold;" data-type="strong">以立德树人为根本任务，以为党育人、为国育才为根本目标</span>
 
-* 标本兼治是新时代推进反腐败斗争的鲜明特征
+* <span style="font-weight: bold;" data-type="strong">标本兼治</span>是新时代推进反腐败斗争的鲜明特征
 
   依靠制度优势：多管齐下
 
@@ -6831,13 +6794,9 @@ toc: true
 
   “鲜明特征”的提法：
 
-  ①解放和发展社会生产力
+  ①解放和发展社会生产力是改革开放的鲜明特征和首要任务。
 
-  是改革开放的鲜明特征和首要任务。
-
-  ②把        党内法规体系
-
-  纳入中国特色社会主义法治体系，是我国法治区别于其他国家法治的鲜明特征。
+  ②把党内法规体系纳入中国特色社会主义法治体系，是我国法治区别于其他国家法治的鲜明特征。
 
 * 李南盗图是智障化身
 
@@ -6887,7 +6846,7 @@ toc: true
 
   就业：基本，最大民生     （大急救）
 
-* 统筹推进各领域各方面改革开放，必须以全面深化改革总目标为引领，以制度建设为主线
+* 统筹推进各领域各方面改革开放，必须以<span style="font-weight: bold;" data-type="strong">全面深化改革总目标</span>为引领，以<span style="font-weight: bold;" data-type="strong">制度建设</span>为主线
 
 * 共建是基础
 
@@ -6921,7 +6880,7 @@ toc: true
 
   政治安全：国家主权、政权、制度和意识形态的稳固
 
-* 中国特色社会主义之所以是社会主义，究其根本就在于坚持科学社会主义基本原则，在于坚持中国共产党的领导。
+* 中国特色社会主义之所以是社会主义，究其根本就在于<span style="font-weight: bold;" data-type="strong">坚持科学社会主义基本原则，在于坚持中国共产党的领导</span>。
 
 * 中华文明在长期历史演进中形成多元一体的格局，是统一性的体现
 
@@ -6936,3 +6895,5 @@ toc: true
   把准政治方向、站稳政治立场、
 
   营造良好政治生态、提高政治能力
+
+‍
