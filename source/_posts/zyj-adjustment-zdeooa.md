@@ -9,9 +9,11 @@ toc: true
 
 # zyj调剂
 
-# 安徽大学
+# 安徽大学——小红书上热度高，线下9号提交资料，10号面试
 
 > [公共管理调剂信息-211 - 小红书 (xiaohongshu.com)](https://www.xiaohongshu.com/explore/660826ce000000001b00afda)
+>
+> 线下调剂，只有面试——[消息来源](https://man.ahu.edu.cn/2024/0407/c13740a332949/page.htm)
 
 * [安徽大学2024年硕士研究生招生调剂公告](https://graschool.ahu.edu.cn/2024/0404/c9537a332847/page.htm)
 
@@ -35,6 +37,23 @@ toc: true
       预43，招了12，
 
       今天 08:54<span style="font-weight: bold;" class="bold">江苏</span>
+    * [https://www.xiaohongshu.com/user/profile/6316d4f6000000001200f650](https://www.xiaohongshu.com/user/profile/6316d4f6000000001200f650)
+
+      [小红薯6316FC40](https://www.xiaohongshu.com/user/profile/6316d4f6000000001200f650)
+
+      请问有多少名额
+
+      前天 15:06<span style="font-weight: bold;" class="bold">江西</span>
+
+      <span style="font-weight: bold;" class="bold">赞</span>
+
+      <span style="font-weight: bold;" class="bold">1</span>
+
+      [https://www.xiaohongshu.com/user/profile/65dc451d000000000d0245c1](https://www.xiaohongshu.com/user/profile/65dc451d000000000d0245c1)
+
+      [全网网名不一样](https://www.xiaohongshu.com/user/profile/65dc451d000000000d0245c1)作者
+
+      21 22
 * 复试名单
 
   * ​![Clip_2024-04-08_08-58-18](http://127.0.0.1:6806/assets/Clip_2024-04-08_08-58-18-20240408085824-w1oyvdh.png)​
@@ -100,7 +119,7 @@ toc: true
 
 # 中国地质大学
 
-> ​![Clip_2024-03-31_13-57-21](http://127.0.0.1:6806/assets/Clip_2024-03-31_13-57-21-20240331135735-21yvdom.png)​
+> ​![Clip_2024-03-31_13-57-21](https://raw.githubusercontent.com/Chenm4/hexoBlog/main/hexoBlog /source/imagesClip_2024-03-31_13-57-21-20240331135735-21yvdom.png)​
 
 # 哈尔滨理工大学
 
