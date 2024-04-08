@@ -9,7 +9,7 @@ toc: true
 
 # zyj调剂
 
-# 安徽大学——小红书上说是有管理学大类调剂名额，但是没官方公布
+# 安徽大学
 
 > [公共管理调剂信息-211 - 小红书 (xiaohongshu.com)](https://www.xiaohongshu.com/explore/660826ce000000001b00afda)
 
@@ -19,9 +19,31 @@ toc: true
 * 招生计划
 
   * ​![Clip_2024-04-08_08-57-29](http://127.0.0.1:6806/assets/Clip_2024-04-08_08-57-29-20240408085736-fikdlxu.png)​
+
+    * 学姐信息资源管理调剂大概有多少名额啊
+
+      昨天 19:37<span style="font-weight: bold;" class="bold">河南</span>
+
+      <span style="font-weight: bold;" class="bold">赞</span>
+
+      <span style="font-weight: bold;" class="bold">1</span>
+
+      [https://www.xiaohongshu.com/user/profile/65dc451d000000000d0245c1](https://www.xiaohongshu.com/user/profile/65dc451d000000000d0245c1)
+
+      [全网网名不一样](https://www.xiaohongshu.com/user/profile/65dc451d000000000d0245c1)作者
+
+      预43，招了12，
+
+      今天 08:54<span style="font-weight: bold;" class="bold">江苏</span>
 * 复试名单
 
   * ​![Clip_2024-04-08_08-58-18](http://127.0.0.1:6806/assets/Clip_2024-04-08_08-58-18-20240408085824-w1oyvdh.png)​
+* 小红书热度
+
+  * 热度较高
+
+    * ​![Clip_2024-04-08_09-08-29](http://127.0.0.1:6806/assets/Clip_2024-04-08_09-08-29-20240408090843-iroetr0.png)​
+    * [安徽大学公共管理调剂招的人比一志愿还多 - 小红书 (xiaohongshu.com)](https://www.xiaohongshu.com/explore/66060967000000001203e640)
 
 # 苏州大学——没说是否线上
 
